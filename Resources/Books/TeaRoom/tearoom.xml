@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader xml:lang="en">    
+        <fileDesc>
+            <titleStmt>
+                <title type="main">The Tea room booklet</title>
+                <title type="sub">An Art of Tea project</title>
+                <respStmt>
+                    <resp>compiled by</resp>
+                    <persName ref="#RM">Regina Manyara</persName>
+                </respStmt>
+            </titleStmt>
+            <editionStmt>
+                <edition>Digital Edition, <date when="2025-06">Nov, 2025</date> </edition>
+                <respStmt>
+                    <resp>annotated by</resp>
+                    <persName ref="#RM">Regina Manyara</persName>
+                </respStmt>
+            </editionStmt>
+            <extent> <!-- update when done -->
+                <measure unit="kb" quantity="41">About 41KB</measure>
+                <measure unit="lines" quantity="300">About 300 lines</measure>
+            </extent>
+            <publicationStmt> 
+                <publisher>Alma Mater Studiorum - Università di Bologna</publisher>
+                <pubPlace>
+                    <placeName key="Bologna" sameAs="https://sws.geonames.org/3181928/">Bologna</placeName>
+                </pubPlace>
+                <date when="2025-06">Nov, 2025</date>
+                <availability status="free"> 
+                    <licence target= "https://creativecommons.org/licenses/by-nc/4.0/"> CC-BY-NC</licence>
+                    <p>Open Access. Available for academic purposes.</p>
+                </availability>
+            </publicationStmt>
+            <notesStmt> 
+                <note>This is an XML/TEI document made for the DHDK exam of Semantic Digital Libraries (2024/25) 
+                    as part of the digital library project Art of Tea.
+                </note>
+            </notesStmt>
+            <sourceDesc>
+                <biblStruct xml:lang="en" type="print">
+                    <monogr>
+                        <title type="main">The Tea room booklet.</title>
+                        <respStmt>
+                            <resp>Published in</resp>
+                            <orgName ref="WHC">New York, Woman's Home Companion</orgName>
+                        </respStmt>
+                        <imprint>
+                            <pubPlace>New York</pubPlace>
+                            <publisher>Woman's home companion</publisher>
+                            <date when="1922">1922</date>
+                        </imprint>
+                    </monogr>
+                </biblStruct>
+                <biblStruct xml:lang= "en" type="digital">
+                    <monogr>
+                        <idno type="loc">22019708</idno>
+                        <idno type="URI">https://lccn.loc.gov/22019708</idno>
+                        <title>tearoombooklet00newy_0001.jp2</title>
+                        <respStmt>
+                            <resp>hosted by</resp>
+                            <name>Library of Congress</name>
+                        </respStmt>
+                        <imprint>
+                            <date when="2025-06-07">6th June 2025</date>
+                        </imprint>
+                        <extent>1 online resource (vi, 60 pages :facs.)</extent>
+                    </monogr>
+                </biblStruct>
+                <listWit> <!-- update when looked through text -->
+                    <witness xml:id="EsR" source="https://handrit.is/manuscript/view/is/AM04-0557/0#mode/2up">AM. 557, 4to (Sögubók) - Saga of Erik the Red</witness>
+                    <witness xml:id="THsK" source="https://handrit.is/manuscript/view/en/AM04-0544/0#mode/2up">AM. 544, 4to (Hauksbók) - Saga of Thorfinn Karlsefni</witness>
+                </listWit>
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc> <!-- update when done -->
+            <variantEncoding method="location-referenced" location="external"/>
+            <projectDesc>
+                <p>
+                    This digtal document is a part of the VinLOD Saga linked open data project for the DHDK exam of Information Science and Cultural Heritage (2024/25). For the Text Encoding and Semantic Representation part of the exam, this doucment was created to further enrich the details of the project. VinLOD Saga is inspired by and centred around the manga and anime series Vinland Saga by Makoto Yukimura, which have been connected to real world Norse cultural objects. Among these, are objects relating to Leif Eirikkson and his discovery of "Vinland" (North America). This document acts as an extention of these objects, transcribing and annotating the digital facsimile of "The Finding of Wineland the Good", a translated critical edition, by Arthur Middleton Reeves, of the Icelandic sagas related to the discovery of Vinland. In particular, the section "Concerning Leif the Lucky and the Introduction of Christianity into Greenland", within the tranlation of the "Saga of Erik the Red", was chosen for its direct, although small, mention of the Vinland discovery. 
+                </p>
+            </projectDesc>
+            <editorialDecl>
+                <correction status="low" method="silent">
+                    <p>Errors in transcription controlled by using the VSCode extension <q>Code Spell Checker</q>. Errors which were present in the original text were left as is.</p>
+                </correction>
+                <interpretation>
+                    <p>Within the main text transcription, the <gi>seg</gi> element was used to further subdivide the smaller narratives within the main section of the saga.</p>
+                    <p>Every person and place mentioned in the text has been marked once per small narrative segment. For people and places with no authoritive URI, a note has been added to their entry in <gi>listPerson</gi> and <gi>listPlace</gi>, respectively.</p>
+                    <p>Dates are marked with the ISO 8601 date format, when possible.</p>
+                </interpretation>
+                <normalization> 
+                    <p>All words and letters are transcribed verbatim from the original, with no normalization applied, since the text was previously normalized by the author from Old Norse to Modern English (in archaic style).</p>
+                </normalization>
+                <normalization method="silent">
+                    <p>Spacing between words has been regularized to one space.</p>
+                </normalization>
+                <quotation marks="all">
+                    <p>All quotation marks have been retained from the original text. For direct speech the element <gi>said</gi> with <att>aloud</att> set to true, was used inside the quotation marks. For indirect speech the same element was used with the <att>aloud</att> set to false.</p>
+                </quotation>
+                <segmentation>
+                    <p>The text has been structured into three main sections. The <gi>front</gi>, which includes the Preface from the original text. The <gi>body</gi>, which includes the main text of the file, taken from a section of Chapter II. - The Saga of Erik the Red. This section has been further subdivided with <gi>seg</gi> marking the smaller acts within the main saga. The <gi>back</gi>, which includes all the endnotes related to the text present in the <gi>body</gi> section.</p>
+                </segmentation>
+            </editorialDecl>
+        </encodingDesc>
+        <profileDesc>
+            <particDesc>
+                <listPerson type="editor">
+                    <person xml:id="RM" source="https://github.com/ValkyrieCain9">
+                        <persName>Regina Manyara</persName>
+                    </person>
+                </listPerson>
+                <listOrg>
+                    <org xml:id="WHC" source="https://www.wikidata.org/wiki/Q3569752">
+                        <orgName>Woman's Home Companion</orgName>
+                    </org>
+                </listOrg>
+            </particDesc>
+            <settingDesc> <!-- update when gone through text -->
+                <listPlace>
+                    <place xml:id="VL" sameAs="https://w3id.org/vinLOD-saga/place/Vinland">
+                        <placeName>Vinland</placeName>
+                        <note>The part of North America first discovered by the Norse explorers</note>
+                    </place>
+                    <place xml:id="GL" source="https://sws.geonames.org/3425505/">
+                        <placeName>Greenland</placeName>
+                    </place>
+                    <place xml:id="NO" source="https://sws.geonames.org/3144096/">
+                        <placeName>Norway</placeName>
+                    </place>
+                    <place xml:id="HB" source="https://sws.geonames.org/2647204/">
+                        <placeName>Hebrides</placeName>
+                    </place>
+                    <place xml:id="IL" source="https://sws.geonames.org/2629691/">
+                        <placeName>Iceland</placeName>
+                    </place>
+                    <place xml:id="BT" source="https://sws.geonames.org/3420741/">
+                        <placeName>Brattahlid</placeName>
+                    </place>
+                    <place xml:id="EF">
+                        <placeName>Ericsfirth</placeName>
+                        <note>Leif Eirikson's home in Greenland</note>
+                    </place>
+                    <place xml:id="SF" source="https://sws.geonames.org/3413200/">
+                        <placeName>Snæfellsnes</placeName>
+                    </place>
+                    <place xml:id="SH" source="https://sws.geonames.org/3413453/">
+                        <placeName>Skálholt</placeName>
+                    </place>
+                    <place xml:id="FR" source="https://nat.is/froda/">
+                        <placeName>Fródá</placeName>
+                    </place>
+                </listPlace>
+            </settingDesc>
+        </profileDesc>
+    </teiHeader>
+    <text xml:lang="en"></text>
+</TEI>
