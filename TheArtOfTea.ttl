@@ -1,0 +1,58 @@
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix schema1: <http://schema.org/> .
+@prefix fabio: <http://purl.org/spar/fabio> .
+@prefix prism: <http://prismstandard.org/namespaces/basic/2.0/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# Books 
+
+<https://w3id.org/ArtOfTea/item/Book/BookOfTea> a crm:E24_Physical_Human-Made_Thing ; # ?
+    bf:identifiedby "!" ; # to be written
+    bf:mainTitle "The Book of Tea" ;
+    dcterms:contributor <http://viaf.org/viaf/99830297> ;
+    bf:responsibilityStatement "University of California Libraries" ;
+    bf:agent "London, New York, Putman's sons" ;
+    bf:date "2007-11-01T16:43:02Z"^^xsd:dateTime ;
+    bf:place <https://archive.org/details/bookoftea00okakrich/mode/2up> ;
+    bf:originPlace "New York" ;
+    bf:originDate "1906" ;
+    dcterms:source "!" ; # to be found
+    dcterms:rights "Free eBook from the Internet Archive" ;
+    dcterms:format "310.5M" ;
+    dcterms:abstract "!" ; # to be written
+    dcterms:subject "Tea, Japanese tea ceremony, Japan, Social life and customs" .
+
+# Articles
+<https://w3id.org/ArtOfTea/item/Article/BookOfTea> a fabio:JournalArticle ;
+    dcterms:identifier "!" ;
+    dcterms:title "Chanoyu or The Tea Philosophy of Japan a Western Evaluation" ;
+    dcterms:creator <http://viaf.org/viaf/38149717251710950257> ;
+    dcterms:title "Pacific Affairs" ; # Journal title
+    prism:volume "2" ;
+    prism:issueIdentifier "10" ;
+    dcterms:hasPublisher "University of Columbia" ;
+    fabio:hasPublicationYear "1929";
+    prism:publicationDate "1929-10"^^xsd:gYearMonth ;
+    fabio:hasURL <https://www-jstor-org.ezproxy.unibo.it/stable/2750271> ;
+    prism:doi <https://doi.org/10.2307/2750271> ;
+    prism:startingPage "635" ;
+    prism:endingPage "644" ;
+    prism:keyword "!" ; # to be written
+    dcterms:abstract "!" . # to be written
+
+# Images
+
+<https://w3id.org/ArtOfTea/item/Image/TeaCeremony> a crm:E24_Physical_Human-Made_Thing ; # ?
+    dcterms:identifier "-" ; # to be added
+    dcterms:title "Woman Performing the Tea Ceremony" ;
+    dcterms:creator <http://viaf.org/viaf/96576651> ;
+    dcterms:coverage "Japan, Edo period (1615-1868)" ;
+    dcterms:medium "Print - color woodblock" ;
+    dcterms:date "c. 1820" ;
+    dcterms:description "inscription: Signature: Eizan hitsu; inscription_translation: None; inscription_remark: None" ;
+    dcterms:subject "-" ;
+    schema:hasMeasurement "Sheet: 20.6 x 18.1 cm (8 1/8 x 7 1/8 in.)" ;
+    dcterms:source "https://www.jstor.org/stable/community.24570642" .
