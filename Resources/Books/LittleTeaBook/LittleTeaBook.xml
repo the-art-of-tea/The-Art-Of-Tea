@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="main">The little tea book</title>
+        <respStmt>
+            <resp>compiled by</resp>
+            <persName>
+                <forename>Shiho</forename>
+                <surname>Nakamura</surname>
+            </persName>
+        </respStmt>
+      </titleStmt>
+      <editionStmt>
+        <edition>Digital Edition, <date when="2025-11">Nov, 2025</date> </edition>
+        <respStmt>
+            <resp>annotated by</resp>
+            <persName>
+                <forename>Shiho</forename>
+                <surname>Nakamura</surname>
+            </persName>
+        </respStmt>
+      </editionStmt>
+      <extent> <!-- update later-->
+        <measure unit="kb" quantity="41">About 41KB</measure>
+        <measure unit="lines" quantity="300">About 300 lines</measure>
+      </extent>
+      <publicationStmt>
+        <publisher>Alma Mater Studiorum - Università di Bologna</publisher>
+        <pubPlace>
+            <placeName key="Bologna" sameAs="https://sws.geonames.org/3181928/">Bologna</placeName>
+        </pubPlace>
+        <date when="2025-11">Nov, 2025</date>
+        <availability status="free"> 
+            <licence target= "https://creativecommons.org/licenses/by-nc/4.0/"> CC-BY-NC</licence>
+            <p>Open Access. Available for academic purposes.</p>
+        </availability>
+      </publicationStmt>
+      <notesStmt>
+        <note>This is an XML/TEI document made for the DHDK exam of Semantic Digital Libraries (2024/25) as part of the digital library project Art of Tea.
+        </note>
+      </notesStmt>
+
+      <!-- start from here (13 Nov) -->
+      <sourceDesc>
+        <biblStruct xml:lang="en" type="print">
+          <monogr>
+            <title type="main">The little tea book</title>
+            <respStmt></respStmt>
+          </monogr>
+        </biblStruct>
+      </sourceDesc>
+    </fileDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="chapter" n="1">
+        <head>Introduction to Tea</head>
+        <p>Tea is a beverage that has been enjoyed for centuries...</p>
+      </div>
+      <div type="chapter" n="2">
+        <head>Types of Tea</head>
+        <p>There are several types of tea, including green, black, oolong...</p>
+      </div>
+    </body>
+  </text>
+</TEI>
