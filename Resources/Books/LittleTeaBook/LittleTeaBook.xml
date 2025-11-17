@@ -6,20 +6,14 @@
         <title type="main">The little tea book</title>
         <respStmt>
             <resp>compiled by</resp>
-            <persName>
-                <forename>Shiho</forename>
-                <surname>Nakamura</surname>
-            </persName>
+             <persName ref="#SN">Shiho Nakamura</persName>
         </respStmt>
       </titleStmt>
       <editionStmt>
         <edition>Digital Edition, <date when="2025-11">Nov, 2025</date> </edition>
         <respStmt>
             <resp>annotated by</resp>
-            <persName>
-                <forename>Shiho</forename>
-                <surname>Nakamura</surname>
-            </persName>
+             <persName ref="#SN">Shiho Nakamura</persName>
         </respStmt>
       </editionStmt>
       <extent> <!-- update later-->
@@ -42,27 +36,1046 @@
         </note>
       </notesStmt>
 
-      <!-- start from here (13 Nov) -->
       <sourceDesc>
+        <!--Original printed edition-->
         <biblStruct xml:lang="en" type="print">
           <monogr>
             <title type="main">The little tea book</title>
-            <respStmt></respStmt>
+            <author>
+                <persName>
+                <forename>Arthur</forename>
+                <surname>Gray</surname>
+                </persName>
+            </author>
+            <illustrator>
+                <persName>
+                <forename>George</forename>
+                <surname>Hood</surname>             
+              </persName>
+            </illustrator>
+            <imprint>
+              <publisher>New York: Baker&amp;Taylor</publisher>
+              <pubPlace>
+                  <placeName key="New York" sameAs="https://sws.geonames.org/5128581/">New York</placeName>
+              </pubPlace>
+              <date when="1903">1903</date>
+            </imprint>
           </monogr>
+          <idno type="OCLC">1048789310</idno>
         </biblStruct>
+       <!--Digital text source: Project Gutenberg-->
+        <biblStruct xml:lang="en" type="digital">
+          <monogr>
+            <imprint>
+              <publisher>Project Gutenberg</publisher>
+              <date when="2006">2006</date> 
+            </imprint>
+            <idno type="Ebook">#19392</idno>
+          </monogr>
+          <note>Textual transcription used for the digital edition.</note>
+        </biblStruct>
+
+      <!--Digital PDf source: Internet Archive-->
+      <biblStruct xml:lang="en" type="digital">
+        <monogr>
+          <imprint>
+            <publisher>Internet Archive</publisher>
+            <date when="2007">2007</date> 
+          </imprint>
+        </monogr>
+        <idno type="archive.org">littleteabook00grayrich</idno>
+        <idno type="url">https://archive.org/details/littleteabook00grayrich</idno>
+        <note>PDF facsimile consulted for page layout and illustrations.</note>
+      </biblStruct>
       </sourceDesc>
     </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>This TEI XML edition was created as part of the Digital Libraries course at Alma Mater Studiorum - Università di Bologna. 
+        The text has been transcribed from the Project Gutenberg version and formatted according to TEI P5 guidelines. 
+        Illustrations and layout details were referenced from the Internet Archive PDF facsimile.</p>
+      </projectDesc>
+      <editorialDecl>
+        <correction status="low" method="silent">
+            <p>Errors in transcription controlled by using the VSCode extension <q>Code Spell Checker</q>. Errors which were present in the original text were left as is.</p>
+        </correction>
+        <interpretation>
+            <p>Within the main text transcription, the <gi>seg</gi> element was used to further subdivide the smaller narratives within the main section of the saga.</p>
+            <p>Every person and place mentioned in the text has been marked once per small narrative segment. For people and places with no authoritive URI, a note has been added to their entry in <gi>listPerson</gi> and <gi>listPlace</gi>, respectively.</p>
+            <p>Dates are marked with the ISO 8601 date format, when possible.</p>
+        </interpretation>
+        <normalization> 
+            <p>All words and letters are transcribed verbatim from the original, with no normalization applied, since the text was previously normalized by the author from Old Norse to Modern English (in archaic style).</p>
+        </normalization>
+        <normalization method="silent">
+            <p>Spacing between words has been regularized to one space.</p>
+        </normalization>
+        <quotation marks="all">
+            <p>All quotation marks have been retained from the original text. For direct speech the element <gi>said</gi> with <att>aloud</att> set to true, was used inside the quotation marks. For indirect speech the same element was used with the <att>aloud</att> set to false.</p>
+        </quotation>
+        <segmentation><!--**UPDATE LATER**-->
+        </segmentation>
+      </editorialDecl>
+    </encodingDesc>
+    <profileDesc>
+      <particDesc>
+        <!--List of people **UPDATE LATER** -->    
+        <listPerson type="contributors">
+          <person xml:id="SN">
+             <persName>Shiho Nakamura</persName>
+             <role>compiler, annotator</role>
+          </person>
+          <person xml:id="arthur_gray">
+            <persName>
+              <forename>Arthur</forename>
+              <surname>Gray</surname>
+            </persName>
+            <role>original author</role>
+          </person>
+          <person xml:id="george_hood">
+            <persName>
+              <forename>George</forename>
+              <surname>Hood</surname>
+            </persName>
+            <role>illustrator</role>
+          </person>
+        </listPerson>
+        <!--List of organizations **UPDATE LATER** -->     
+        <listOrg>     
+        </listOrg>
+      </particDesc>
+      <settingDesc>
+        <!--List of places **UPDATE LATER**-->   
+        <listPlace>
+            <place xml:id="JP" sameAs="https://sws.geonames.org/1861060/">
+                <placeName>Japan</placeName>
+            </place>
+            <place xml:id="CN" sameAs="https://sws.geonames.org/1814991/">
+                <placeName>China</placeName>
+            </place>
+            <place xml:id="IN" sameAs="https://sws.geonames.org/1269750/">
+                <placeName>India</placeName>
+            </place>
+            <place xml:id="EN" sameAs="https://sws.geonames.org/2635167/">
+                <placeName>England</placeName>
+            </place>
+            <place xml:id="RU" sameAs="https://sws.geonames.org/2017370/">
+                <placeName>Russia</placeName>
+            </place>
+        </listPlace>
+      </settingDesc>
+    </profileDesc>
   </teiHeader>
+
   <text>
+        <front>
+        <div type="title">
+            <head type="main">THE LITTLE TEA BOOK</head>
+            <head type="credits">COMPILED BY ARTHUR GRAY</head>
+            <head type="credits">ILLUSTRATED BY GEORGE W. HOOD</head>
+        </div>
+        <div type="illustration" n="1">[Cover illustration]</div>
+        <div type="illustration" n="2">[Illustration of Boswell and Johnson at the Mitre]</div>
+        <div type="illustration" n="3">[Illustration of tea kettle]</div>
+
+    </front>
     <body>
+      <div type="section-quote" n="1">
+        <quote>
+        Thou soft, thou sober, sage, and venerable liquid! Thou
+        innocent pretence for bringing the wicked of both sexes
+        together in the morning! Thou female tongue-running,
+        smile-soothing, heart-opening, wink-tipping cordial
+        to whose glorious insipidity I owe the happiest
+        moments of my life.
+        </quote>
+        <p>  --COLLEY CIBBER.</p>     
+      </div>
+
+      <div type="section-introduction">
+        <title type="title-indroduction">INTRODUCING THE LITTLE TEA BOOK</title>
+        <p>After all, tea is _the_ drink! Domestically and socially it is the beverage of the world. There may be those who will come forward with _their_ figures to prove that other fruits of the soil-- agriculturally and commercially--are more important. Perhaps they are right when quoting statistics. But what other product can compare with tea in the high regard in which it has always been held by writers whose standing in literature, and recognized good taste in other walks, cannot be questioned?.</p>
+
+        <p>A glance through this book will show that the spirit of the tea beverage is one of peace, comfort, and refinement. As these qualities are all associated with the ways of women, it is to them, therefore--the real rulers of the world--that tea owes its prestige and vogue.</p>
+
+        <p>Further peeps through these pages prove this to be true; for nearly all the allusions and references to the beverage, by male writers, reveal the womanly influence that tea imparts. But this is not all. The side-lights of history, customs, manners, and modes of living which tea plays in the life of all nations will be found entertaining and instructive. Linked with the fine feminine atmosphere which pervades the drinking of the beverage everywhere, a leaf which can combine so much deserves, at least, a little human hearing for its long list of virtues; for its peaceful walks, talks, tales, tattle, frills, and fancies which go to make up this tribute to "the cup that cheers but not inebriates."</p>
+      </div>
+
       <div type="chapter" n="1">
-        <head>Introduction to Tea</head>
-        <p>Tea is a beverage that has been enjoyed for centuries...</p>
+        <title type="title-chapter">THE ORIGIN OF TEA</title>
+        <p>Darma, third son of Koyuwo, King of India, a religions high priest from Siaka (the author of that Eastern paganism about a thousand years before the Christian era), coming to China, to teach the way of happiness, lived a most austere life, passing his days in continual mortification, and retiring by night to solitudes, in which he fed only upon the leaves of trees and other vegetable productions. After several years passed in this manner, in fasting and watching, it happened that, contrary to his vows, the pious Darma fell asleep! When he awoke, he was so much enraged at himself, that, to prevent the offence to his vows for the future, he got rid of his eyelids and placed them on the ground. On the following day, returning to his accustomed devotions, he beheld, with amazement, springing up from his eyelids, two small shrubs of an unusual appearance, such as he had never before seen, and of whose qualities he was, of course, entirely ignorant. The saint, however, not being wholly devoid of curiosity--or, perhaps, being unusually hungry--was prompted to eat of the leaves, and immediately felt within him a wonderful elevation of mind, and a vehement desire of divine contemplation, with which he acquainted his disciples, who were eager to follow the example of their instructor, and they readily received into common use the fragrant plant which has been the theme of so many poetical and literary pens in succeeding ages.</p>
+      
+        <div type="illustration" n="4">[Illustration of Dr. Johnson's chair]</div>      
       </div>
+
+      <div type="section-poem" n="1">
+        <title type="title-poem">TEA</title>
+        <head>By FRANCIS SALTUS SALTUS</head>
+        <div type="poem" n="1">
+          <lg>
+            <l>From what enchanted Eden came thy leaves</l>
+            <l>That hide such subtle spirits of perfume?</l>
+            <l>Did eyes preadamite first see the bloom,</l>
+            <l>Luscious nepenthe of the soul that grieves?</l>
+          </lg>
+          <lg>
+            <l>By thee the tired and torpid mind conceives</l>
+            <l>Fairer than roses brightening life's gloom,</l>
+            <l>Thy protean charm can every form assume</l>
+            <l>And turn December nights to April eves.</l>
+          </lg>
+          <lg>
+            <l>Thy amber-tinted drops bring back to me</l>
+            <l>Fantastic shapes of great Mongolian towers,</l>
+            <l>Emblazoned banners, and the booming gong;</l>
+            <l>I hear the sound of feast and revelry,</l>   
+            <l>And smell, far sweeter than the sweetest flowers,</l>
+            <l>The kiosks of Pekin, fragrant of Oolong!</l>
+          </lg>
+        </div>
+      </div>
+
       <div type="chapter" n="2">
-        <head>Types of Tea</head>
-        <p>There are several types of tea, including green, black, oolong...</p>
+        <title type="title-chapter">LITTLE CUPS OF CHINESE AND JAPANESE TEA</title>
+        <p>Although the legend credits the pious East Indian with the discovery of tea, there is no evidence extant that India is really the birthplace of the plant.</p>
+
+        <p>Since India has no record of date, or facts, on stone or tablet, or ever handed down a single incident of song or story--apart from the legend--as to the origin of tea, one is loath to accept the claim--if claim they assert--of a people who are not above practising the "black art" at every turn of their fancy.</p>
+
+        <p>Certain it is that China, first in many things, knew tea as soon as any nation of the world. The early Chinese were not only more progressive than other peoples, but linked with their progress were important researches, and invaluable discoveries, which the civilized world has long ago recognized. Then, why not add tea to the list?</p>
+
+        <p>At any rate, it is easy to believe that the Chinese were first in the tea fields, and that undoubtedly the plant was a native of both China and Japan when it was slumbering on the slopes of India, unpicked, unsteeped, undrunk, unhonored, and unsung.</p>
+
+        <p>A celebrated Buddhist, St. Dengyo Daishai, is credited with having introduced tea into Japan from China as early as the fourth century. It is likely that he was the first to teach the Japanese the use of the herb, for it had long been a favorite beverage in the mountains of the Celestial Kingdom. The plant, however, is found in so many parts of Japan that there can be little doubt but what it is indigenous there as well.</p>
+
+        <p>The word TEA is of Chinese origin, being derived from the Amoy and Swatow reading, "Tay," of the same character, which expresses both the ancient name of tea, "T'su," and the more modern one, "Cha." Japanese tea, "Chiya"--pronounced Châ.</p>
+
+        <p>Tea was not known in China before the Tang dynasty, 618-906 A.D. An infusion of some kind of leaf, however, was used as early as the Chow dynasty, 1122-255 B.C., as we learn from the Urh-ya, a glossary of terms used in ancient history and poetry. This work, which is classified by subjects, has been assigned as the beginning of the Chow dynasty, but belongs more properly to the era of Confucius, K'ung Kai, 551-479 B.C.</p>
+
+        <p>Although known in Japan for more than a thousand years, tea only gradually became the national beverage as late as the fourteenth century.</p>
+
+        <p>In the first half of the eighth century, 729 A.D., there was a record made of a religious festival, at which the forty-fifth Mikado---"Sublime Gate"--Shommei Tenno, entertained the Buddhist priests with tea, a hitherto unknown beverage from Corea, which country was for many years the high-road of Chinese culture to Japan.</p>
+
+        <p>After the ninth century, 823 A.D., and for four centuries thereafter, tea fell into disuse, and almost oblivion, among the Japanese. The nobility, and Buddhist priests, however, continued to drink it as a luxury.</p>
+
+        <p>During the reign of the eighty-third Emperor, 1199-1210 A.D., the cultivation of tea was permanently established in Japan. In 1200, the bonze, Yei-Sei, brought tea seeds from China, which he planted on the mountains in one of the most northern provinces. Yei-Sei is also credited with introducing the Chinese custom of ceremonious tea-drinking. At any rate, he presented tea seeds to Mei-ki, the abbot of the monastery of To-gano (to whom the use of tea had been recommended for its stimulating properties), and instructed him in the mystery of its cultivation, treatment, and preparation. Mei-ki, who laid out plantations near Uzi, was successful as a pupil, and even now the tea-growers of that neighborhood pay tribute to his memory by annually offering at his shrine the first gathered tea-leaves.</p>
+
+        <p>After that period, the use of tea became more and more in fashion, the monks and their kindred having discovered its property of keeping them awake during long vigils and nocturnal prayers.</p>
+
+        <p>From this time on the development and progress of the plant are interwoven with the histories and customs of these countries.</p>        
       </div>
+
+      <div type="section-poem" n="2">
+        <title type="title-poem">ON TEA</title>
+        <p> The following short poem by Edmund Waller is believed to be the first one written in praise of the "cup that does not inebriate":</p>
+
+        <div type="poem">
+          <lg>
+            <l>Venus her myrtle, Phoebus has her bays;</l>
+            <l>Tea both excels, which she vouchsafes to praise.</l>
+            <l>The best of Queens, and best of herbs, we owe</l>
+            <l>To that bold nation, which the way did show</l>
+            <l>To the fair region where the sun doth rise,</l>
+            <l>Whose rich productions we so justly prize.</l>
+            <l>The Muse's friend, tea does our fancy aid,</l>
+            <l>Repress those vapors which the head invade,</l>
+            <l>And keep the palace of the soul serene,</l>
+            <l>Tit on her birthday to salute the Queen.</l>
+          </lg>
+        </div>
+        <p>Waller was born in 1605, and died in 1687, aged eighty-two.</p>
+      </div>
+
+      <div type="chapter" n="3">
+        <title type="title-chapter">SOME ENGLISH TEA HISTORY</title>
+        <p>Tea was brought into Europe by the DUTCH EAST INDIA COMPANY, in 1610. It was at least forty, and perhaps forty-seven, years later that England woke up to the fascinations of the new drink. Dr. Johnson puts it at even a later date, for he claims that tea was first introduced into England by Lords Arlington and Ossory, in 1666, and really made its debut into society when the wives of these noblemen gave it its vogue.</p>
+
+        <p>If Dr. Johnson's statement is intended to mean that nothing is anything until the red seal of the select says, "Thus shall it be," he is right in the year he has selected. If, on the other hand, the Doctor had in mind society at large, he is "mixed in his dates," or leaves, for tea was drawn and drunk in London nine years before that date.</p>
+
+        <p>Garway, the founder of Garraway's coffee house, claimed the honor of being first to offer tea in leaf and drink for public sale, in 1657. It is pretty safe to fix the entrance of tea into Europe even a few years ahead of his announcement, for merchants in those days did not advertise their wares in advance.</p>
+
+        <p>However, this date is about the beginning of TEA TIME, for in the _Mercurius Politicius_ of September, 1658, appeared the following advertisement:</p>
+
+        <quote>That excellent and by all Physitians approved China drink, called by the Chineans, Tcha, by other nations, Tay, or Tea, is sold at the Sultana's Head, a Copphee House, in Sweetings Rents, by the Royal Exchange, London.</quote>
+
+        <p>Like all new things, when they have fastened on to the public's favor, tea was on everybody's lips and in everybody's mouth. It was lauded to the skies, and was supposed to be good for all the ills of the flesh. It would cure colds and consumption, clear the sight, remove lassitude, purify the liver, improve digestion, create appetite, strengthen the memory, and cure fever and ague.</p>
+
+        <p>One panegyrist says, while never putting the patient in mind of his disease, it cheers the heart, without disordering the head; strengthens the feet of the old, and settles the heads of the young; cools the brain of the hard drinker, and warms that of the sober student; relieves the sick, and makes the healthy better. Epicures drink it for want of an appetite; _bon vivants_, to remove the effects of a surfeit of wine; gluttons, as a remedy for indigestion; politicians, for the vertigo; doctors, for drowsiness; prudes, for the vapors; wits, for the spleen; and beaux to improve their complexions; summing up, by declaring tea to be a treat for the frugal, a regale for the luxurious, a successful agent for the man of business, and a bracer for the idle.</p>
+
+        <p>Poets and verse-makers joined the chorus in praise of tea, in Greek and Latin. One poet pictures Hebe pouring the delightful cup for the goddesses, who, finding it made their beauty brighter and their wit more brilliant, drank so deeply as to disgust Jupiter, who had forgotten that he, himself,</p>
+
+        <div type="verse">
+          <lg>
+            <l> "Drank tea that happy morn,</l>
+            <l>When wise Minerva of his brain was born."</l>
+          </lg>
+        </div>
+
+        <p>Laureant Tate, who wrote a poem on tea in two cantos, described a family jar among the fair deities, because each desired to become the special patroness of the ethereal drink destined to triumph over wine. Another versifier exalts it at the expense of its would-be rival, coffee:</p>
+
+        <div type="verse">
+          <lg>
+            <l>"In vain would coffee boast an equal good,</l>
+            <l>The crystal stream transcends the flowing mud,</l>
+            <l>Tea, even the ills from coffee spring repairs,</l>
+            <l>Disclaims its vices and its virtues shares."</l>
+          </lg>
+        </div>
+
+        <p>Another despairing enthusiast exclaims:</p>
+
+        <div type="verse">
+          <lg>
+            <l>"Hail, goddess of the vegetable, hail!</l>
+            <l>To sing thy worth, all words, all numbers, fail!"</l>
+          </lg>
+        </div>
+
+        <p>The new beverage did not have the field all to itself, however, for, while it was generally admitted that</p>
+        
+        <div type="verse">
+          <lg>
+            <l>Tea was fixed, and come to stay.</l>
+            <l>It could not drive good meat and drink away.</l>
+          </lg>
+        </div>
+
+        <p>Lovers of the old and conservative customs of the table were not anxious to try the novelty. Others shied at it; some flirted with it, in tiny teaspoonfuls; others openly defied and attacked it. Among the latter were a number of robust versifiers and physicians.</p>
+
+        <div type="verse">
+          <lg>
+            <l>"'Twas better for each British virgin,</l>
+            <l>When on roast beef, strong beer and sturgeon,</l>
+            <l>Joyous to breakfast they sat round,</l>
+            <l>Nor were ashamed to eat a pound."</l>
+          </lg>
+        </div>
+
+        <p>The fleshly school of doctors were only too happy to disagree with their brethren respecting the merits and demerits of the new-fangled drink; and it is hard to say which were most bitter, the friends or the foes of tea.</p>
+
+        <p>Maria Theresa's physician, Count Belchigen, attributed the discovery of a number of new diseases to the debility born of daily tea-drinking. Dr. Paulli denied that it had either taste or fragrance, owing its reputation entirely to the peculiar vessels and water used by the Chinese, so that it was folly to partake of it, unless tea-drinkers could supply themselves with pure water from the Vassie and the fragrant tea-pots of Gnihing. This sagacious sophist and dogmatizer also discovered that, among other evils, tea-drinking deprived its devotees of the power of expectoration, and entailed sterility; wherefore he hoped Europeans would thereafter keep to their natural beverages-- wine and ale--and reject coffee, chocolate, and tea, which were all equally bad for them.</p>
+
+        <p>In spite of the array of old-fashioned doctors, wits, and lovers of the pipe and bottle, who opposed evil effects, sneered at the finely bred men of England being turned into women, and grumbled at the stingy custom of calling for dish-water after dinner, the custom of tea-drinking continued to grow. By 1689 the sale of the leaf had increased sufficiently to make it politic to reduce the duty on it from eight pence on the decoction to five shillings a pound on the leaf. The value of tea at this time may be estimated from a customhouse report of the sale of a quantity of divers sorts and qualities, the worst being equal to that "used in coffee-houses for making single tea," which, being disposed of by "inch of candle," fetched an average of twelve shillings a pound.</p>
+
+        <p>During the next three years the consumption of tea was greatly increased; but very little seems to have been known about it by those who drank it--if we may judge from the enlightenment received from a pamphlet, given gratis, "up one flight of stairs, at the sign of the Anodyne Necklace, without Temple Bar." All it tells us about tea is that it is the leaf of a little shoot growing plentifully in the East Indies; that Bohea--called by the French "Bean Tea"--is best of a morning with bread and butter, being of a more nourishing nature than the green which may be used when a meal is not wanted. Three or four cups at a sitting are enough; and a little milk or cream renders the beverage smoother and more powerful in blunting the acid humors of the stomach.</p>
+
+        <p>The satirists believed that tea had a contrary effect upon the acid humors of the mind, making the tea-table the arena for the display of the feminine capacity for backbiting and scandal. Listen to Swift describe a lady enjoying her evening cups of tea:</p>
+
+        <div type="verse">
+          <lg>
+            <l>"Surrounded with the noisy clans</l>
+            <l>Of prudes, coquettes and harridans.</l>
+            <l>Now voices over voices rise,</l>
+            <l>While each to be the loudest vies;</l>
+            <l>They contradict, affirm, dispute,</l>
+            <l>No single tongue one moment mute;</l>
+            <l>All mad to speak, and none to hearken,</l>
+            <l>They set the very lapdog barking;</l>
+            <l>Their chattering makes a louder din</l>
+            <l>Than fish-wives o'er a cup of gin;</l>
+            <l>Far less the rabble roar and rail</l>
+            <l>When drunk with sour election ale."</l>
+          </lg>
+        </div>
+
+        <p>Even gentle Gay associated soft tea with the temper of women when he pictures Doris and Melanthe abusing all their bosom friends, while--</p>
+
+        <div type="verse">
+          <lg>
+            <l>"Through all the room</l>
+            <l>From flowery tea exhales a fragrant fume."</l>
+          </lg>
+        </div>
+
+        <p>But not all the women were tea-drinkers in those days. There was Madam Drake, the proprietress of one of the three private carriages Manchester could boast. Few men were as courageous as she in declaring against the tea-table when they were but invited guests. Madam Drake did not hesitate to make it known when she paid an afternoon's visit that she expected to be offered her customary solace--a tankard of ale and a pipe of tobacco.</p>
+
+        <p>Another female opponent of tea was the _Female Spectator_, which declared the use of the fluid to be not only expensive, but pernicious; the utter destruction of all economy, the bane of good housewifery, and the source of all idleness. Tradesmen especially suffered from the habit. They could not serve their customers because their apprentices were absent during the busiest hours of the day drumming up gossips for their mistresses' tea-tables.</p>
+
+        <p>This same censor says that the most temperate find themselves obliged to drink wine freely after tea, or supplement their Bohea with rum and brandy, the bottle and glass becoming as necessary to the tea-table as the slop-basin.</p>
+
+        <p>Although Jonas Hanway, the father of the umbrella, was successful in keeping off water, he was not successful in keeping out tea. All he did accomplish in his essay on the subject was to call forth a reply from Dr. Johnson, who, strange to say, instead of vigorously defending his favorite tipple, rather excuses it as an amiable weakness; confessing that tea is a barren superfluity, fit only to amuse the idle, relax the studious, and dilute the meals of those who cannot take exercise, and will not practise abstinence. His chief argument in tea's favor is that it is drunk in no great quantity even by those who use it most, and as it neither exhilarates the heart nor stimulates the palate, is, after all, but a nominal entertainment, serving as a pretence for assembling people together, for interrupting business, diversifying idleness; admitting that, perhaps, while gratifying the taste, without nourishing the body, it is quite unsuited to the lower classes.</p>
+
+        <p>It is a singular fact, too, that at that period there was no other really vigorous defender of the beverage. All the best of the other writers did was to praise its pleasing qualities, associations, and social attributes.</p>
+
+        <p>Still, tea grew in popular favor, privately and publicly. The custom had now become so general that every wife looked upon the tea-pot, cups, and caddy to be as much her right by marriage as the wedding-ring itself. Fine ladies enjoyed the crowded public entertainments with tea below stairs and ventilators above. Citizens, fortunate enough to have leaden roofs to their houses, took their tea and their ease thereon. On Sundays, finding the country lanes leading to Kensington, Hampstead, Highgate, Islington, and Stepney, "to be much pleasanter than the paths of the gospel," the people flocked to those suburban resorts with their wives and children, to take tea under the trees. In one of Coleman's plays, a Spitalfield's dame defines the acme of elegance as:</p>
+
+        <div type="verse">
+          <lg>
+            <l> "Drinking tea on summer afternoons</l>
+            <l>At Bagnigge Wells with china and gilt spoons."</l>
+          </lg>
+        </div>
+
+        <p>London was surrounded with tea-gardens, the most popular being Sadlier's Wells, Merlin's Cave, Cromwell Gardens, Jenny's Whim, Cuper Gardens, London Spa, and the White Conduit House, where they used to take in fifty pounds on a Sunday afternoon for sixpenny tea-tickets.</p>
+
+        <p>One D'Archenholz was surprised by the elegance, beauty, and luxury of these resorts, where, Steele said, they swallowed gallons of the juice of tea, while their own dock leaves were trodden under foot.</p>
+
+        <p>The ending of the East India Company's monopoly of the trade, coupled with the fact that the legislature recognized that tea had passed out of the catalogue of luxuries into that of necessities, began a new era for the queen of drinks destined to reign over all other beverages.</p>
+
+        <div type="illustration" n="5">[Illustration of woman]</div>
+      </div>
+
+      <div type="section-poem" n="3">
+        <title type="title-poem">O TEA!</title>
+        <div type="poem">
+          <lg>
+            <l>In the drama of the past</l>
+            <l>Thou art featured in the cast;</l>
+            <l>(O Tea!)</l>
+            <l>And thou hast played thy part</l>
+            <l>With never a change of heart,</l>
+            <l>(O Tea!)</l>
+            <l>For 'mid all the ding and dong</l>
+            <l>Waits a welcome--soothing song,</l>
+            <l>For fragrant Hyson and Oolong.</l>
+            <l>. . .</l>
+          </lg>
+          <lg>
+            <l>A song of peace, through all the years,</l>
+            <l>Of fireside fancies, devoid of fears,</l>
+            <l>Of mothers' talks and mothers' lays,</l>
+            <l>Of grandmothers' comforts--quiet ways.</l>
+            <l>Of gossip, perhaps--still and yet--</l>
+            <l>What of Johnson? Would we forget</l>
+            <l>The pictured cup; those merry times,</l>
+            <l>When round the board, with ready rhymes</l>
+            <l>Waller, Dryden, and Addison--Young,</l>
+            <l>Grave Pope to Gay, when Cowper sung?</l>
+            <l>Sydney Smith, too; gentle Lamb brew,</l>
+            <l>Tennyson, Dickens, Doctor Holmes knew.</l>
+            <l>The cup that cheered, those sober souls,</l>
+            <l>And tiny tea-trays, samovars, and bowls.</l>
+            <l>. . .</l>
+          </lg>
+          <lg>
+            <l>So here's a toast to the queen of plants,</l>
+            <l>The queen of plants--Bohea!</l>
+            <l>Good wife, ring for your maiden aunts,</l>
+            <l>We'll all have cups of tea.</l>
+            <l>--ARTHUR GRAY.</l>
+          </lg>
+        </div>
+      </div>
+
+      <div type="section-term" n="1">
+        <title type="title-term">TEA TERMS</title>
+        <head>JAPANESE</head>
+        <p>Ori-mono-châ. . . Folded Tea</p>
+        <p>Giy-ôku-ro-châ . . . Dew Drop Tea</p>
+        <p>Usu-châ. . . Light Tea</p>
+        <p>Koi-châ. . . Dark Tea</p>
+        <p>Tô-bi-dashi-châ . . . Sifted Tea</p>
+        <p>Yu-Shiyutsu-châ . . . Export Tea</p>
+        <p>Neri-châ. . . Brick Tea</p>
+        <p>Koku-châ . . . Black Tea</p>
+        <p>Ko-châ . . . Tea Dust Broken Leaves</p>
+        <p>Riyoku-châ . . . Green Tea</p>
+
+        <head>CHINESE</head>
+        <p>Bohea . . . "Happy Establishment" So called after two ranges of hills, Fu-Kien or Fo-Kien</p>
+        <p>Congou . . . Labor. Named so at Amoy from the labor in preparing it.</p>
+        <p>Sou chong . . . Small Kind</p>
+        <p>Hyson . . . Flourishing Spring</p>
+        <p>Pe-koe . . . White Hair. So called because only the youngest leaves are gathered, which still have the delicate down--white hair--on the surface.</p>
+        <p>Pou-chong . . . Folded Tea. So called at Canton after the manner of picking it.</p>
+        <p>Brick Tea--prepared in Central China from the commonest sorts of tea, by soaking the tea refuse, such as broken leaves, twigs, and dust, in boiling water and then pressing them into moulds. Used in Siberia and Mongolia, where it also serves as a medium of exchange. The Mongols place the bricks, when testing the quality, on the head, and try to pull downward over the eyes. They reject the brick as worthless if it breaks or bends.</p>
+
+        <div type="illustration" n="6">[Illustration of Japanese woman] </div>
+
+        
+      </div>
+
+      <div type="chapter" n="4">
+        <title type="title-chapter">TEA LEAVES</title>
+        <head>BY JOHN ERNEST MCCANN</head>
+        <p>According to Henry Thomas Buckle, the author of "The History of Civilization in England," who was the master of eighteen languages, and had a library of 22,000 volumes, with an income of $75,000 a year, at the age of twenty-nine, in 1850 (he died in 1860, at the age of thirty-nine), tea making and drinking were, or are, what Wendell Phillips would call lost arts. He thought that, when it came to brewing tea, the Chinese philosophers were not living in his vicinity. He distinctly wrote that, until he showed her how, no woman of his acquaintance could make a decent cup of tea. He insisted upon a warm cup, and even spoon, and saucer. Not that Mr. Buckle ever sipped tea from a saucer. Of course, he was right in insisting upon those above-mentioned things, for tea-things, like a tea-party, should be in sympathy with the tea, not antagonistic to it. Still, not always; for, on one memorable occasion, in the little town of Boston, the greatest tea-party in history was anything but sympathetic. But let that pass.</p>
+
+        <p>Emperor Kien Lung wrote, 200 years or more ago, for the benefit of his children, just before he left the Flowery Kingdom for a flowerier:</p>
+
+        <p>"Set a tea-pot over a slow fire; fill it with cold water; boil it long enough to turn a lobster red; pour it on the quantity of tea in a porcelain vessel; allow it to remain on the leaves until the vapor evaporates, then sip it slowly, and all your sorrows will follow the vapor."</p>
+
+        <p>He says nothing about milk or sugar. But, to me, tea without sugar is poison, as it is with milk. I can drink one cup of tea, or coffee, with sugar, but without milk, and feel no ill effects; but if I put milk in either tea or coffee, I am as sick as a defeated candidate for the Presidency. That little bit of fact is written as a hint to many who are ill without knowing why they are, after drinking tea, or coffee, with milk in it. I don't think that milk was ever intended for coffee or tea. Why should it be? Who was the first to color tea and coffee with milk? It may have been a mad prince, in the presence of his flatterers and imitators, to be odd; or just to see if his flatterers would adopt the act.</p>
+
+        <p>The Russians sometimes put champagne in their tea; the Germans, beer; the Irish, whiskey; the New Yorker, ice cream; the English, oysters, or clams, if in season; the true Bostonian, rose leaves; and the Italian and Spaniard, onions and garlic.</p>
+
+        <p>You all know one of the following lines, imperfectly. Scarcely one in one hundred quotes them correctly. _I_ never have quoted them as written, off-hand--but lines run out of my head like schoolboys out of school,</p>
+
+        <div type="verse">
+          <lg>
+            <l>"When the lessons and tasks are all ended,</l>
+            <l>And school for the day is dismissed."</l>
+          </lg>
+        </div>
+
+        <p>Here are the lines:</p>
+
+        <div type="verse">
+          <lg>
+            <l>"Now stir the fire, and close the shutters fast;</l>
+            <l>Let fall the curtains; wheel the sofa round;</l>
+            <l>And while the bubbling and loud-hissing urn</l>
+            <l>Throws up a steamly column, and the cups</l>
+            <l>That cheer, but not inebriate, wait on each,</l>
+            <l>To let us welcome peaceful evening in."</l>
+          </lg>
+        </div>
+
+        <p>Isn't that a picture? Not one superfluous word in it! Who knows its author, or when it was written, or can quote the line before or after</p>
+
+        <div type="verse">
+          <lg>
+            <l>"the cups</l>
+            <l>That cheer, but not inebriate"?</l>
+          </lg>
+        </div>
+
+        <p>or in what poem the lines run down the ages? I tell you? Not I. I don't believe in encouraging laziness. If I tell you, you will let it slip from your memory, like a panic-stricken eel through the fingers of a panic-stricken schoolboy; but if you hunt it up, it will be riveted to your memory, like a ballet, and one never forgets when, where, how, why, and from whom, he receives that.</p>
+
+        <p>What a pity that, in Shakespeare's time, there was no tea-table! What a delightful comedy he could, and would, have written around it, placing the scene in his native Stratford! What a charming hostess at a tea-table his mother, Mary Arden (loveliest of womanly names), would have made! Any of the ladies of the delightful "Cranford" wouldn't be a circumstance to a tea-table scene in a Warwickshire comedy, with lovely Mary Arden Shakespeare as the protagonist, if the comedy were from the pen of her delightful boy, Will. Had tea been known in Shakespeare's time, how much more closely he would have brought his sexes, under one roof, instead of sending the more animal of the two off to The Boar's Head and The Mermaid, leaving the ladies to their own verbal devices.</p>
+
+        <p>Shakespeare, being such a delicate, as well as virile, poet, would have taken to tea as naturally as a bee takes to a rose or honeysuckle; for the very word "tea" suggests all that is fragrant, and clean, and spotless: linen, silver, china, toast, butter, a charming room with charming women, charmingly gowned, and peach and plum and apple trees, with the scent of roses, just beyond the open, half-curtained windows, looking down upon, or over, orchard or garden, as the May or June morning breezes suggest eternal youth, as they fill the room with perfume, tenderness, love, optimism, and hope in immortality. Coffee suggests taverns, cafés, sailing vessels, yachts, boarding-houses-by-the-river-side, and pessimism. Tea suggests optimism. Coffee is a tonic; tea, a comfort. Coffee is prose; tea is poetry. Whoever thinks of taking coffee into a sick-room? Who doesn't think of taking in the comforting cup of tea? Can the most vivid imagination picture the angels (above the stars) drinking coffee? No. Yet, if I were to show them to you over the teacups, you would not be surprised or shocked. Would you? Not a bit of it. You would say:</p>
+
+        <p>"That's a very pretty picture. Pray, what are they talking about, or of whom are they talking?"</p>
+
+        <p>Why, of their loved ones below, and of the days of their coming above the stars. They know when to look for us, and while the time may seem long to us before the celestial reunion, to them it is short. They do not worry, as we do. We could not match their beautiful serenity if we tried, for they know the folly of wishing to break or change divine laws.</p>
+
+        <p>What delightful scandals have been born at tea-tables--rose and lavender, and old point lace scandals: surely, no brutal scandals or treasons, as in the tavern. Tea-table gossip surely never seriously hurt a reputation. Well, name one. No? Well, think of the shattered reputations that have fallen around the bottle. Men are the worst gossips unhanged, not women.</p>
+
+        <p>In 1652, tea sold for as high as £10 in the leaf. Pepys had his first cup of tea in September, 1660. (See his Diary.) The rare recipe for making tea in those days was known only to the elect, and here it is:</p>
+
+        <p>"To a pint of tea, add the yolks of two fresh eggs; then beat them up with as much fine sugar as is sufficient to sweeten the tea, and stir well together. The water must remain no longer upon the tea than while you can chant the Miserere psalm in a leisurely fashion."</p>
+
+        <p>"To a pint of tea, add the yolks of two fresh eggs; then beat them up with as much fine sugar as is sufficient to sweeten the tea, and stir well together. The water must remain no longer upon the tea than while you can chant the Miserere psalm in a leisurely fashion."</p>
+
+        <p>John Milton knew the delights of tea. He drank coffee during the composition of "Paradise Lost," and tea during the building of "Paradise Regained."</p>
+
+        <p>Like all good things, animate and inanimate, tea did not become popular without a struggle. It, like the gradual oak, met with many kinds of opposition, from the timid, the prejudiced, and the selfish. All sorts of herbs were put upon the market to offset its popularity; such as onions, sage, marjoram, the Arctic bramble, the sloe, goat-weed, Mexican goosefoot, speedwell, wild geranium, veronica, wormwood, juniper, saffron, carduus benedictus, trefoil, wood-sorrel, pepper, mace, scurry grass, plantain, and betony.</p>
+
+        <p>Sir Hans Sloane invented herb tea, and Captain Cook's companion, Dr. Solander, invented another tea, but it was no use--tea had come to stay, and a blessing it has been to the world, when moderately used. You don't want to become a tea drunkard, like Dr. Johnson, nor a coffee fiend, like Balzac. Be moderate in all things, and you are bound to be happy and live long. Moderation in eating, drinking, loving, hating, smoking, talking, acting, fighting, sleeping, walking, lending, borrowing, reading newspapers--in expressing opinions--even in bathing and praying--means long life and happiness.</p>  
+      </div>
+
+      <div type="chapter" n="5">
+        <title type="title-chapter">WIT, WISDOM, AND HUMOR OF TEA</title>
+        <p>Tea tempers the spirits and harmonizes the mind, dispels lassitude and relieves fatigue, awakens thought and prevents drowsiness, lightens or refreshes the body, and clears the perceptive faculties.--CONFUCIUS.</p>
+
+        <p>Thank God for tea! What would the world do without tea?--how did it exist? I am glad I was not born before tea.--SYDNEY SMITH.</p>
+
+        <p>"Sammy," whispered Mr. Weller, "if some o' these here people don't want tappin' to-morrow mornin', I ain't your father, and that's wot it is. Why this here old lady next me is a drown-in' herself in tea."</p>
+
+        <p>"Be quiet, can't you?" murmured Sam.</p>
+
+        <p>"Sam," whispered Mr. Weller, a moment afterward, in a tone of deep agitation, "mark my words, my boy; if that 'ere secretary feller keeps on for five minutes more, he'll blow himself up with toast and water."</p>
+
+        <p>"Well, let him if he likes," replied Sam; "it ain't no bis'ness of yourn."</p>
+
+        <p>"If this here lasts much longer, Sammy," said Mr. Weller, in the same low voice, "I shall feel it my duty as a human bein' to rise and address the cheer. There's a young 'ooman on the next form but two, as has drank nine breakfast cups and a half; and she's a swellin' wisibly before my wery eyes."--_Pickwick Papers_.</p>
+
+        <p>Books upon books have been published in relation to the evil effects of tea-drinking, but, for all that, no statistics are at hand to show that their arguments have made teetotalers of tea-drinkers. One of the best things, however, said against tea-drinking is distinctly in its favor to a certain extent. It is from one Dr. Paulli, who laments that "tea so dries the bodies of the Chinese that they can hardly spit." This will find few sympathizers among us. We suggest the quotation to some enterprising tea-dealer to be used in a street-car advertisement.</p>
+
+        <p>Of all methods of making tea, that hit upon by Heine's Italian landlord was perhaps the most economical. Heine lodged in a house at Lucca, the first floor of which was occupied by an English family. The latter complained of the cookery of Italy in general, and their landlord's in particular. Heine declared the landlord brewed the best tea ho had ever tasted in the country, and to convince his doubtful English friends, invited them to take tea with him and his brother. The invitation was accepted. Tea-time came, but no tea. When the poet's patience was exhausted, his brother went to the kitchen to expedite matters. There he found his landlord, who, in blissful ignorance of what company the Heines had invited, cried: "You can get no tea, for the family on the first floor have not taken tea this evening."</p>
+
+        <p>The tea that had delighted Heine was made from the used leaves of the English party, who found and made their own tea, and thus afforded the landlord an opportunity of obtaining at once praise and profit by this Italian method of serving a pot of tea. --_Chambers's Journal_.</p>
+
+        <div type="illustration" n="7">[Illustration of two women]</div>
+      </div>
+
+      <div type="section-quote" n="2">
+        <title type="title-quote">FATE</title>
+        <quote>Matrons who toss the cup, and see
+          The grounds of Fate in grounds of tea.</quote>
+        <p>--_Churchill_.</p>
+      </div>
+
+      <div type="chapter" n="5">
+        <title type="title-chapter">TEA MAKING AND TAKING IN JAPAN AND CHINA</title>
+
+        <p>The queen of teas in Japan is a fine straw-colored beverage, delicate and subtle in flavor, and as invigorating as a glass of champagne. It is real Japan tea, and seldom leaves its native heath for the reason that, while it is peculiarly adaptable to the Japanese constitution, it is too stimulating for the finely-tuned and over-sensitive Americans, who, by the way, are said to be the largest customers for Japan teas of other grades in the world.</p>
+
+        <p>This particular tea, which looks as harmless as our own importations of the leaf, is a very insidious beverage, as an American lady soon found out after taking some of it late at night. She declared, after drinking a small cup before retiring, she did not close her eyes in sleep for a week. We do not know the name of the brand of tea, and are glad of it; for we live in a section where the women are especially curious.</p>
+
+        <p>But the drink of the people at large in Japan is green tea, although powdered tea is also used, but reserved for special functions and ceremonial occasions. Tea, over there, is not made by infusing the leaves with boiling water, as is the case with us; but the boiling water is first carefully cooled in another vessel to 176 degrees Fahrenheit. The leaves are also renewed for every infusion. It would be crime against his August Majesty, the Palate, to use the same leaves more than once--in Japan. The preparation of good tea is regarded by the Japs as the height of social art, and for that reason it is an important element in the domestic, diplomatic, political, and general life of the country.</p>
+
+        <p>Tea is the beverage--the masterpiece--of every meal, even if it be nothing but boiled rice. Every artisan and laborer, going to work, carries with him his rice-box of lacquered wood, a kettle, a tea-caddy, a tea-pot, a cup, and his chop-sticks. Milk and sugar are generally eschewed. The Japs and the Chinese never indulge in either of these ingredients in tea; the use of which, they claim, spoils the delicate aroma.</p>
+
+        <p>From the highest court circles down to the lowliest and poorest of the Emperor's subjects, it is the custom in both Japan and China to offer tea to every visitor upon his arrival. Not to do this would be an unpardonable breach of national manners. Even in the shops, the customer is regaled with a soothing cup before the goods are displayed to him. This does not, however, impose any obligation on the prospective purchaser, but it is, nevertheless, a good stimulant to part with his money. This appears to be a very ancient tradition in China and Japan--so ancient that it is continued by the powers that be in Paradise and Hades, according to a translation called "Strange Stories from My Small Library," a classical Chinese work published in 1679.</p>
+
+        <p>The old domestic etiquette of Japan never intrusted to a servant the making of tea for a guest. It was made by the master of the house himself; the custom probably growing out of the innate politeness and courtesy of a people who believe that an honored visitor is entitled to the best entertainment possible to give him.</p>
+
+        <p>As soon as a guest is seated upon his mat, a small tray is set before the master of the house. Upon this tray is a tiny tea-pot with a handle at right angles to the spout. Other parts of this outfit include a highly artistic tea-kettle filled with hot water, and a requisite number of small cups, set in metal or bamboo trays. These trays are used for handing the cups around, but the guest is not expected to take one. The cups being without handles, and not easy to hold, the visitor must therefore be careful lest he let one slip through his untutored fingers.</p>
+
+        <p>The tea-pot is drenched with hot water before the tea is put in; then more hot water is poured over the leaves, and soon poured off into the cups. This is repeated several times, but the hot water is never allowed to stand on the grounds over a minute.</p>
+
+        <p>The Japanese all adhere to the general household custom of the country in keeping the necessary tea apparatus in readiness. In the living-room of every house is contained a brazier with live coals, a kettle to boil water, a tray with tea-pot, cups, and a tea-caddy.</p>
+
+        <p>Their neighbors, the Chinese, are just as alert; for no matter what hour of the day it may be, they always keep a kettle of boiling water over the hot coals, ready to make and serve the beverage at a moment's notice. No visitor is allowed to leave without being offered a cup of their tea, and they themselves are glad to share in their own hospitality.</p>
+
+        <p>The Chinese use boiling water, and pour it upon the dry tea in each cup. Among the better social element is used a cup shaped like a small bowl, with a saucer a little less in diameter than the top of the bowl. This saucer also serves another purpose, and is often used for a cover when the tea is making. After the boiling water is poured upon the tea, it is covered for a couple of minutes, until the leaves have separated and fallen to the bottom of the cup. This process renders the tea clear, delightfully fragrant, and appetizing.</p>
+
+        <p>A variety of other cups are also used; the most prominent being without handles, one or two sizes larger than the Japanese. They are made of the finest china, set in silver trays beautifully wrought, ornate in treatment and design.</p>
+
+        <p>A complete tea outfit is a part of the outfitting of every _Ju-bako_--"picnic-box"--with which every Jap is provided when on a journey, making an excursion, or attending a picnic. The Japanese are very much given to these out-of-door affairs, which they call _Hanami_--"Looking at the flowers." No wonder they are fond of these pleasures, for it is a land of lovely landscapes and heaven-sent airs, completely in harmony with the poetic and artistic natures of this splendid people.</p>
+
+        <p>Tea-houses--_Châ ya_--which take the place of our cafes and bar rooms, but which, nevertheless, serve a far higher social purpose, are everywhere in evidence, on the high-roads and by-roads, tucked away in templed groves and public resorts of every nature.</p>
+
+        <p>Among the Japanese are a number of ceremonial, social, and literary tea-parties which reflect their courtly and chivalrous spirit, and keep alive the traditions of the people more, perhaps, than any other of their functions.</p>
+
+        <p>The most important of these tea-parties are exclusively for gentlemen, and their forms and ceremonies rank among the most refined usages of polite society. The customs of these gatherings are so peculiarly characteristic of the Japanese that few foreign observers have an opportunity of attending them. These are the tea-parties of a semi-literary or aesthetic character, and the ceremonious _Châ-no-ya_. In the first prevails the easy and unaffected tone of the well-bred gentleman. In the other are observed the strictest rules of etiquette both in speech and behavior. But the former entertainment is by far the most interesting. The Japanese love and taste for fine scenery is shown in the settings and surroundings. To this picturesque outlook, recitals of romance and impromptu poetry add intellectual charm to the tea-party.</p>
+
+        <p>For these occasions the host selects a tea-house located in well-laid-out grounds and commanding a fine view. In this he lays mats equal to the number of guests. By sliding the partition and removing the front wall the place is transformed into an open hall overlooking the landscape. The room is filled with choice flowers, and the art treasures of the host, which at other times are stored away in the fire-proof vault--"go down"--of his private residence, contribute artistic beauty and decoration to the scene. Folding screens and hanging pictures painted by celebrated artists, costly lacquer-ware, bronze, china, and other heirlooms are tastefully distributed about the room.</p>
+
+        <p>Stories told at these tea-parties are called by the Japanese names of _Châ-banashi_, meaning tea-stories, or _Hiti-Kuchá_--"one mouth stories," short stories told at one sitting. At times professional story-tellers are employed. Of these there are two kinds: Story-Tellers and "Cross-Road Tradition Narrators," both of whom since olden times have been the faithful custodians and disseminators of native folk-lore and tales.</p>
+
+        <p>These professionals are divided into a number of classes, the most important being the _Hanashi-Ka_, members of a celebrated company under a well-known manager, who unites them into troops of never less than five or more than seven in number. Such companies are often advertised weeks before their arrival in a place by hoisting flags or streamers with the names of the performers thereon. Their programme consists of war-stories, traditions, and recitals with musical accompaniment. During the intermission, feats of legerdemain or wrestling fill in the time and give variety to the entertainment.</p>
+
+        <p>These are the leading professional performers. The other classes, while not held in as high regard by the select, nevertheless have a definite place in Japanese amusement circles. One of the latter is the _Tsuji-kô-shâku-ji_. This word-swallower does not belong to any company, but is a "free-lance" entertainer. A sort of "has been," he does not, however, rest on his past laurels, but continues to perform whenever he can obtain an audience--on the highways, to passers-by, in public resorts and thoroughfares.</p>
+
+        <p>Although the Chinese are not so neat in their public habits as the Japs, still their tea-houses and similar resorts are just as numerous and popular as they are in the neighboring country. Perhaps the most interesting caterers in China, however, are the coolies, who sell hot water in the rural districts. These itinerants have an ingenious way of announcing their coming by a whistling kettle. This vessel contains a compartment for fire with a funnel going through the top. A coin with a hole is placed so that when the water is boiling a regular steam-whistle is heard.</p>
+
+        <p>Plentiful as tea is in China, however, the poor people there do not consume as good a quality of the leaf as the same class in our own country.</p>
+
+        <p>Especially is this the case in the northern part of China, where most of the inhabitants just live, and that is all. There they are obliged to use the last pickings of tea, commonly known as "brick tea," which is very poor and coarse in quality. It is pressed into bricks about eight by twelve inches in size, and whenever a quantity of it is needed a piece is knocked off and pulverized in a kettle of boiling water. Other ingredients, consisting of suit, milk, butter, a little pepper, and vinegar, are added, and this combination constitutes the entire meal of the family.</p>
+
+        <p>Tea in China and Japan is the stand-by of every meal--the never-failing and ever-ready refreshment. Besides being the courteous offering to the visitor, it serves a high purpose in the home life of these peoples; uniting the family and friends in their domestic life and pleasures at all times and seasons. At home round the brazier and the lamp in winter evenings, at picnic parties and excursions to the shady glen during the fine season, tea is the social connecting medium, the intellectual stimulant and the universal drink of these far-and-away peoples.</p>
+
+        <div type="illustration" n="8">[Illustration of Japanese garden]</div>
+
+
+      </div>
+
+      <div type="chapter" n="6">
+        <title type="title-chapter">TEA-DRINKING IN OTHER LANDS</title>
+
+        <p>While tea-drinking outside of Japan and China is not attended with any "high-days and holidays," still there are countries where it is just as important element of the daily life of its people as it is in the Land of the Rising Sun.</p>
+
+        <p>Among the Burmese a newly-married couple, to insure a happy life, exchange a mixture of tea-leaves steeped in oil.</p>
+
+        <p>In Bokhara, every man carries a small bag of tea about with him. When he is thirsty he hands a certain quantity over to the booth-keeper, who makes the beverage for him. The Bokhariot, who is a confirmed tea-slave, finds it just as hard to pass a tea-booth without indulging in the herb as our own inebriates do to go by a corner cafe. His breakfast beverage is _Schitschaj_--tea in which bread is soaked and flavored with milk, cream, or mutton fat. During the daytime he drinks green tea with cakes of flour and mutton suet. It is considered a gross breach of manners to cool the hot tea by blowing the breath. This is overcome by supporting the right elbow in the left hand and giving an easy, graceful, circular movement to the cup. The time it takes for each kind of tea to draw is calculated to a second. When the can is emptied it is passed around among the company for each tea-drinker to take up as many leaves as can be held between the thumb and finger; the leaves being considered a special dainty.</p>
+
+        <p>An English traveller once journeying through Asiatic Russia was obliged to claim the hospitality of a family of Buratsky Arabs. At mealtime the mistress of the tent placed a large kettle on the fire, wiped it carefully with a horse's tail, filled it with water, threw in some coarse tea and a little salt. When this was nearly boiled she stirred the mixture with a brass ladle until the liquor became very brown, when she poured it into another vessel. Cleaning the kettle as before, the woman set it again on the fire to fry a paste of meal and fresh butter. Upon this she poured the tea and some thick cream, stirred it, and after a time the whole. Was taken off the fire and set aside to cool. Half-pint mugs were handed around and the tea ladled into them: the result, a pasty tea forming meat and drink, satisfying both hunger and thirst.</p>
+
+        <p>M. Vámbéry says: "The picture of a newly encamped caravan in the summer months, on the steppes of Central Asia, is a truly interesting one. While the camels in the distance, but still in sight, graze greedily, or crush the juicy thistles, the travellers, even to the poorest among them, sit with their tea-cups in their hands and eagerly sip the costly beverage. It is nothing more than a greenish warm water, innocent of sugar, and often decidedly turbid; still, human art has discovered no food, invented no nectar, which is so grateful, so refreshing, in the desert as this unpretending drink. I have still a vivid recollection of its wonderful effects. As I sipped the first drops, a soft fire filled my veins, a fire which enlivened without intoxicating. The later draughts affected both heart and head; the eye became peculiarly bright and began to glow. In such moments I felt an indescribable rapture and sense of comfort. My companions sunk in sleep; I could keep myself awake and dream with open eyes!"</p>
+
+        <p>Tea is the national drink of Russia, and as indispensable an ingredient of the table there as bread or meat. It is taken at all hours of the day and night, and in all the griefs of the Russian he flies to tea and vodka for mental refuge and consolation. Tea is drunk out of tumblers in Russia. In the homes of the wealthy these tumblers are held in silver holders like the sockets that hold our soda-water glasses. These holders are decorated, of course, with the Russian idea of art.</p>
+
+        <p>In every Russian town tea-houses flourish. In these public resorts a large glass of tea with plenty of sugar in it is served at what would cost, in our money, about two cents. Tea with lemon is so general that milk with the drink, over there, is considered a fad.</p>
+
+        <p>The Russians seem to like beverages that bite--set the teeth on edge, as it were.</p>
+
+        <p>The poor in Russia take a lump of sugar in their mouths and let the tea trickle through it. Travelling tea-peddlers, equipped with kettles wrapped up in towels to preserve the heat, and a row of glasses in leather pockets, furnish a glass of hot tea at any hour of the day or night.</p>
+
+        <p>The Russian samovar--from the Greek "to boil itself"--is a graceful dome-topped brass urn with a cylinder two or three inches in diameter passing through it from top to bottom. The cylinder is filled with live coals, and keeps the water boiling hot. The Russian tea-pots are porcelain or earthen. Hot water to heat the pot is first put in and then poured out; dry tea is then put in, boiling water poured over it; after which the pot is placed on top of the samovar.</p>
+
+        <p>We all know about tea-drinking in England. It is not a very picturesque or interesting occasion, at best. To the traditional Englishman's mind it means simply a quiet evening at home, attended by the papers, and serious conversations in which the head of the house deals out political and domestic wisdom until ten o'clock. During the day, tea-taking begins with breakfast and rounds up on the fashionable thoroughfares in the afternoon. Here one may see the Britishers at their best and worst. These places are called "tea-shops," and in them one may acquire the latest hand-shake, the freshest tea and gossip, see the newest modes and millinery, meet and greet the whirl of the world. An interesting study of types, in contrasts and conditions of society, worth the price of a whole chest of choice tea.</p>
+
+        <p>We are pretty prosaic tea-drinkers in America. Is it because there is not enough "touch and go" about the drink, or that we are too busy to settle down to the quiet, comfort, and thoughtful tea-ways of our contemporaries? Wait until a few things are settled; when our kitchen queens do not leave us in the "gray of the morning," and all of our daughters have obtained diplomas in the art and science of gastronomy.</p>
+
+        <p>However made or taken, tea at best or worst is a glorious drink. As a stimulant for the tired traveller and weary worker it is unique in its restful, retiring, soothing, and caressing qualities.</p>
+
+      </div>
+
+      <div type="section-poem" n="4">
+        <title type="title-poem">THE TEA-TABLE</title>
+        <div type="poem">
+        <lg>
+          <l>Tho' all unknown to Greek and Roman song,</l>
+          <l>The paler hyson and the dark souchong,</l>
+          <l>Tho' black nor green the warbled praises share</l>
+          <l>Of knightly troubadour or gay trouvère,</l>
+          <l>Yet deem not thou, an alien quite to numbers,</l>
+          <l>That friend to prattle and that foe to slumbers,</l>
+          <l>Which Kian-Long, imperial poet, praised</l>
+          <l>So high that, cent per cent, its price was raised;</l>
+          <l>Which Pope himself would sometimes condescend</l>
+          <l>To place commodious at a couplet's end;</l>
+          <l>Which the sweet Bard of Olney did not spurn,</l>
+          <l>Who loved the music of the "hissing urn."</l>
+          <l>. . .</l>
+        </lg>
+        <lg>
+          <l>For the dear comforts of domestic tea</l>
+          <l>Are sung too well to stand in need of me</l>
+          <l>By Cowper and the Bard of Rimini;</l>
+          <l>Besides, I hold it as a special grace</l>
+          <l>When such a theme is old and commonplace.</l>
+          <l>The cheering lustre of the new-stirr'd fire,</l>
+          <l>The mother's summons to the dozing sire,</l>
+          <l>The whispers audible that oft intrude</l>
+          <l>On the forced silence of the younger brood,</l>
+          <l>The seniors' converse, seldom over new,</l>
+          <l>Where quiet dwells and strange events are few,</l>
+          <l>The blooming daughter's ever-ready smile,</l>
+          <l>So full of meaning and so void of guile.</l>
+          <l>And all the little mighty things that cheer</l>
+          <l>The closing day from quiet year to year,</l>
+          <l>I leave to those whom benignant fate</l>
+          <l>Or merit destines to the wedded state.</l>
+          <l>. . .</l>
+        </lg>
+        <lg>
+          <l>'Tis woman still that makes or mars the man.</l>
+          <l>And so it is, the creature can beguile</l>
+          <l>The fairest faces of the readiest smile.</l>
+          <l>The third who comes the hyson to inhale,</l>
+          <l>If not a man, at least appears a male.</l>
+          <l>. . .</l>
+        </lg>
+        <lg>
+          <l>Last of the rout, and dogg'd with public cares,</l>
+          <l>The politician stumbles up the stairs;</l>
+          <l>Whose dusky soul nor beauty can illume,</l>
+          <l>Nor wine dispel his patriotic gloom.</l>
+          <l>In restless ire from guest to guest he goes,</l>
+          <l>And names us all among our country's foes;</l>
+          <l>Swears 'tis a shame that we should drink our tea,</l>
+          <l>'Till wrongs are righted and the nation free,</l>
+          <l>That priests and poets are a venal race,</l>
+          <l>Who preach for patronage and rhyme for place;</l>
+          <l>Declares that boys and girls should not be cooing.</l>
+          <l>When England's hope is bankruptcy and ruin;</l>
+          <l>That wiser 'twere the coming wrath to fly,</l>
+          <l>And that old women should make haste to die.</l>
+          </lg>
+        </div>
+        <p> Condensed from a poem published in _Fraser's Magazine_, January, 1857, and ascribed to Hartley Coleridge.</p>
+      </div>
+
+      <div type="chapter" n="7">
+        <title type="title-chapter">LADIES, LITERATURE, AND TEA</title>
+
+        <p>TIn spite of the fact that coffee is just as important a beverage as tea, tea has been sipped more in literature.</p>
+
+        <p>Tea is certainly as much of a social drink as coffee, and more of a domestic, for the reason that the teacup hours are the family hours. As these are the hours when the sexes are thrown together, and as most of the poetry and philosophy of tea-drinking teem with female virtues, vanities, and whimsicalities, the inference is that, without women, tea would be nothing, and without tea, women would be stale, flat, and uninteresting. With them it is a polite, purring, soft, gentle, kind, sympathetic, delicious beverage.</p>
+
+        <p>In support of this theory, notice what Pope, Gay, Crabbe, Cowper, Dryden, and others have written on the subject.</p>
+
+        <div type="verse">
+          <lg>
+            <l>"The tea-cup times of hood and hoop,</l>
+            <l>And when the patch was worn"</l>
+          </lg>
+        </div>
+        <p>--wrote Tennyson of the early half of the seventeenth century.</p>
+
+        <p>What a suggestive couplet, full of the foibles and follies of the times! A picture a la mode of the period when fair dames made their red cheeks cute with eccentric patches. Ornamented with high coiffures, powdered hair, robed in satin petticoats and square-cut bodices, they blossomed, according to the old engravings, into most fetching figures. Even the beaux of the day affected feminine frills in their many-colored, bell-skirted waistcoats, lace ruffles, patches, and powdered queues.</p>
+
+        <p>Dryden must have succumbed to the charms of women through tea, when he wrote:</p>
+
+        <div type="verse">
+          <lg>
+            <l>"And thou, great Anna, whom three realms obey,</l>
+            <l>Dost sometimes take counsel, and sometimes tay."</l>
+          </lg>
+        </div>
+
+        <p>From the great vogue which tea started grew a taste for china; the more peculiar and striking the design, the more valuable the tea-set.</p>
+
+        <p>Pope in one of his satirical compositions praises the composure of a woman who is</p>
+        
+        <div type="verse">
+          <lg>
+            <l> "Mistress of herself though china fall."</l>
+          </lg>
+        </div>
+
+        <p>Even that fine old bachelor, philosopher, and humorist, Charles Lamb, thought that the subject deserved an essay.</p>
+
+        <p>In speaking of the ornaments on the tea-cup he says, in "Old China":</p>
+
+        <quote><p>"I like to see my old friends, whom distance cannot diminish, figuring up in the air (so they appear to our optics), yet on terra firma still, for so we must in courtesy interpret that speck of deeper blue which the decorous artist, to prevent absurdity, has made to spring up beneath their sandals. I love the men with women's faces and the women, if possible, with still more womanish expressions.</p>
+
+        <p>"Here is a young and courtly Mandarin, handing tea to a lady from a salver--two miles off. See how distance seems to set off respect! And here the same lady, or another--for likeness is identity on tea-cups--is stepping into a little fairy boat, moored on the hither side of this calm garden river, with a dainty, mincing foot, which is in a right angle of incidence (as angles go in our world) that must infallibly land her in the midst of a flowery mead--a furlong off on the other side of the same strange stream!"</p></quote>
+
+        <p>The _Spectator_ and the _Tatter_ were also susceptible to the female influence that tea inspired. In both of these journals there are frequent allusions to tea-parties and china. At these gatherings, poets and dilletante literary gentlemen read their verses and essays to the ladies, who criticised their merits. These "literary teas" became so contagious that a burning desire for authorship took possession of the ladies, for among those who made their debut as authors about this time were Fanny Burney, Mrs. Alphra Behn, Mrs. Manley, the Countess of Winchelsea, and a host of others.</p>
+
+        <p>One of the readers of the _Spectator_ wrote as follows:</p>
+
+        <p>"_Mr. Spectator:_ Your paper is a part of my tea-equipage, and my servant knows my humor so well that, calling for my breakfast this morning (it being past my usual hour), she answered, the _Spectator_ was not come in, but that the tea-kettle boiled, and she expected it every minute."</p>
+
+        <p>Crabbe, too, was a devotee of ladies, literature, and tea, for he wrote:</p>
+
+        <div type="verse">
+          <lg>
+            <l>"The gentle fair on nervous tea relies,</l>
+            <l>Whilst gay good-nature sparkles in her eyes;</l>
+            <l>And inoffensive scandal fluttering round,</l>
+            <l>Too rough to tickle and too light to wound."</l>
+          </lg>
+        </div>
+
+        <p>What better proof do we want, therefore, that to women's influence is due the cultivation and retention of the tea habit? Without tea, what would become of women, and without women and tea, what would become of our domestic literary men and matinee idols? They would not sit at home or in salons and write and act things. There would be no homes to sit in, no salons or theatres to act in, and dramatic art would receive a blow from which it could not recover in a century, at least.</p>
+
+        <div type="illustration" n="9">[Illustration of woman and cat]</div>
+
+        <p>In the year 1700, J. Roberts, a London publisher, issued a pamphlet of about fifty pages which was made up as follows:</p>
+
+        <p>Poem upon Tea in Two Cantos . . . 34 pages
+          Dedication of the poem . . . . . . 6  "
+          Preface to the poem . . . . . . .  2  "
+          Poem upon the poem . . . . . .. .  1  "
+          Introduction to the poem . . . . . 4  "
+          To the author upon the poem .  .   1  "
+          Postscript . . . . . . . . . .. .  3  "
+          Tea-Table . . . . . . . . . .  . . 2  "</p>
+
+        <p>The poem--_pièce de résistance_--which is by one Nahum Tate, who figures on the title-page as "Servant to His Majesty," is an allegory; and although good in spots is too long and too dry to reproduce here. "The poem upon the poem," "The Introduction," and the "Tea-Table" verses will be found interesting and entertaining.</p>
+      </div>
+
+      <div type="section-poem" n="5">
+        <title type="title-poem">ON OUR ENGLISH POETRY AND THIS POEM UPON TEA</title>
+        <div type="poem">
+        <lg>
+        <l>See Spanish Curderon in Strength outdone:</l>
+        <l>And see the Prize of Wit from Tasso won:</l>
+        <l>See Corneil's Skill and Decency Refin'd;</l>
+        <l>See Rapin's Art, and Molier's Fire Outshin'd;</l>
+        <l>See Dryden's Lamp to our admiring View,</l>
+        <l>Brought from the Tomb to shine and Blaze anew!</l>
+        </lg>
+        <lg>
+        <l>The British Laurel by old Chaucer worn,</l>
+        <l>Still Fresh and Gay, did Dryden's Brow Adorn;</l>
+        <l>And that its Lustre may not fade on Thine,</l>
+        <l>Wit, Fancy, Judgment, Taste, in thee combine.</l>
+        <l>Thy pow'rful Genius thus, from Censure's Frown</l>
+        <l>And Envy's Blast, in Flourishing Renown,</l>
+        <l>Supports our British Muses Verdant Crown.</l>
+        <l>Nor only takes a Trusty Laureat's Care,</l>
+        <l>Lest Thou the Muses Garland might'st impair;</l>
+        <l>But, more Enrich'd, the Chaplet to Bequeath,</l>
+        <l>With Eastern Tea join'd to the Laurel-Wreath.</l>
+        <l>--R. B.</l>
+        </lg>
+      </div>       
+      </div>
+
+      <div type="section-poem" n="6">
+        <title type="title-poem">TO THE AUTHOR ON HIS POEM UPON TEA</title>
+        <div type="poem">
+          <lg>
+          <l>Let Rustick Satyr, now no more Abuse,</l>
+          <l>In rude Unskilful Strains, thy Tuneful Muse;</l>
+          <l>No more let Envy lash thy true-bred Steed,</l>
+          <l>Nor cross thy easy, just, and prudent Speed:</l>
+          <l>Who dext'rously doth bear or loose the Rein,</l>
+          <l>To climb each lofty Hill, or scour the Plain:</l>
+          <l>With proper Weight and Force thy Courses run;</l>
+          <l>Where still thy Pegasus has Wonders done,</l>
+          <l>Come home with Strength, and thus the Prize has Won.</l>
+          <l>But now takes Wing, and to the Skies aspires;</l>
+          <l>While Vanquish'd Envy the bold Flight admires,</l>
+          <l>And baffled Satyr to his Den retires.</l>
+          <l>--T. W.</l>
+          </lg>          
+        </div>
+
+
+      </div>
+
+      <div type="section-poem" n="7">
+        <title type="title-poem">THE INTRODUCTION</title>
+        <div type="poem">
+          <lg>
+          <l>Fame Sound thy Trump, all Ranks of Mortals Call,</l>
+          <l>To share a Prize that will enrich 'em All.</l>
+          <l>You that with Sacred Oracles converse,</l>
+          <l>And clearly wou'd Mysterious Truths rehearse;</l>
+          <l>On soaring Wings of Contemplation rise,</l>
+          <l>And fetch Discov'ries from above the Skies;</l>
+          <l>Ethereal TEA your Notions will resine,</l>
+          <l>Till you yourselves become almost Divine.</l>
+          </lg>
+          <lg>
+          <l>You statesmen, who in Storms the Publick</l>
+          <l>Helm Wou'd Guide with Skill, and Save a sinking Realm,</l>
+          <l>TEA, your Minerva, shall suggest such Sense,</l>
+          <l>Such safe and sudden Turns of Thought dispense,</l>
+          <l>That you, like her Ulysses, may Advise,</l>
+          <l>And start Designs that shall the World surprise.</l>
+          </lg>
+          <lg>
+          <l>You Pleaders, who for Conquest at the Bar</l>
+          <l>Contend as Fierce and Loud as Chiefs in War;</l>
+          <l>Would you Amaze and Charm the list'ning Court?</l>
+          <l>First to this Spring of Eloquence resort:</l>
+          <l>Then boldly launch on Tully's flowing Seas,</l>
+          <l>And grasp the Thunder of Demosthenes.</l>
+          </lg>
+          <lg>
+          <l>You Artists of the AEsculapian Tribe,</l>
+          <l>Wou'd you, like AEsculapius's Self, Prescribe,</l>
+          <l>Cure Maladies, and Maladies prevent?</l>
+          <l>Receive this Plant, from your own Phoebus sent;</l>
+          <l>Whence Life's nice Lamp in Temper is maintain'd,</l>
+          <l>When Dim, Recruited, when too fierce, restrained.</l>
+          </lg>
+          <lg>
+          <l>You Curious Souls, who all our Thoughts apply,</l>
+          <l>The hidden Works of Nature to descry;</l>
+          <l>Why veering Winds with Vari'd Motion blow,</l>
+          <l>Why Seas in settled Courses Ebb and Flow;</l>
+          <l>Wou'd you these Secrets of her Empire know?</l>
+          <l>Treat the Coy Nymph with this Celestial Dew,</l>
+          <l>Like Ariadne she'll impart the Clue;</l>
+          <l>Shall through her Winding Labyrinths convey,</l>
+          <l>And Causes, iculking in their Cells, display.</l>
+          </lg>
+          <lg>
+          <l>You that to Isis's Bark or Cam retreat,</l>
+          <l>Wou'd you prove worthy Sons of either Seat,</l>
+          <l>And All in Learning's Commonwealth be Great?</l>
+          <l>Infuse this Leaf, and your own Streams shall bring</l>
+          <l>More Science than the fam'd Castalian Spring.</l>
+          </lg>
+          <lg>
+          <l>Wou'd you, O Musick's Sons, your art Compleat,</l>
+          <l>And all its ancient Miracles repeat,</l>
+          <l>Rouse Rev'ling Monarchs into Martial Rage,</l>
+          <l>And, when Inflam'd, with Softer Notes As swage;</l>
+          <l>The tedious Hours of absent Love beguile,</l>
+          <l>Charm Care asleep, and make Affliction smile?</l>
+          <l>Carouse in Tea, that will your Souls inspire;</l>
+          <l>Drink Phoebus's liquor and command his Lyre.</l>
+          </lg>
+          <lg>
+          <l>Sons of Appelles, wou'd you draw the Face</l>
+          <l>And Shape of Venus, and with equal Grace</l>
+          <l>In some Elysian Field the Figure place?</l>
+          <l>Your Fancy, warm'd by TEA, with wish'd success,</l>
+          <l>Shall Beauty's Queen in all her Charms express;</l>
+          <l>With Nature's Rural Pride your Landscape fill</l>
+          <l>The Shady Grotto, and the Sunny Hill,</l>
+          <l>The Laughing Meadow, and the Talking Rill.</l>
+          </lg>
+          <lg>
+          <l>Sons of the Muses, would you Charm the Plains</l>
+          <l>With Chearful Lays, or Sweet Condoling Strains;</l>
+          <l>Or with a Sonnet make the Vallies ring,</l>
+          <l>To Welcome home the Goddess of the Spring?</l>
+          <l>Or wou'd you in sublimer Themes engage,</l>
+          <l>And sing of Worthies who adorn the Age?</l>
+          <l>Or, with Promethean Boldness, wou'd aspire</l>
+          <l>To Catch a Spark of the Celestial Fire</l>
+          <l>That Crowned the Royal Conquest, and could raise</l>
+          <l>Juverne's Boyn above Scamander's Praise?</l>
+          <l>Drink, drink Inspiring TEA, and boldly draw</l>
+          <l>A Hercules, a Mars, or a NASSAU.</l>
+          </lg>
+        </div>
+      </div>
+
+      <div type="section-poem" n="8">
+        <title type="title-poem">THE TEA-TABLE</title>
+        <div type="poem">
+          <lg>
+          <l>Hail, Queen of Plants, Pride of Elysian Bow'rs!</l>
+          <l>How shall we speak thy complicated Pow'rs?</l>
+          <l>Thou Won'drous Panacea to asswage</l>
+          <l>The Calentures of Youths' fermenting rage,</l>
+          <l>And Animate the freezing Veins of age.</l>
+          </lg>
+          <lg>
+          <l>To Bacchus when our Griefs repair for Ease,</l>
+          <l>The Remedy proves worse than the Disease.</l>
+          <l>Where Reason we must lose to keep the Round,</l>
+          <l>And drinking others Health's, our own confound:</l>
+          <l>Whilst TEA, our Sorrows to beguile,</l>
+          <l>Sobriety and Mirth does reconcile:</l>
+          <l>For to this Nectar we the Blessing owe,</l>
+          <l>To grow more Wise, as we more Cheerful grow.</l>
+          </lg>
+          <lg>
+          <l>Whilst fancy does her brightest beams dispense,</l>
+          <l>And decent Wit diverts without Offense.</l>
+          <l>Then in Discourse of Nature's mystick Pow'rs</l>
+          <l>And Noblest Themes, we pass the well spent Hours.</l>
+          <l>Whilst all around the Virtues' Sacred Band,</l>
+          <l>And list'ning Graces, pleas'd Attendants, stand.</l>
+          </lg>
+          <lg>
+          <l>Thus our Tea-Conversation we employ,</l>
+          <l>Where with Delight, Instruction we enjoy;</l>
+          <l>Quaffing, without the waste of Time or Wealth,</l>
+          <l>The Sov'reign Drink of Pleasure and of Health.</l>
+          </lg>          
+        </div>
+      </div>
+
+      <div type="chapter" n="8">
+        <title type="title-chapter">DR. JOHNSON'S AFFINITY</title>
+        <p> DR. SAMUEL JOHNSON drew his own portrait thus:</p>
+        <p>"A hardened and shameless tea-drinker, who for twenty years diluted his meals with the infusion of this fascinating plant; whose kettle had scarcely time to cool; who with tea amused the evening, with tea solaced the midnight, and with tea welcomed the morning."</p>
+      </div>
+
+      <div type="chapter" n="9">
+        <title type="title-chapter">EARLIEST MENTION OF TEA</title>
+        <p>According to a magazinist, the first mention of tea by an Englishman is to be found in a letter from Mr. Wickham, an agent of the East India Company, written from Japan, on the 27th of June, 1615, to Mr. Eaton, another officer of the company, a resident of Macao, asking him to send "a pot of the best chaw." In Mr. Eaton's accounts of expenditure occurs this item:</p>
+        <p>"Three silver porringiys to drink chaw in."</p>
+      </div>
+
+      <div type="chapter" n="10">
+        <title type="title-chapter">AUSTRALIAN TEA</title>
+        <p>In the interior of Australia all the men drink tea. They drink it all day long, and in quantities and at a strength that would seem to be poisonous. On Sunday morning the tea-maker starts with a clean pot and a clean record. The pot is hung over the fire with a sufficiency of water in it for the day's brew, and when this has boiled he pours into it enough of the fragrant herb to produce a deep, coffee-colored liquid.</p>
+
+        <p>On Monday, without removing yesterday's tea-leaves, he repeats the process; on Tuesday da capo and on Wednesday da capo, and so on through the week. Toward the close of it the great pot is filled with an acrid mash of tea-leaves, out of which the liquor is squeezed by the pressure of a tin cup.</p>
+
+        <p>By this time the tea is of the color of rusty iron, incredibly bitter and disagreeable to the uneducated palate. The native calls it "real good old post and rails," the simile being obviously drawn from a stiff and dangerous jump, and regards it as having been brought to perfection.</p>
+      </div>
+
+      <div type="chapter" n="11">
+        <title type="chapter-title">FIVE-O'CLOCK TEA</title>
+        <p>There is a fallacy among certain tea-fanciers that the origin of five-o'clock tea was due to hygienic demand. These students of the stomach contend that as a tonic and gentle stimulant, when not taken with meat, it is not to be equalled. With meat or any but light food it is considered harmful. Taken between luncheon and dinner it drives away fatigue and acts as a tonic. This is good if true, but it is only a theory, after all. Our theory is that five o'clock in the afternoon is the ladies' leisure hour, and that the taking of tea at that time is an escape from _ennui_.</p>
+      </div>
+
+      <div type="chapter" n="12">
+        <title type="chapter-title">TEA IN LADIES' NOVELS</title>
+        <p>What would women novelists do without tea in their books? The novelists of the rougher sex write of "over the coffee and cigars"; or, "around the gay and festive board"; or, "over a bottle of old port"; or, "another bottle of dry and sparkling champagne was cracked"; or, "and the succulent welsh rarebits were washed down with royal mugs of musty ale"; or, "as the storm grew fiercer, the captain ordered all hands to splice the main brace," _i. e._, to take a drink of rum; or, "as he gulped down the last drink of fiery whiskey, he reeled through the tavern door, and his swaying form drifted into the bleak, black night, as a roar of laughter drowned his repentant sobs." But the ladies of the novel confine themselves almost exclusively to tea--rarely allowing their heroes and heroines to indulge in even coffee, though they sometimes treat their heroes to wine; but their heroines rarely get anything from them but Oolong.</p>
+
+        <div type="illustration" n="10">[Illustration of Old Russian Samovar]</div>
+      </div>
+
+      <div type="chapter" n="13">
+        <title type="chapter-title">SYDNEY SMITH</title>
+        <p>One evening when Sidney Smith was drinking tea with Mrs. Austin the servant entered the crowded room with a boiling tea-kettle in his hand. It seemed doubtful, nay, impossible, he should make his way among the numerous gossips--but on the first approach of the steaming kettle the crowd receded on all sides, Mr. Smith among the rest, though carefully watching the progress of the lad to the table.</p>
+        <p>"I declare," said he, addressing Mrs. Austin, "a man who wishes to make his way in life could do no better than go through the world with a boiling tea-kettle in his hand."--_Life of Rev. Sydney Smith_.</p>
+      </div>  
+
+      <div type="chapter" n="14">
+        <title type="chapter-title">DR. JOHNSON AGAIN</title>
+        <p>The good doctor evidently lived up to his reputation as a tea-drinker at all times and places. Cumberland, the dramatist, in his memoirs gives a story illustrative of the doctor's tea-drinking powers: "I remember when Sir Joshua Reynolds, at my home, reminded Dr. Johnson that he had drunk eleven cups of tea. 'Sir,' he replied, 'I did not count your glasses of wine; why should you number my cups of tea?'</p>
+        <p>At another time a certain Lady Macleod, after pouring out sixteen cups for him, ventured mildly to ask whether a basin would not save him trouble and be more convenient. "I wonder, madam," he replied, roughly, "why all ladies ask such questions?" "It is to save yourself trouble, not me," was the tactful answer of his hostess.</p>
+      </div>    
+
+      <div type="section-poem" n="9">
+        <title type="title-poem">A CUP OF TEA</title>
+        <head>From St. Nicholas, December, 1899</head>
+        <div type="poem">
+          <lg>
+          <l>Now Grietje from her window sees the leafless poplars lean</l>
+          <l>Against a windy sunset sky with streaks of golden green;</l>
+          <l>The still canal is touched with light from that wild, wintry sky,</l>
+          <l>And, dark and gaunt, the windmill flings its bony arms on high.</l>
+          <l>"It's growing late; it's growing cold; I'm all alone," says she;</l>
+          <l>"I'll put the little kettle on, to make a cup of tea!"</l>
+          </lg>
+          <lg>
+          <l>Mild radiance from the porcelain stove reflects on shining tiles;</l>
+          <l>The kettle beams, so red and bright that Grietje thinks it smiles;</l>
+          <l>The kettle sings--so soft and low it seems as in a dream--</l>
+          <l>The song that's like a lullaby, the pleasant song of steam:</l>
+          <l>"The summer's gone; the storks are flown; I'm always here, you see,</l>
+          <l>To sing and sing, and shine, and shine, and make a cup of tea!"</l>
+          </lg>
+          <lg>
+          <l>The blue delft plates and dishes gleam, all ranged upon the shelf;</l>
+          <l>The tall Dutch clock tick-ticks away, just talking to itself;</l>
+          <l>The brindled pussy cuddles down, and basks and blinks and purrs;</l>
+          <l>And rosy, sleepy Grietje droops that snow-white cap of hers.</l>
+          <l>"I do like winter after all; I'm very glad," says she,</l>
+          <l>"I put--my--little--kettle--on--to make--a cup--of--tea!"</l>
+          </lg>          
+        </div>
+        <div type="illustration" n="11">[Illustration of landscape]</div>
+      </div>
+
     </body>
   </text>
 </TEI>
