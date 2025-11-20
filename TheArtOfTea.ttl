@@ -1,15 +1,40 @@
 @prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
 @prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix schema1: <http://schema.org/> .
+@prefix schema: <http://schema.org/> .
 @prefix fabio: <http://purl.org/spar/fabio> .
 @prefix prism: <http://prismstandard.org/namespaces/basic/2.0/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix ArTea: <https://w3id.org/ArtOfTea/> .
+
+# ? Entities (From Dewey, to be decided)
+# bla bla bla 
+
+# ! Defining Tea
+ArTea:Tea a crm:E22_Human_Made_Object ;
+    rdfs:label "Tea";
+    crm:P67i_is_referred_to_by ArTea:TeaCeremony ;
+    crm:P129_is_subject_of ArTea:BookOfTea, 
+    ArTea:Chanoyu,
+    ArTea:WomanPerforming . # etc.
+
+# ! Defining Tea Ceremony
+
+ArTea:TeaCeremony a crm:E89_Propositional_Object ; 
+    rdfs:label "Tea Ceremony";
+    crm:P67i_refers_to ArTea:Tea.
+
+# ! Defining each chapter/section with their dewey labels
+
+ArTea:BookOfTea_Paragraph1 a crm:E33_Linguistic_Object ;
+    dcterms:subject "Tea, Japanese tea ceremony, Japan, Social life and customs" ; # ! note: they should be Dewey Entities    
+    rdfs:label "Paragraph about the philosophy of tea" ;
+    crm:P129_is_about ArTea:Tea .
 
 # Books 
 
-<https://w3id.org/ArtOfTea/item/Book/BookOfTea> a crm:E24_Physical_Human-Made_Thing ; # ?
+ArTea:BookOfTea a schema:Book;
     bf:identifiedby "!" ; # to be written
     bf:mainTitle "The Book of Tea" ;
     dcterms:contributor <http://viaf.org/viaf/99830297> ;
@@ -23,10 +48,11 @@
     dcterms:rights "Free eBook from the Internet Archive" ;
     dcterms:format "310.5M" ;
     dcterms:abstract "!" ; # to be written
-    dcterms:subject "Tea, Japanese tea ceremony, Japan, Social life and customs" .
+    crm:P129_is_about ArTea:Tea ; # ! so the Work is linked to the Tea.
+    crm:P148_has_component ArTea:BookOfTea_Paragraph1 . # ! Links to the paragraph(s) and/or section(s)
 
 # Articles
-<https://w3id.org/ArtOfTea/item/Article/BookOfTea> a fabio:JournalArticle ;
+ArTea:Chanoyu a fabio:JournalArticle ;
     dcterms:identifier "!" ;
     dcterms:title "Chanoyu or The Tea Philosophy of Japan a Western Evaluation" ;
     dcterms:creator <http://viaf.org/viaf/38149717251710950257> ;
@@ -45,7 +71,7 @@
 
 # Images
 
-<https://w3id.org/ArtOfTea/item/Image/TeaCeremony> a crm:E24_Physical_Human-Made_Thing ; # ?
+ArTea:WomanPerforming a schema:ImageObject ; 
     dcterms:identifier "-" ; # to be added
     dcterms:title "Woman Performing the Tea Ceremony" ;
     dcterms:creator <http://viaf.org/viaf/96576651> ;
@@ -56,3 +82,4 @@
     dcterms:subject "-" ;
     schema:hasMeasurement "Sheet: 20.6 x 18.1 cm (8 1/8 x 7 1/8 in.)" ;
     dcterms:source "https://www.jstor.org/stable/community.24570642" .
+
