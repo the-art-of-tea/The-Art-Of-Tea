@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
     <teiHeader xml:lang="en">
-        <fileDesc> <!-- contains a full bibliographic description of an electronic file.-->
+        <fileDesc>
             <titleStmt>
                 <title type="main">The Book of Tea</title>
                 <respStmt>
@@ -82,16 +82,14 @@
                 </biblStruct>
             </sourceDesc>
         </fileDesc>
-        <encodingDesc> <!-- documents the relationship between an electronic text and the source or
-            sources from which it was derived.-->
-            <projectDesc> <!-- 1. describes in detail the aim or purpose for which an electronic file
-                was encoded, together with any other relevant information concerning the process by
-                which it was assembled or collected.-->
-                <p>
+        <encodingDesc>
+            <projectDesc> 
+                <p> This TEI encoding was prepared for the Semantic Digital Library exam (Digital Humanities and Digital Knowledge, University of Bologna).
+                    It is part of a group effort to create a small semantic library on Tea and the Tea Ceremony.
+                    The project's key feature is the use of the Dewey Decimal Classification (DDC) system within the paragraph's @about attribute. This strategy assigns specific topics (e.g., 700-Arts, 951-History) to each section, allowing the text to be treated as a semantically connected resource for the digital library.
                 </p>
             </projectDesc>
-            <editorialDecl> <!-- 2. provides details of editorial principles and practices applied
-                during the encoding of a text.-->
+            <editorialDecl>
                 <correction status="low" method="silent">
                     <p>Errors in transcription controlled by using the VSCode extension <q>Code
                             Spell Checker</q>.</p>
@@ -105,16 +103,10 @@
                     <p>Spacing between words, if any, has been regularized to one space.</p>
                 </normalization>
                 <interpretation>
-                    <p> ! descrive l'estensione di qualsiasi informazione analitica o interpretativa
-                        inserita nel testo, in aggiunta alla trascrizione !</p>
+                    <p> Hyphenated words have not been reformatted because hyphens frequently appear in Japanese terms. To avoid introducing errors, I chose not to merge any hyphenated items and instead transcribed everything verbatim. </p>
                 </interpretation>
                 <quotation marks="none">
-                    <p>! No quotation marks have been retained. Instead, the <att>rend</att>
-                        attribute on the <gi>q</gi> element is used to specify what kinds of
-                        quotation mark was used, according to the following list: <list type="gloss">
-                            <label>dq</label>
-                            <item>double quotes, open and close</item>
-                        </list>
+                    <p>No quotation marks have been retained.
                     </p>
                 </quotation>
                 <segmentation>
@@ -123,7 +115,7 @@
                         source text is not present. The <gi>front</gi> contains the title divided
                         into a <gi>title</gi> element indicating the main title, and another
                         indicating the credits to the author. The <gi>body</gi> consists of two main <gi>
-                        div</gi>,one containing the list of the names of the chapters (each is
+                        div</gi>s, one containing the list of the names of the chapters (each is
                         numbered in the <att>type</att> attribute), while the other containing the
                         main text divided into chapters (each of them contained in a <gi>div</gi>
                         tag). The division in paragraphs of the text is faithful to the source. </p>
@@ -137,10 +129,8 @@
                 </punctuation>
             </editorialDecl>
         </encodingDesc>
-        <profileDesc> <!-- provides a detailed description of non-bibliographic aspects of a text,
-            specifically the languages and sublanguages used, the situation in which it was
-            produced, the participants and their setting.-->
-            <langUsage> <!-- -->
+        <profileDesc>
+            <langUsage>
                 <language ident="en">Modern English</language>
                 <language ident="la">Latin</language>
             </langUsage>
@@ -154,7 +144,7 @@
                 <preparedness type="revised" />
                 <purpose type="inform" degree="medium" />
             </textDesc>
-            <particDesc> <!-- -->
+            <particDesc> 
                 <listPerson type="contributors">
                     <person source="https://github.com/theair-hub">
                         <persName xml:lang="it">Ilaria De Dominicis</persName>
@@ -167,45 +157,7 @@
                         <birth when="1862" />
                     </person>
                 </listPerson>
-                <listPerson type="characters"> <!-- -->
-                    <person xml:id="OT" sameAs="http://viaf.org/viaf/309852469"
-                        source="https://en.wikipedia.org/wiki/Odin">
-                    </person>
-                    <listRelation>
-                        <relation name="brotherhood" active="#AG1 #GR" />
-                        <relation name="fatherhood" active="#GR" passive="#AG2" />
-                    </listRelation>
-                </listPerson>
-                <listOrg>
-                    <org>
-                        <orgName xml:id="VK" source="https://en.wikipedia.org/wiki/Valkyrie"
-                            sameAs="https://w3id.org/vinLOD-saga/group/Valkyries">Valkyries</orgName>
-                        <desc source="https://en.wikipedia.org/wiki/Valkyrie">One of a host of
-                            female figures who guide souls of the dead to the god Odin's hall <placeName
-                                ref="#VH">Valhalla</placeName>.</desc>
-                    </org>
-                </listOrg>
             </particDesc>
-            <settingDesc> <!-- -->
-                <listPlace type="imaginary">
-                    <place xml:id="VH" source="https://en.wikipedia.org/wiki/Valhalla"
-                        sameAs="https://w3id.org/vinLOD-saga/concept/Valhalla">
-                        <placeName xml:lang="non">Valhall</placeName>
-                        <placeName type="epithet" xml:lang="en">Valhalla</placeName>
-                    </place>
-                    <place>
-                        <placeName xml:id="VA"
-                            source="https://www.gutenberg.org/cache/epub/73533/pg73533-images.html#ch1.4">
-                            Valgrind</placeName>
-                        <desc
-                            source="https://www.gutenberg.org/cache/epub/73533/pg73533-images.html#ch1.4">The
-                            sacred gate leading into <placeName ref="#VH">Valhalla</placeName>,
-                            Odin’s hall of the slain. Mentioned in Grímnismál <ref source="#s22">(stanza
-                            22)</ref>, it is described as a threshold that opens only for those
-                            fated to die in battle.</desc>
-                    </place>
-                </listPlace>
-            </settingDesc>
         </profileDesc>
     </teiHeader>
     <text>
@@ -230,37 +182,39 @@
             <div type="main-text">
                 <div type="chapter-i">
                     <title type="title-chapter-i">I. The Cup of Humanity</title>
-                    <p>Tea began as a medicine and grew into a beverage. In China, in the eighth
-                        century, it entered the realm of poetry as one of the polite amusements. The
-                        fifteenth century saw Japan ennoble it into a religion of
-                        aestheticism—Teaism. Teaism is a cult founded on the adoration of the
-                        beautiful among the sordid facts of everyday existence. It inculcates purity
-                        and harmony, the mystery of mutual charity, the romanticism of the social
-                        order. It is essentially a worship of the Imperfect, as it is a tender
-                        attempt to accomplish something possible in this impossible thing we know as
-                        life.</p>
+                    <div about="100-Philosophy, 204-Religious experience, life, practice, 218-Humankind, 952-Japan">
+                        <p>Tea began as a medicine and grew into a beverage. In China, in the eighth
+                            century, it entered the realm of poetry as one of the polite amusements. The
+                            fifteenth century saw Japan ennoble it into a religion of
+                            aestheticism—Teaism. Teaism is a cult founded on the adoration of the
+                            beautiful among the sordid facts of everyday existence. It inculcates purity
+                            and harmony, the mystery of mutual charity, the romanticism of the social
+                            order. It is essentially a worship of the Imperfect, as it is a tender
+                            attempt to accomplish something possible in this impossible thing we know as
+                            life.</p>
 
-                    <p>The Philosophy of Tea is not mere aestheticism in the ordinary acceptance of
-                        the term, for it expresses conjointly with ethics and religion our whole
-                        point of view about man and nature. It is hygiene, for it enforces
-                        cleanliness; it is economics, for it shows comfort in simplicity rather than
-                        in the complex and costly; it is moral geometry, inasmuch as it defines our
-                        sense of proportion to the universe. It represents the true spirit of
-                        Eastern democracy by making all its votaries aristocrats in taste.</p>
+                        <p>The Philosophy of Tea is not mere aestheticism in the ordinary acceptance of
+                            the term, for it expresses conjointly with ethics and religion our whole
+                            point of view about man and nature. It is hygiene, for it enforces
+                            cleanliness; it is economics, for it shows comfort in simplicity rather than
+                            in the complex and costly; it is moral geometry, in as much as it defines our
+                            sense of proportion to the universe. It represents the true spirit of
+                            Eastern democracy by making all its votaries aristocrats in taste.</p>
 
-                    <p>The long isolation of Japan from the rest of the world, so conducive to
-                        introspection, has been highly favourable to the development of Teaism. Our
-                        home and habits, costume and cuisine, porcelain, lacquer, painting—our very
-                        literature—all have been subject to its influence. No student of Japanese
-                        culture could ever ignore its presence. It has permeated the elegance of
-                        noble boudoirs, and entered the abode of the humble. Our peasants have
-                        learned to arrange flowers, our meanest labourer to offer his salutation to
-                        the rocks and waters. In our common parlance we speak of the man "with no
-                        tea" in him, when he is insusceptible to the serio-comic interests of the
-                        personal drama. Again we stigmatise the untamed aesthete who, regardless of
-                        the mundane tragedy, runs riot in the springtide of emancipated emotions, as
-                        one "with too much tea" in him.</p>
-
+                        <p>The long isolation of Japan from the rest of the world, so conducive to
+                            introspection, has been highly favourable to the development of Teaism. Our
+                            home and habits, costume and cuisine, porcelain, lacquer, painting—our very
+                            literature—all have been subject to its influence. No student of Japanese
+                            culture could ever ignore its presence. It has permeated the elegance of
+                            noble boudoirs, and entered the abode of the humble. Our peasants have
+                            learned to arrange flowers, our meanest labourer to offer his salutation to
+                            the rocks and waters. In our common parlance we speak of the man "with no
+                            tea" in him, when he is insusceptible to the serio-comic interests of the
+                            personal drama. Again we stigmatise the untamed aesthete who, regardless of
+                            the mundane tragedy, runs riot in the springtide of emancipated emotions, as
+                            one "with too much tea" in him.</p>
+                    </div>
+                    <div about="908-History with respect to groups of people, 320-Political Science, 952-Japan">
                     <p>The outsider may indeed wonder at this seeming much ado about nothing. What a
                         tempest in a tea-cup! he will say. But when we consider how small after all
                         the cup of human enjoyment is, how soon overflowed with tears, how easily
@@ -307,23 +261,25 @@
                         Nay, we had something worse against you: we used to think you the most
                         impracticable people on the earth, for you were said to preach what you
                         never practiced.</p>
-
-                    <p>Such misconceptions are fast vanishing amongst us. Commerce has forced the
-                        European tongues on many an Eastern port. Asiatic youths are flocking to
-                        Western colleges for the equipment of modern education. Our insight does not
-                        penetrate your culture deeply, but at least we are willing to learn. Some of
-                        my compatriots have adopted too much of your customs and too much of your
-                        etiquette, in the delusion that the acquisition of stiff collars and tall
-                        silk hats comprised the attainment of your civilisation. Pathetic and
-                        deplorable as such affectations are, they evince our willingness to approach
-                        the West on our knees. Unfortunately the Western attitude is unfavourable to
-                        the understanding of the East. The Christian missionary goes to impart, but
-                        not to receive. Your information is based on the meagre translations of our
-                        immense literature, if not on the unreliable anecdotes of passing
-                        travellers. It is rarely that the chivalrous pen of a Lafcadio Hearn or that
-                        of the author of "The Web of Indian Life" enlivens the Oriental darkness
-                        with the torch of our own sentiments.</p>
-
+                    </div>
+                    <div about="952-Japan, 940-History of Europe, 382-International commerce, 230-Christianity, 242-Devotional Literature">
+                        <p>Such misconceptions are fast vanishing amongst us. Commerce has forced the
+                            European tongues on many an Eastern port. Asiatic youths are flocking to
+                            Western colleges for the equipment of modern education. Our insight does not
+                            penetrate your culture deeply, but at least we are willing to learn. Some of
+                            my compatriots have adopted too much of your customs and too much of your
+                            etiquette, in the delusion that the acquisition of stiff collars and tall
+                            silk hats comprised the attainment of your civilisation. Pathetic and
+                            deplorable as such affectations are, they evince our willingness to approach
+                            the West on our knees. Unfortunately the Western attitude is unfavourable to
+                            the understanding of the East. The Christian missionary goes to impart, but
+                            not to receive. Your information is based on the meagre translations of our
+                            immense literature, if not on the unreliable anecdotes of passing
+                            travellers. It is rarely that the chivalrous pen of a Lafcadio Hearn or that
+                            of the author of "The Web of Indian Life" enlivens the Oriental darkness
+                            with the torch of our own sentiments.</p>
+                    </div>
+                    <div about="952-Japan, 940-History of Europe, 204-Religious experience, life, practice">
                     <p>Perhaps I betray my own ignorance of the Tea Cult by being so outspoken. Its
                         very spirit of politeness exacts that you say what you are expected to say,
                         and no more. But I am not to be a polite Teaist. So much harm has been done
@@ -355,7 +311,8 @@
                         philosophic resignation of the guest to the fate awaiting him in the dubious
                         decoction proclaims that in this single instance the Oriental spirit reigns
                         supreme.</p>
-
+                    </div>
+                    <div about="908-History with respect to groups of people, 915-Geography and travel in Asia, 950-History of Asia, 343-Tax, 382-International commerce (foreign trade)">
                     <p>The earliest record of tea in European writing is said to be found in the
                         statement of an Arabian traveller, that after the year 879 the main sources
                         of revenue in Canton were the duties on salt and tea. Marco Polo records the
@@ -387,7 +344,8 @@
                         oppression until human endurance gave way before the heavy duties laid on
                         Tea. American independence dates from the throwing of tea-chests into Boston
                         harbour.</p>
-
+                    </div>
+                    <div about="100-Philosophy, 204-Religious experience, life, practice, 218-Humankind, 952-Japan">
                     <p>There is a subtle charm in the taste of tea which makes it irresistible and
                         capable of idealisation. Western humourists were not slow to mingle the
                         fragrance of their thought with its aroma. It has not the arrogance of wine,
@@ -440,9 +398,11 @@
                         brightening the bamboos, the fountains are bubbling with delight, the
                         soughing of the pines is heard in our kettle. Let us dream of evanescence,
                         and linger in the beautiful foolishness of things.</p>
+                    </div>
                 </div>
                 <div type="chapter-ii">
                     <title type="title-chapter-ii">II. The Schools of Tea</title>
+                    <div about="580-Plants, 641-Food and drink, 700-Arts">
                     <p>Tea is a work of art and needs a master hand to bring out its noblest
                         qualities. We have good and bad tea, as we have good and bad
                         paintings—generally the latter. There is no single recipe for making the
@@ -457,8 +417,8 @@
                         utter waste of fine tea through incompetent manipulation.</p>
 
                     <p>Like Art, Tea has its periods and its schools. Its evolution may be roughly
-                        divided into three main stages: the **Boiled Tea**, the **Whipped Tea**, and
-                        the **Steeped Tea**. We moderns belong to the last school. These several
+                        divided into three main stages: the Boiled Tea, the Whipped Tea, and
+                        the Steeped Tea. We moderns belong to the last school. These several
                         methods of appreciating the beverage are indicative of the spirit of the age
                         in which they prevailed. For life is an expression, our unconscious actions
                         the constant betrayal of our innermost thought. Confucius said that "man
@@ -469,12 +429,13 @@
                         separate idiosyncrasies of different periods and nationalities of Europe, so
                         the Tea-ideals characterise the various moods of Oriental culture. The
                         Cake-tea which was boiled, the Powdered-tea which was whipped, the Leaf-tea
-                        which was steeped, mark the distinct emotional impulses of the **Tang**, the
-                        **Sung**, and the **Ming** dynasties of China. If we were inclined to borrow
+                        which was steeped, mark the distinct emotional impulses of the Tang, the
+                        Sung, and the Ming dynasties of China. If we were inclined to borrow
                         the much-abused terminology of art-classification, we might designate them
-                        respectively, the **Classic**, the **Romantic**, and the **Naturalistic**
+                        respectively, the Classic, the Romantic, and the Naturalistic
                         schools of Tea.</p>
-
+                    </div>
+                    <div about="931-History of Ancient China, 610-Medicine and Health">
                     <p>The tea-plant, a native of southern China, was known from very early times to
                         Chinese botany and medicine. It is alluded to in the classics under the
                         various names of Tou, Tseh, Chung, Kha, and Ming, and was highly prized for
@@ -500,16 +461,18 @@
                         take tea from the Chinese caravansaries, points to the survival of the
                         ancient method.</p>
 
-                    <p>It needed the genius of the **Tang dynasty** to emancipate Tea from its crude
-                        state and lead to its final idealization. With **Luwuh** in the middle of
+                    <p>It needed the genius of the Tang dynasty to emancipate Tea from its crude
+                        state and lead to its final idealization. With Luwuh in the middle of
                         the eighth century we have our first apostle of tea. He was born in an age
                         when Buddhism, Taoism, and Confucianism were seeking mutual synthesis. The
                         pantheistic symbolism of the time was urging one to mirror the Universal in
                         the Particular. Luwuh, a poet, saw in the Tea-service the same harmony and
                         order which reigned through all things. In his celebrated work, the
-                        "**Chaking**" (The Holy Scripture of Tea) he formulated the Code of Tea. He
+                        "Chaking" (The Holy Scripture of Tea) he formulated the Code of Tea. He
                         has since been worshipped as the tutelary god of the Chinese tea merchants.</p>
-
+                    </div>
+                    
+                    <div about="641-Food and drink, 738-Ceramics">
                     <p>The "Chaking" consists of three volumes and ten chapters. In the first
                         chapter Luwuh treats of the nature of the tea-plant, in the second of the
                         implements for gathering the leaves, in the third of the selection of the
@@ -535,7 +498,7 @@
                         light ware of white porcelain.</p>
 
                     <p>In the fifth chapter Luwuh describes the method of making tea. He eliminates
-                        all ingredients except **salt**. He dwells also on the much-discussed
+                        all ingredients except salt. He dwells also on the much-discussed
                         question of the choice of water and the degree of boiling it. According to
                         him, the mountain spring is the best, the river water and the spring water
                         come next in the order of excellence. There are three stages of boiling: the
@@ -569,9 +532,11 @@
                         fame attracted many followers. Some exquisites were said to have been able
                         to detect the tea made by Luwuh from that of his disciples. One mandarin has
                         his name immortalised by his failure to appreciate the tea of this great
-                        master.</p>
-
-                    <p>In the **Sung dynasty** the **whipped tea** came into fashion and created the
+                        master.</p> 
+                    </div>
+                    
+                    <div about="951-History of China, 294-Religions of Indic origin, 581-Specific topics in natural history of plants">
+                    <p>In the Sung dynasty the whipped tea came into fashion and created the
                         second school of Tea. The leaves were ground to fine powder in a small stone
                         mill, and the preparation was whipped in hot water by a delicate whisk made
                         of split bamboo. The new process led to some change in the tea-equipage of
@@ -601,8 +566,8 @@
                         the southern Zen sect, which incorporated so much of Taoist doctrines,
                         formulated an elaborate ritual of tea. The monks gathered before the image
                         of Bodhi Dharma and drank tea out of a single bowl with the profound
-                        formality of a holy sacrament. It was this **Zen ritual** which finally
-                        developed into the **Tea-ceremony of Japan** in the fifteenth century.</p>
+                        formality of a holy sacrament. It was this Zen ritual which finally
+                        developed into the Tea-ceremony of Japan in the fifteenth century.</p>
 
                     <p>Unfortunately the sudden outburst of the Mongol tribes in the thirteenth
                         century which resulted in the devastation and conquest of China under the
@@ -613,10 +578,10 @@
                         century. Manners and customs changed to leave no vestige of the former
                         times. The powdered tea is entirely forgotten. We find a Ming commentator at
                         loss to recall the shape of the tea whisk mentioned in one of the Sung
-                        classics. Tea is now taken by **steeping the leaves** in hot water in a bowl
+                        classics. Tea is now taken by steeping the leaves in hot water in a bowl
                         or cup. The reason why the Western world is innocent of the older method of
                         drinking tea is explained by the fact that Europe knew it only at the close
-                        of the **Ming dynasty**.</p>
+                        of the Ming dynasty.</p>
 
                     <p>To the latter-day Chinese tea is a delicious beverage, but not an ideal. The
                         long woes of his country have robbed him of the zest for the meaning of
@@ -627,30 +592,31 @@
                         conquer or worship her. His Leaf-tea is often wonderful with its flower-like
                         aroma, but the romance of the Tang and Sung ceremonials are not to be found
                         in his cup.</p>
-
-                    <p>Japan, which followed closely on the footsteps of Chinese civilisation, has
-                        known the tea in all its three stages. As early as the year **729** we read
+                    </div>
+                    <div about="581-Specific topics in natural history of plants, 952-Japan, 294-Religions of Indic origin">
+                        <p>Japan, which followed closely on the footsteps of Chinese civilisation, has
+                        known the tea in all its three stages. As early as the year 729 we read
                         of the Emperor Shomu giving tea to one hundred monks at his palace in Nara.
                         The leaves were probably imported by our ambassadors to the Tang Court and
-                        prepared in the way then in fashion. In **801** the monk Saicho brought back
+                        prepared in the way then in fashion. In 801 the monk Saicho brought back
                         some seeds and planted them in Yeisan. Many tea-gardens are heard of in
                         succeeding centuries, as well as the delight of the aristocracy and
-                        priesthood in the beverage. The Sung tea reached us in **1191** with the
+                        priesthood in the beverage. The Sung tea reached us in 1191 with the
                         return of Yeisai-zenji, who went there to study the southern Zen school. The
                         new seeds which he carried home were successfully planted in three places,
                         one of which, the Uji district near Kioto, bears still the name of producing
                         the best tea in the world. The southern Zen spread with marvelous rapidity,
-                        and with it the tea-ritual and the tea-ideal of the Sung. By the **fifteenth
-                        century**, under the patronage of the Shogun, Ashikaga-Voshinasa, the **tea
-                        ceremony is fully constituted** and made into an independent and secular
+                        and with it the tea-ritual and the tea-ideal of the Sung. By the fifteenth
+                        century, under the patronage of the Shogun, Ashikaga-Voshinasa, the tea
+                        ceremony is fully constituted and made into an independent and secular
                         performance. Since then Teaism is fully established in Japan. The use of the
                         steeped tea of the later China is comparatively recent among us, being only
-                        known since the middle of the **seventeenth century**. It has replaced the
+                        known since the middle of the seventeenth century. It has replaced the
                         powdered tea in ordinary consumption, though the latter still continues to
                         hold its place as the tea of teas.</p>
 
                     <p>It is in the Japanese tea ceremony that we see the culmination of tea-ideals.
-                        Our successful resistance of the Mongol invasion in **1281** had enabled us
+                        Our successful resistance of the Mongol invasion in 1281 had enabled us
                         to carry on the Sung movement so disastrously cut off in China itself
                         through the nomadic inroad. Tea with us became more than an idealisation of
                         the form of drinking; it is a religion of the art of life. The beverage grew
@@ -664,7 +630,8 @@
                         to obtrude on the harmony, not a word to break the unity of the
                         surroundings, all movements to be performed simply and naturally—such were
                         the aims of the tea-ceremony. And strangely enough it was often successful.
-                        A subtle philosophy lay behind it all. **Teaism was Taoism in disguise**.</p>
+                        A subtle philosophy lay behind it all. Teaism was Taoism in disguise.</p>
+                    </div>
                 </div>
                 <div type="chapter-iii">
                     <title type="title-chapter-iii">III. Taoism and Zennism.</title>
