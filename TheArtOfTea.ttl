@@ -14,16 +14,9 @@
 # ! Defining Tea
 ArTea:Tea a crm:E22_Human_Made_Object ;
     rdfs:label "Tea";
-    crm:P67i_is_referred_to_by ArTea:TeaCeremony ;
     crm:P129_is_subject_of ArTea:BookOfTea, 
     ArTea:Chanoyu,
     ArTea:WomanPerforming . # etc.
-
-# ! Defining Tea Ceremony
-
-ArTea:TeaCeremony a crm:E89_Propositional_Object ; 
-    rdfs:label "Tea Ceremony";
-    crm:P67i_refers_to ArTea:Tea.
 
 # ! Defining each chapter/section with their dewey labels
 
@@ -82,4 +75,5 @@ ArTea:WomanPerforming a schema:ImageObject ;
     dcterms:subject "-" ;
     schema:hasMeasurement "Sheet: 20.6 x 18.1 cm (8 1/8 x 7 1/8 in.)" ;
     dcterms:source "https://www.jstor.org/stable/community.24570642" .
+
 
