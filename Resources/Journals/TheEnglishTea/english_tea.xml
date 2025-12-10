@@ -3,7 +3,7 @@
     <teiHeader xml:lang="en">    
         <fileDesc>
             <titleStmt>
-                <title type="main">The Tea room booklet</title>
+                <title type="main">The English Tea</title>
                 <title type="sub">An Art of Tea project</title>
                 <respStmt>
                     <resp>compiled by</resp>
@@ -38,39 +38,30 @@
                 </note>
             </notesStmt>
             <sourceDesc>
-                <biblStruct xml:lang="en" type="print">
+                <biblStruct xml:lang= "en" type="article" subtype="digital">
                     <monogr>
-                        <title type="main">The Tea room booklet.</title>
-                        <respStmt>
-                            <resp>Published in</resp>
-                            <orgName ref="WHC">New York, Woman's Home Companion</orgName>
-                        </respStmt>
+                        <idno type="jstore">25120965</idno>
+                        <idno type="URI">https://www.jstor.org/stable/25120965</idno>
+                        <title>The English Tea</title>
+                        <author>
+                            <persName ref="#MH">Muriel Harris</persName>
+                        </author>
                         <imprint>
-                            <pubPlace>New York</pubPlace>
-                            <publisher>Woman's home companion</publisher>
-                            <date when="1922">1922</date>
+                            <biblStruct xml:lang= "en" type="journal" ref="#nortamerrev">
+                                <monogr>
+                                    <title>The North American Review</title>
+                                    <date when="1922-02">Feb, 1922</date>
+                                    <biblScope unit="volume">215</biblScope>
+                                    <biblScope unit="number">795</biblScope>
+                                    <biblScope unit="page" from="12" to="34">pp. 229-235</biblScope>
+                                    <imprint>
+                                        <publisher>University of Northern Iowa</publisher>
+                                    </imprint>
+                                </monogr>
+                            </biblStruct>
                         </imprint>
                     </monogr>
                 </biblStruct>
-                <biblStruct xml:lang= "en" type="digital">
-                    <monogr>
-                        <idno type="loc">22019708</idno>
-                        <idno type="URI">https://lccn.loc.gov/22019708</idno>
-                        <title>tearoombooklet00newy_0001.jp2</title>
-                        <respStmt>
-                            <resp>hosted by</resp>
-                            <name>Library of Congress</name>
-                        </respStmt>
-                        <imprint>
-                            <date when="2025-06-07">6th June 2025</date>
-                        </imprint>
-                        <extent>1 online resource (vi, 60 pages :facs.)</extent>
-                    </monogr>
-                </biblStruct>
-                <listWit> <!-- update when looked through text -->
-                    <witness xml:id="EsR" source="https://handrit.is/manuscript/view/is/AM04-0557/0#mode/2up">AM. 557, 4to (Sögubók) - Saga of Erik the Red</witness>
-                    <witness xml:id="THsK" source="https://handrit.is/manuscript/view/en/AM04-0544/0#mode/2up">AM. 544, 4to (Hauksbók) - Saga of Thorfinn Karlsefni</witness>
-                </listWit>
             </sourceDesc>
         </fileDesc>
         <encodingDesc> <!-- update when done -->
@@ -105,16 +96,17 @@
         </encodingDesc>
         <profileDesc>
             <particDesc>
-                <listPerson type="editor">
-                    <person xml:id="RM" source="https://github.com/ValkyrieCain9">
-                        <persName>Regina Manyara</persName>
-                    </person>
-                </listPerson>
-                <listOrg>
-                    <org xml:id="WHC" source="https://www.wikidata.org/wiki/Q3569752">
-                        <orgName>Woman's Home Companion</orgName>
-                    </org>
-                </listOrg>
+                <person xml:id="RM" source="https://github.com/ValkyrieCain9"> <!-- do we need to put our own source -->
+                    <persName>Regina Manyara</persName>
+                </person>
+                <person xml:id="MH" role="author">
+                    <persName>Muriel Harris</persName>
+                </person>
+                <org xml:id="nortamerrev" type="journal" source="https://www.jstor.org/journal/nortamerrev">
+                    <idno type="issn">00292397</idno>
+                    <idno type="eissn">23291907</idno>
+                    <orgName>The North American Review</orgName>
+                </org>
             </particDesc>
             <settingDesc> <!-- update when gone through text -->
                 <listPlace>
@@ -155,5 +147,21 @@
         </profileDesc>
     </teiHeader>
     <text xml:lang="en">
+        <body>
+            <div>
+                <head rend="align(center) case(allcaps)">
+                    <title>The English Tea</title>
+                    By <persName ref="#MH">Muriel Harris</persName>
+                </head>
+                <p>
+                    <seg ana="#englishness">
+                        If the English tea has not always been the foundation of English society, it is simply because Marco Polo began his travels a few centuries late. The germ of English tea was as much a part of the English constitution as is the Bible, Beethoven, or Blighty. And just as the Germans feel that Shakespeare should have been born in their Fatherland, so it scarcely occurs to the English mind that China tea really comes from China and Indian from India. And even if it does, what is China? What is India? Both are places to which the Englishman takes England and brings it safely home again. And tea? Tea was being poured in the panelled drawing-room when he left England, and seven years later he comes back for his second cup. It is as impossible for the Englishman to forget English tea as it is for him to forget England.
+                    </seg>
+                </p>
+                <p>
+                    There are grandmothers to-day who remember the severity with which their grandmothers regarded the decadent innova tion of afternoon tea. You might have tea, but you might not have it comfortably. It was brought in under protest, and conversation languished until it was taken out again. And yet the Great War was run on tea, and the submarine sinkings and th convoy system and the munitions question and the War Cabinet itself were suspended regularly every afternoon for a few min utes when the little black tea-pot made its peremptory appearance, flanked with what had once been cake and toast but now was?it is difficult to say what it was in 1918. The apotheosis of tea took place during the Great War. More than this. A certain Georgian virility returned with it. The "dish of tay" which was drunk alike by men and by women after the portentous three and four and five o'clock dinners of more than a century ago, again became masculine as well as feminine. Perhaps it was more the one than the other by the time the war was finished. Certainly the solvent that is tea accommodate a million inter-relationships where friction was possible. nothing more, it was the weakness to which the truly great succumbed as readily as any one of their minions. Quee Anne is dead?though she was once a real person with a mark liking for playing at the game of "Let's Pretend"-but her tall glass cupboards with their Lowestoft and egg-shell china found real successors in the rude earthenware of the funny, ramshack shabby old Whitehall buildings which constitute the heart the British Empire. If you go to Regent's Park to-day, if you visit the pleasant town of Cheltenham or of Bath, you will by the hundred the houses in which the "dish of tay " flaunted with parrots and negro servants and marmosets and coiffures of astounding geography. You will see where the Nabobs lived and you will hear faint echoes of John Company, and perhaps also some of the fantastic old tea-chests will remain and the red lacquer trays and the dragon china, and a memory of the days when the trial of Warren Hastings was the gossip of the day an a few other Anglo-Indians felt uneasy, even though the wo "profiteering" had not yet been invented. And so the o Government offices, in which the Pepys and the Norths?al of tea fame?and the Pitts and the Foxes had had their bein positively clamored for the revival of the beverage of which the regalia was still there.
+                </p>
+            </div>
+        </body>
     </text>
 </TEI>
