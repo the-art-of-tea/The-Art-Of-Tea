@@ -1,1855 +1,2565 @@
 {
-	"@context": "http://iiif.io/api/presentation/2/context.json",
-	"@id": "http://ec86424d-6b7d-47c1-8db2-86f0adb2f69c",
-	"@type": "sc:Manifest",
-	"label": [
-		"The Book of Tea by Okakura, Kakuzo, 1862-1913"
-	],
-	"metadata": [
-		{
-			"label": "External ID",
-			"value": " urn:oclc:record:1041561203"
-		},
-		{
-			"label": "Language: [en]",
-			"value": {
-				"@value": "English",
-				"@language": "en"
-			}
-		},
-		{
-			"label": "Source",
-			"value": "https://archive.org/details/bookoftea00okakrich/page/38/mode/2up"
-		}
-	],
-	"description": [
-		{
-			"@value": "The Book of Tea (茶の本, Cha no Hon) A Japanese Harmony of Art, Culture, and the Simple Life [1] by Okakura Kakuzō is a long 1906 essay linking the role of chadō (teaism) to the aesthetic and cultural aspects of Japanese life and protesting Western caricatures of \"the East\".",
-			"@language": "en"
-		}
-	],
-	"license": "https://creativecommons.org/licenses/by/3.0/",
-	"attribution": [
-		"Okakura, Kakuzo, 1862-1913",
-		{
-			"@value": "http://viaf.org/viaf/99830297"
-		}
-	],
-	"sequences": [
-		{
-			"@id": "http://63d008d6-8def-48cb-a169-c3011f8d13f9",
-			"@type": "sc:Sequence",
-			"label": [
-				{
-					"@value": "Normal Sequence",
-					"@language": "en"
-				}
-			],
-			"canvases": [
-				{
-					"@id": "http://cbd22096-b0c8-4d15-bd3a-affc457c277f",
-					"@type": "sc:Canvas",
-					"label": "Book Of Tea - 1",
-					"height": 1056,
-					"width": 668,
-					"images": [
-						{
-							"@context": "http://iiif.io/api/presentation/2/context.json",
-							"@id": "http://ccdaf2f8-fd66-47d9-9a7b-515abcea38ea",
-							"@type": "oa:Annotation",
-							"motivation": "sc:painting",
-							"resource": {
-								"@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-1/full/full/0/default.jpg",
-								"@type": "dctypes:Image",
-								"format": "image/jpeg",
-								"service": {
-									"@context": "http://iiif.io/api/image/2/context.json",
-									"@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-1",
-									"profile": "http://iiif.io/api/image/2/level0.json"
-								},
-								"height": 1056,
-								"width": 668
-							},
-							"on": "http://cbd22096-b0c8-4d15-bd3a-affc457c277f"
-						}
-					],
-					"related": ""
-				},
-				{
-					"@id": "http://e42bb744-5db5-42ed-a939-c7a56d951fa4",
-					"@type": "sc:Canvas",
-					"label": "Book Of Tea - 2",
-					"height": 1028,
-					"width": 604,
-					"images": [
-						{
-							"@context": "http://iiif.io/api/presentation/2/context.json",
-							"@id": "http://c2897e49-ace2-4a63-bd48-b0ddbcd3d4c2",
-							"@type": "oa:Annotation",
-							"motivation": "sc:painting",
-							"resource": {
-								"@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-2/full/full/0/default.jpg",
-								"@type": "dctypes:Image",
-								"format": "image/jpeg",
-								"service": {
-									"@context": "http://iiif.io/api/image/2/context.json",
-									"@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-2",
-									"profile": "http://iiif.io/api/image/2/level0.json"
-								},
-								"height": 1028,
-								"width": 604
-							},
-							"on": "http://e42bb744-5db5-42ed-a939-c7a56d951fa4"
-						}
-					],
-					"related": ""
-				},
-				{
-					"@id": "http://644f3f4d-5486-4b69-90ff-ae4812c371d5",
-					"@type": "sc:Canvas",
-					"label": "Book Of Tea - 3",
-					"height": 1028,
-					"width": 604,
-					"images": [
-						{
-							"@context": "http://iiif.io/api/presentation/2/context.json",
-							"@id": "http://9d8dbc7e-f001-473a-844c-28f830429fe8",
-							"@type": "oa:Annotation",
-							"motivation": "sc:painting",
-							"resource": {
-								"@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-3/full/full/0/default.jpg",
-								"@type": "dctypes:Image",
-								"format": "image/jpeg",
-								"service": {
-									"@context": "http://iiif.io/api/image/2/context.json",
-									"@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-3",
-									"profile": "http://iiif.io/api/image/2/level0.json"
-								},
-								"height": 1028,
-								"width": 604
-							},
-							"on": "http://644f3f4d-5486-4b69-90ff-ae4812c371d5"
-						}
-					],
-					"related": ""
-				},
-				{
-					"@id": "http://f169a049-fbd4-4ca6-aa6e-64970962e8c2",
-					"@type": "sc:Canvas",
-					"label": "Book Of Tea - 4",
-					"height": 1028,
-					"width": 604,
-					"images": [
-						{
-							"@context": "http://iiif.io/api/presentation/2/context.json",
-							"@id": "http://ac117e95-b36d-4ec1-b328-95e296549f2d",
-							"@type": "oa:Annotation",
-							"motivation": "sc:painting",
-							"resource": {
-								"@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-4/full/full/0/default.jpg",
-								"@type": "dctypes:Image",
-								"format": "image/jpeg",
-								"service": {
-									"@context": "http://iiif.io/api/image/2/context.json",
-									"@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-4",
-									"profile": "http://iiif.io/api/image/2/level0.json"
-								},
-								"height": 1028,
-								"width": 604
-							},
-							"on": "http://f169a049-fbd4-4ca6-aa6e-64970962e8c2"
-						}
-					],
-					"related": ""
-				},
-				{
-					"@id": "http://c8322e17-da18-490b-9c2e-05fc189c5275",
-					"@type": "sc:Canvas",
-					"label": "Book Of Tea - 5",
-					"height": 1028,
-					"width": 604,
-					"images": [
-						{
-							"@context": "http://iiif.io/api/presentation/2/context.json",
-							"@id": "http://fa74c668-2503-4b8e-81ce-f10e4e358427",
-							"@type": "oa:Annotation",
-							"motivation": "sc:painting",
-							"resource": {
-								"@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-5/full/full/0/default.jpg",
-								"@type": "dctypes:Image",
-								"format": "image/jpeg",
-								"service": {
-									"@context": "http://iiif.io/api/image/2/context.json",
-									"@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-5",
-									"profile": "http://iiif.io/api/image/2/level0.json"
-								},
-								"height": 1028,
-								"width": 604
-							},
-							"on": "http://c8322e17-da18-490b-9c2e-05fc189c5275"
-						}
-					],
-					"related": ""
-				},
-				{
-					"@id": "http://bb9499c0-4a5c-4936-a4d9-176716f1ba07",
-					"@type": "sc:Canvas",
-					"label": "Book Of Tea - 6",
-					"height": 1028,
-					"width": 604,
-					"images": [
-						{
-							"@context": "http://iiif.io/api/presentation/2/context.json",
-							"@id": "http://4dfaee57-2d1e-4f10-8f80-f96700fc2942",
-							"@type": "oa:Annotation",
-							"motivation": "sc:painting",
-							"resource": {
-								"@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-6/full/full/0/default.jpg",
-								"@type": "dctypes:Image",
-								"format": "image/jpeg",
-								"service": {
-									"@context": "http://iiif.io/api/image/2/context.json",
-									"@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-6",
-									"profile": "http://iiif.io/api/image/2/level0.json"
-								},
-								"height": 1028,
-								"width": 604
-							},
-							"on": "http://bb9499c0-4a5c-4936-a4d9-176716f1ba07"
-						}
-					],
-					"related": ""
-				},
-				{
-					"@id": "http://13a49ab6-5d7b-4451-8291-b790973eeaec",
-					"@type": "sc:Canvas",
-					"label": "Book Of Tea - 7",
-					"height": 1028,
-					"width": 604,
-					"images": [
-						{
-							"@context": "http://iiif.io/api/presentation/2/context.json",
-							"@id": "http://b3818d18-573f-4a4c-8dbe-a8f54aeae786",
-							"@type": "oa:Annotation",
-							"motivation": "sc:painting",
-							"resource": {
-								"@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-7/full/full/0/default.jpg",
-								"@type": "dctypes:Image",
-								"format": "image/jpeg",
-								"service": {
-									"@context": "http://iiif.io/api/image/2/context.json",
-									"@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-7",
-									"profile": "http://iiif.io/api/image/2/level0.json"
-								},
-								"height": 1028,
-								"width": 604
-							},
-							"on": "http://13a49ab6-5d7b-4451-8291-b790973eeaec"
-						}
-					],
-					"related": ""
-				},
-				{
-					"@id": "http://60b637c7-83c7-48c0-8ac5-c7f54a255d76",
-					"@type": "sc:Canvas",
-					"label": "Book Of Tea - 8",
-					"height": 1028,
-					"width": 604,
-					"images": [
-						{
-							"@context": "http://iiif.io/api/presentation/2/context.json",
-							"@id": "http://e81933ca-c3f8-4889-9938-986ec700a434",
-							"@type": "oa:Annotation",
-							"motivation": "sc:painting",
-							"resource": {
-								"@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-8/full/full/0/default.jpg",
-								"@type": "dctypes:Image",
-								"format": "image/jpeg",
-								"service": {
-									"@context": "http://iiif.io/api/image/2/context.json",
-									"@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-8",
-									"profile": "http://iiif.io/api/image/2/level0.json"
-								},
-								"height": 1028,
-								"width": 604
-							},
-							"on": "http://60b637c7-83c7-48c0-8ac5-c7f54a255d76"
-						}
-					],
-					"related": ""
-				},
-				{
-					"@id": "http://04a44df8-e31d-48ba-ad9d-12ae5c7741c4",
-					"@type": "sc:Canvas",
-					"label": "Book Of Tea - 9",
-					"height": 1028,
-					"width": 604,
-					"images": [
-						{
-							"@context": "http://iiif.io/api/presentation/2/context.json",
-							"@id": "http://27485c9b-822e-4a0a-90a9-4cc18744435c",
-							"@type": "oa:Annotation",
-							"motivation": "sc:painting",
-							"resource": {
-								"@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-9/full/full/0/default.jpg",
-								"@type": "dctypes:Image",
-								"format": "image/jpeg",
-								"service": {
-									"@context": "http://iiif.io/api/image/2/context.json",
-									"@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-9",
-									"profile": "http://iiif.io/api/image/2/level0.json"
-								},
-								"height": 1028,
-								"width": 604
-							},
-							"on": "http://04a44df8-e31d-48ba-ad9d-12ae5c7741c4"
-						}
-					],
-					"related": ""
-				},
-				{
-					"@id": "http://ac789d67-4154-40cc-9d13-0269ef8094f4",
-					"@type": "sc:Canvas",
-					"label": "Book Of Tea - 10",
-					"height": 1028,
-					"width": 604,
-					"images": [
-						{
-							"@context": "http://iiif.io/api/presentation/2/context.json",
-							"@id": "http://155a1a41-291b-418a-a777-4b6a7ebeb360",
-							"@type": "oa:Annotation",
-							"motivation": "sc:painting",
-							"resource": {
-								"@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-10/full/full/0/default.jpg",
-								"@type": "dctypes:Image",
-								"format": "image/jpeg",
-								"service": {
-									"@context": "http://iiif.io/api/image/2/context.json",
-									"@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-10",
-									"profile": "http://iiif.io/api/image/2/level0.json"
-								},
-								"height": 1028,
-								"width": 604
-							},
-							"on": "http://ac789d67-4154-40cc-9d13-0269ef8094f4"
-						}
-					],
-					"related": ""
-				},
-				{
-					"@id": "http://a1dbcef2-e572-426b-a00e-7c0f57b6b224",
-					"@type": "sc:Canvas",
-					"label": "Book Of Tea - 11",
-					"height": 1028,
-					"width": 604,
-					"images": [
-						{
-							"@context": "http://iiif.io/api/presentation/2/context.json",
-							"@id": "http://03f258b5-8612-46f5-ac82-49a63c9a1fde",
-							"@type": "oa:Annotation",
-							"motivation": "sc:painting",
-							"resource": {
-								"@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-11/full/full/0/default.jpg",
-								"@type": "dctypes:Image",
-								"format": "image/jpeg",
-								"service": {
-									"@context": "http://iiif.io/api/image/2/context.json",
-									"@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-11",
-									"profile": "http://iiif.io/api/image/2/level0.json"
-								},
-								"height": 1028,
-								"width": 604
-							},
-							"on": "http://a1dbcef2-e572-426b-a00e-7c0f57b6b224"
-						}
-					],
-					"related": ""
-				},
-				{
-					"@id": "http://fcc4d909-7507-47d2-8128-33c3e2ae907d",
-					"@type": "sc:Canvas",
-					"label": "Book Of Tea - 12",
-					"height": 1028,
-					"width": 604,
-					"images": [
-						{
-							"@context": "http://iiif.io/api/presentation/2/context.json",
-							"@id": "http://f676135c-8ce3-462d-8dd5-5d07c4120213",
-							"@type": "oa:Annotation",
-							"motivation": "sc:painting",
-							"resource": {
-								"@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-12/full/full/0/default.jpg",
-								"@type": "dctypes:Image",
-								"format": "image/jpeg",
-								"service": {
-									"@context": "http://iiif.io/api/image/2/context.json",
-									"@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-12",
-									"profile": "http://iiif.io/api/image/2/level0.json"
-								},
-								"height": 1028,
-								"width": 604
-							},
-							"on": "http://fcc4d909-7507-47d2-8128-33c3e2ae907d"
-						}
-					],
-					"related": ""
-				},
-				{
-					"@id": "http://c95a22ae-a4e4-46c0-80d6-0590ada60db6",
-					"@type": "sc:Canvas",
-					"label": "Book Of Tea - 13",
-					"height": 1028,
-					"width": 604,
-					"images": [
-						{
-							"@context": "http://iiif.io/api/presentation/2/context.json",
-							"@id": "http://d61eac11-4a73-4cbb-b7d9-f0991417a480",
-							"@type": "oa:Annotation",
-							"motivation": "sc:painting",
-							"resource": {
-								"@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-13/full/full/0/default.jpg",
-								"@type": "dctypes:Image",
-								"format": "image/jpeg",
-								"service": {
-									"@context": "http://iiif.io/api/image/2/context.json",
-									"@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-13",
-									"profile": "http://iiif.io/api/image/2/level0.json"
-								},
-								"height": 1028,
-								"width": 604
-							},
-							"on": "http://c95a22ae-a4e4-46c0-80d6-0590ada60db6"
-						}
-					],
-					"related": ""
-				},
-				{
-					"@id": "http://797a2029-8e66-404f-ac58-01940e37e5d0",
-					"@type": "sc:Canvas",
-					"label": "Book Of Tea - 14",
-					"height": 1028,
-					"width": 604,
-					"images": [
-						{
-							"@context": "http://iiif.io/api/presentation/2/context.json",
-							"@id": "http://53b9b77b-79c6-40f5-8355-d551806a72a2",
-							"@type": "oa:Annotation",
-							"motivation": "sc:painting",
-							"resource": {
-								"@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-14/full/full/0/default.jpg",
-								"@type": "dctypes:Image",
-								"format": "image/jpeg",
-								"service": {
-									"@context": "http://iiif.io/api/image/2/context.json",
-									"@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-14",
-									"profile": "http://iiif.io/api/image/2/level0.json"
-								},
-								"height": 1028,
-								"width": 604
-							},
-							"on": "http://797a2029-8e66-404f-ac58-01940e37e5d0"
-						}
-					],
-					"related": ""
-				},
-				{
-					"@id": "http://c46579a0-cdb8-45a4-a71e-492e1ec48a68",
-					"@type": "sc:Canvas",
-					"label": "Book Of Tea - 15",
-					"height": 1028,
-					"width": 604,
-					"images": [
-						{
-							"@context": "http://iiif.io/api/presentation/2/context.json",
-							"@id": "http://85fe8fc3-c859-4335-ab1f-c9ca3bd7aa83",
-							"@type": "oa:Annotation",
-							"motivation": "sc:painting",
-							"resource": {
-								"@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-15/full/full/0/default.jpg",
-								"@type": "dctypes:Image",
-								"format": "image/jpeg",
-								"service": {
-									"@context": "http://iiif.io/api/image/2/context.json",
-									"@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-15",
-									"profile": "http://iiif.io/api/image/2/level0.json"
-								},
-								"height": 1028,
-								"width": 604
-							},
-							"on": "http://c46579a0-cdb8-45a4-a71e-492e1ec48a68"
-						}
-					],
-					"related": ""
-				},
-				{
-					"@id": "http://452cf5e2-564e-4ea2-80e9-9916f168d611",
-					"@type": "sc:Canvas",
-					"label": "Book Of Tea - 16",
-					"height": 1028,
-					"width": 598,
-					"images": [
-						{
-							"@context": "http://iiif.io/api/presentation/2/context.json",
-							"@id": "http://a68924e0-922c-4e90-aab2-65bf96698201",
-							"@type": "oa:Annotation",
-							"motivation": "sc:painting",
-							"resource": {
-								"@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-16/full/full/0/default.jpg",
-								"@type": "dctypes:Image",
-								"format": "image/jpeg",
-								"service": {
-									"@context": "http://iiif.io/api/image/2/context.json",
-									"@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-16",
-									"profile": "http://iiif.io/api/image/2/level0.json"
-								},
-								"height": 1028,
-								"width": 598
-							},
-							"on": "http://452cf5e2-564e-4ea2-80e9-9916f168d611"
-						}
-					],
-					"related": ""
-				},
-				{
-					"@id": "http://33debc71-1964-477c-b9a3-d3c2d8d6a534",
-					"@type": "sc:Canvas",
-					"label": "Book Of Tea - 17",
-					"height": 1028,
-					"width": 598,
-					"images": [
-						{
-							"@context": "http://iiif.io/api/presentation/2/context.json",
-							"@id": "http://0e24bbeb-64b6-4874-8cfa-e3972fab9bb1",
-							"@type": "oa:Annotation",
-							"motivation": "sc:painting",
-							"resource": {
-								"@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-17/full/full/0/default.jpg",
-								"@type": "dctypes:Image",
-								"format": "image/jpeg",
-								"service": {
-									"@context": "http://iiif.io/api/image/2/context.json",
-									"@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-17",
-									"profile": "http://iiif.io/api/image/2/level0.json"
-								},
-								"height": 1028,
-								"width": 598
-							},
-							"on": "http://33debc71-1964-477c-b9a3-d3c2d8d6a534"
-						}
-					],
-					"related": ""
-				},
-				{
-					"@id": "http://7a269798-384e-4e16-b84e-1ada12537a7f",
-					"@type": "sc:Canvas",
-					"label": "Book Of Tea - 18",
-					"height": 1028,
-					"width": 598,
-					"images": [
-						{
-							"@context": "http://iiif.io/api/presentation/2/context.json",
-							"@id": "http://847249a6-2438-4a8b-b24d-da85d241be71",
-							"@type": "oa:Annotation",
-							"motivation": "sc:painting",
-							"resource": {
-								"@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-18/full/full/0/default.jpg",
-								"@type": "dctypes:Image",
-								"format": "image/jpeg",
-								"service": {
-									"@context": "http://iiif.io/api/image/2/context.json",
-									"@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-18",
-									"profile": "http://iiif.io/api/image/2/level0.json"
-								},
-								"height": 1028,
-								"width": 598
-							},
-							"on": "http://7a269798-384e-4e16-b84e-1ada12537a7f"
-						}
-					],
-					"related": ""
-				},
-				{
-					"@id": "http://bb212504-0896-40ff-bf8b-f8abd552fecd",
-					"@type": "sc:Canvas",
-					"label": "Book Of Tea - 19",
-					"height": 1028,
-					"width": 598,
-					"images": [
-						{
-							"@context": "http://iiif.io/api/presentation/2/context.json",
-							"@id": "http://12b1a6ff-271e-4913-b2b3-bf719bee935c",
-							"@type": "oa:Annotation",
-							"motivation": "sc:painting",
-							"resource": {
-								"@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-19/full/full/0/default.jpg",
-								"@type": "dctypes:Image",
-								"format": "image/jpeg",
-								"service": {
-									"@context": "http://iiif.io/api/image/2/context.json",
-									"@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-19",
-									"profile": "http://iiif.io/api/image/2/level0.json"
-								},
-								"height": 1028,
-								"width": 598
-							},
-							"on": "http://bb212504-0896-40ff-bf8b-f8abd552fecd"
-						}
-					],
-					"related": ""
-				},
-				{
-					"@id": "http://209cb54b-6f07-43bc-97d0-a212e4c4ab06",
-					"@type": "sc:Canvas",
-					"label": "Book Of Tea - 20",
-					"height": 1028,
-					"width": 598,
-					"images": [
-						{
-							"@context": "http://iiif.io/api/presentation/2/context.json",
-							"@id": "http://dd7c8106-a8ed-4799-ae79-32ef777a007c",
-							"@type": "oa:Annotation",
-							"motivation": "sc:painting",
-							"resource": {
-								"@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-20/full/full/0/default.jpg",
-								"@type": "dctypes:Image",
-								"format": "image/jpeg",
-								"service": {
-									"@context": "http://iiif.io/api/image/2/context.json",
-									"@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-20",
-									"profile": "http://iiif.io/api/image/2/level0.json"
-								},
-								"height": 1028,
-								"width": 598
-							},
-							"on": "http://209cb54b-6f07-43bc-97d0-a212e4c4ab06"
-						}
-					],
-					"related": ""
-				},
-				{
-					"@id": "http://377afafb-e04e-4ab2-afb7-979853f1db93",
-					"@type": "sc:Canvas",
-					"label": "Book Of Tea - 21",
-					"height": 1028,
-					"width": 598,
-					"images": [
-						{
-							"@context": "http://iiif.io/api/presentation/2/context.json",
-							"@id": "http://6bbecc4e-669a-4923-b993-46d1008774f0",
-							"@type": "oa:Annotation",
-							"motivation": "sc:painting",
-							"resource": {
-								"@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-21/full/full/0/default.jpg",
-								"@type": "dctypes:Image",
-								"format": "image/jpeg",
-								"service": {
-									"@context": "http://iiif.io/api/image/2/context.json",
-									"@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-21",
-									"profile": "http://iiif.io/api/image/2/level0.json"
-								},
-								"height": 1028,
-								"width": 598
-							},
-							"on": "http://377afafb-e04e-4ab2-afb7-979853f1db93"
-						}
-					],
-					"related": ""
-				},
-				{
-					"@id": "http://7b58710b-b2c0-4faa-ad6c-edb2df0d90d3",
-					"@type": "sc:Canvas",
-					"label": "Book Of Tea - 22",
-					"height": 1028,
-					"width": 598,
-					"images": [
-						{
-							"@context": "http://iiif.io/api/presentation/2/context.json",
-							"@id": "http://42e02157-c0c9-431a-b254-7a76f12dafd5",
-							"@type": "oa:Annotation",
-							"motivation": "sc:painting",
-							"resource": {
-								"@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-22/full/full/0/default.jpg",
-								"@type": "dctypes:Image",
-								"format": "image/jpeg",
-								"service": {
-									"@context": "http://iiif.io/api/image/2/context.json",
-									"@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-22",
-									"profile": "http://iiif.io/api/image/2/level0.json"
-								},
-								"height": 1028,
-								"width": 598
-							},
-							"on": "http://7b58710b-b2c0-4faa-ad6c-edb2df0d90d3"
-						}
-					],
-					"related": ""
-				},
-				{
-					"@id": "http://cbf0a941-5daa-4d28-8cec-6d1b2f61b767",
-					"@type": "sc:Canvas",
-					"label": "Book Of Tea - 23",
-					"height": 1028,
-					"width": 598,
-					"images": [
-						{
-							"@context": "http://iiif.io/api/presentation/2/context.json",
-							"@id": "http://cae06fce-074e-4c4a-9ae7-c798ec6e2aec",
-							"@type": "oa:Annotation",
-							"motivation": "sc:painting",
-							"resource": {
-								"@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-23/full/full/0/default.jpg",
-								"@type": "dctypes:Image",
-								"format": "image/jpeg",
-								"service": {
-									"@context": "http://iiif.io/api/image/2/context.json",
-									"@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-23",
-									"profile": "http://iiif.io/api/image/2/level0.json"
-								},
-								"height": 1028,
-								"width": 598
-							},
-							"on": "http://cbf0a941-5daa-4d28-8cec-6d1b2f61b767"
-						}
-					],
-					"related": ""
-				},
-				{
-					"@id": "http://ce9469b5-235e-422f-bcd8-0a7375ebcd1c",
-					"@type": "sc:Canvas",
-					"label": "Book Of Tea - 24",
-					"height": 1028,
-					"width": 598,
-					"images": [
-						{
-							"@context": "http://iiif.io/api/presentation/2/context.json",
-							"@id": "http://135da3a6-e102-439d-89e1-a41c4296e816",
-							"@type": "oa:Annotation",
-							"motivation": "sc:painting",
-							"resource": {
-								"@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-24/full/full/0/default.jpg",
-								"@type": "dctypes:Image",
-								"format": "image/jpeg",
-								"service": {
-									"@context": "http://iiif.io/api/image/2/context.json",
-									"@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-24",
-									"profile": "http://iiif.io/api/image/2/level0.json"
-								},
-								"height": 1028,
-								"width": 598
-							},
-							"on": "http://ce9469b5-235e-422f-bcd8-0a7375ebcd1c"
-						}
-					],
-					"related": ""
-				},
-				{
-					"@id": "http://ae59fed9-41da-4378-89ca-6dc2ed297ad9",
-					"@type": "sc:Canvas",
-					"label": "Book Of Tea - 25",
-					"height": 1028,
-					"width": 598,
-					"images": [
-						{
-							"@context": "http://iiif.io/api/presentation/2/context.json",
-							"@id": "http://dbc94a35-1484-47dc-a0f2-6361fa71e73d",
-							"@type": "oa:Annotation",
-							"motivation": "sc:painting",
-							"resource": {
-								"@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-25/full/full/0/default.jpg",
-								"@type": "dctypes:Image",
-								"format": "image/jpeg",
-								"service": {
-									"@context": "http://iiif.io/api/image/2/context.json",
-									"@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-25",
-									"profile": "http://iiif.io/api/image/2/level0.json"
-								},
-								"height": 1028,
-								"width": 598
-							},
-							"on": "http://ae59fed9-41da-4378-89ca-6dc2ed297ad9"
-						}
-					],
-					"related": ""
-				},
-				{
-					"@id": "http://39abe23e-0e8d-4348-8ae7-0eeb36d63fb0",
-					"@type": "sc:Canvas",
-					"label": "26",
-					"height": 1028,
-					"width": 598,
-					"images": [
-						{
-							"@context": "http://iiif.io/api/presentation/2/context.json",
-							"@id": "http://c11fb8f0-2486-4646-b1ab-5df0126ad422",
-							"@type": "oa:Annotation",
-							"motivation": "sc:painting",
-							"resource": {
-								"@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-26/full/full/0/default.jpg",
-								"@type": "dctypes:Image",
-								"format": "image/jpeg",
-								"service": {
-									"@context": "http://iiif.io/api/image/2/context.json",
-									"@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-26",
-									"profile": "http://iiif.io/api/image/2/level0.json"
-								},
-								"height": 1028,
-								"width": 598
-							},
-							"on": "http://39abe23e-0e8d-4348-8ae7-0eeb36d63fb0"
-						}
-					],
-					"related": ""
-				},
-				{
-					"@id": "http://d6e4bf84-0517-4e61-95c2-004e9f1a60fe",
-					"@type": "sc:Canvas",
-					"label": "Book Of Tea - 27",
-					"height": 1028,
-					"width": 598,
-					"images": [
-						{
-							"@context": "http://iiif.io/api/presentation/2/context.json",
-							"@id": "http://76699493-9552-45ca-8f69-22ffd5405c20",
-							"@type": "oa:Annotation",
-							"motivation": "sc:painting",
-							"resource": {
-								"@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-27/full/full/0/default.jpg",
-								"@type": "dctypes:Image",
-								"format": "image/jpeg",
-								"service": {
-									"@context": "http://iiif.io/api/image/2/context.json",
-									"@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-27",
-									"profile": "http://iiif.io/api/image/2/level0.json"
-								},
-								"height": 1028,
-								"width": 598
-							},
-							"on": "http://d6e4bf84-0517-4e61-95c2-004e9f1a60fe"
-						}
-					],
-					"related": ""
-				},
-				{
-					"@id": "http://79b420e1-9814-4502-b366-dbe87a8318c3",
-					"@type": "sc:Canvas",
-					"label": "Book Of Tea - 28",
-					"height": 1028,
-					"width": 598,
-					"images": [
-						{
-							"@context": "http://iiif.io/api/presentation/2/context.json",
-							"@id": "http://8e825fd3-0f75-4178-adf3-32569195d156",
-							"@type": "oa:Annotation",
-							"motivation": "sc:painting",
-							"resource": {
-								"@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-28/full/full/0/default.jpg",
-								"@type": "dctypes:Image",
-								"format": "image/jpeg",
-								"service": {
-									"@context": "http://iiif.io/api/image/2/context.json",
-									"@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-28",
-									"profile": "http://iiif.io/api/image/2/level0.json"
-								},
-								"height": 1028,
-								"width": 598
-							},
-							"on": "http://79b420e1-9814-4502-b366-dbe87a8318c3"
-						}
-					],
-					"related": ""
-				},
-				{
-					"@id": "http://1c09ed92-2eaf-440a-9534-5c60a0dd2e06",
-					"@type": "sc:Canvas",
-					"label": "Book Of Tea - 29",
-					"height": 1028,
-					"width": 598,
-					"images": [
-						{
-							"@context": "http://iiif.io/api/presentation/2/context.json",
-							"@id": "http://05ddb297-bb45-40a6-8519-08318a106568",
-							"@type": "oa:Annotation",
-							"motivation": "sc:painting",
-							"resource": {
-								"@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-29/full/full/0/default.jpg",
-								"@type": "dctypes:Image",
-								"format": "image/jpeg",
-								"service": {
-									"@context": "http://iiif.io/api/image/2/context.json",
-									"@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-29",
-									"profile": "http://iiif.io/api/image/2/level0.json"
-								},
-								"height": 1028,
-								"width": 598
-							},
-							"on": "http://1c09ed92-2eaf-440a-9534-5c60a0dd2e06"
-						}
-					],
-					"related": ""
-				},
-				{
-					"@id": "http://e7c403d8-817c-46fe-bd4b-fec2187b9ac9",
-					"@type": "sc:Canvas",
-					"label": "Book Of Tea - 30",
-					"height": 1028,
-					"width": 598,
-					"images": [
-						{
-							"@context": "http://iiif.io/api/presentation/2/context.json",
-							"@id": "http://863fe773-eef4-41a2-894b-37d48085f52c",
-							"@type": "oa:Annotation",
-							"motivation": "sc:painting",
-							"resource": {
-								"@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-30/full/full/0/default.jpg",
-								"@type": "dctypes:Image",
-								"format": "image/jpeg",
-								"service": {
-									"@context": "http://iiif.io/api/image/2/context.json",
-									"@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-30",
-									"profile": "http://iiif.io/api/image/2/level0.json"
-								},
-								"height": 1028,
-								"width": 598
-							},
-							"on": "http://e7c403d8-817c-46fe-bd4b-fec2187b9ac9"
-						}
-					],
-					"related": ""
-				},
-				{
-					"@id": "http://049835b1-c115-4035-b0cf-a142322039a5",
-					"@type": "sc:Canvas",
-					"label": "Book Of Tea - 31",
-					"height": 1028,
-					"width": 598,
-					"images": [
-						{
-							"@context": "http://iiif.io/api/presentation/2/context.json",
-							"@id": "http://5169c0fe-6ebe-4bac-af8e-52cc85e017a6",
-							"@type": "oa:Annotation",
-							"motivation": "sc:painting",
-							"resource": {
-								"@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-31/full/full/0/default.jpg",
-								"@type": "dctypes:Image",
-								"format": "image/jpeg",
-								"service": {
-									"@context": "http://iiif.io/api/image/2/context.json",
-									"@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-31",
-									"profile": "http://iiif.io/api/image/2/level0.json"
-								},
-								"height": 1028,
-								"width": 598
-							},
-							"on": "http://049835b1-c115-4035-b0cf-a142322039a5"
-						}
-					],
-					"related": ""
-				},
-				{
-					"@id": "http://04b9e31c-11dd-4463-b635-281b3304e2f7",
-					"@type": "sc:Canvas",
-					"label": "Book Of Tea - 32",
-					"height": 1028,
-					"width": 598,
-					"images": [
-						{
-							"@context": "http://iiif.io/api/presentation/2/context.json",
-							"@id": "http://49f370d8-5f5b-4564-8adc-60fc5ed97dc4",
-							"@type": "oa:Annotation",
-							"motivation": "sc:painting",
-							"resource": {
-								"@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-32/full/full/0/default.jpg",
-								"@type": "dctypes:Image",
-								"format": "image/jpeg",
-								"service": {
-									"@context": "http://iiif.io/api/image/2/context.json",
-									"@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-32",
-									"profile": "http://iiif.io/api/image/2/level0.json"
-								},
-								"height": 1028,
-								"width": 598
-							},
-							"on": "http://04b9e31c-11dd-4463-b635-281b3304e2f7"
-						}
-					],
-					"related": ""
-				},
-				{
-					"@id": "http://c3f20c3f-1715-4bd6-af87-ddc72e3059f4",
-					"@type": "sc:Canvas",
-					"label": "Book Of Tea - 33",
-					"height": 1028,
-					"width": 598,
-					"images": [
-						{
-							"@context": "http://iiif.io/api/presentation/2/context.json",
-							"@id": "http://110030c2-61a1-4d57-8ae1-653c2ae4d539",
-							"@type": "oa:Annotation",
-							"motivation": "sc:painting",
-							"resource": {
-								"@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-33/full/full/0/default.jpg",
-								"@type": "dctypes:Image",
-								"format": "image/jpeg",
-								"service": {
-									"@context": "http://iiif.io/api/image/2/context.json",
-									"@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-33",
-									"profile": "http://iiif.io/api/image/2/level0.json"
-								},
-								"height": 1028,
-								"width": 598
-							},
-							"on": "http://c3f20c3f-1715-4bd6-af87-ddc72e3059f4"
-						}
-					],
-					"related": ""
-				},
-				{
-					"@id": "http://c693932e-17f9-4e9b-af6d-9c7336581f66",
-					"@type": "sc:Canvas",
-					"label": "Book Of Tea - 34",
-					"height": 1028,
-					"width": 598,
-					"images": [
-						{
-							"@context": "http://iiif.io/api/presentation/2/context.json",
-							"@id": "http://75f07a67-21fa-453d-a7c4-b15658e2d125",
-							"@type": "oa:Annotation",
-							"motivation": "sc:painting",
-							"resource": {
-								"@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-34/full/full/0/default.jpg",
-								"@type": "dctypes:Image",
-								"format": "image/jpeg",
-								"service": {
-									"@context": "http://iiif.io/api/image/2/context.json",
-									"@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-34",
-									"profile": "http://iiif.io/api/image/2/level0.json"
-								},
-								"height": 1028,
-								"width": 598
-							},
-							"on": "http://c693932e-17f9-4e9b-af6d-9c7336581f66"
-						}
-					],
-					"related": ""
-				},
-				{
-					"@id": "http://941d5b6f-5241-4157-9daf-d777f3f71aaf",
-					"@type": "sc:Canvas",
-					"label": "Book Of Tea - 35",
-					"height": 1028,
-					"width": 598,
-					"images": [
-						{
-							"@context": "http://iiif.io/api/presentation/2/context.json",
-							"@id": "http://c9cdb64e-3384-45e4-b2db-6a7b21c6a313",
-							"@type": "oa:Annotation",
-							"motivation": "sc:painting",
-							"resource": {
-								"@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-35/full/full/0/default.jpg",
-								"@type": "dctypes:Image",
-								"format": "image/jpeg",
-								"service": {
-									"@context": "http://iiif.io/api/image/2/context.json",
-									"@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-35",
-									"profile": "http://iiif.io/api/image/2/level0.json"
-								},
-								"height": 1028,
-								"width": 598
-							},
-							"on": "http://941d5b6f-5241-4157-9daf-d777f3f71aaf"
-						}
-					],
-					"related": ""
-				},
-				{
-					"@id": "http://357ac948-6e1e-4dc9-9f36-c05500555637",
-					"@type": "sc:Canvas",
-					"label": "Book Of Tea - 36",
-					"height": 1028,
-					"width": 598,
-					"images": [
-						{
-							"@context": "http://iiif.io/api/presentation/2/context.json",
-							"@id": "http://c0be36a4-a514-4da0-8338-32911f596ec0",
-							"@type": "oa:Annotation",
-							"motivation": "sc:painting",
-							"resource": {
-								"@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-36/full/full/0/default.jpg",
-								"@type": "dctypes:Image",
-								"format": "image/jpeg",
-								"service": {
-									"@context": "http://iiif.io/api/image/2/context.json",
-									"@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-36",
-									"profile": "http://iiif.io/api/image/2/level0.json"
-								},
-								"height": 1028,
-								"width": 598
-							},
-							"on": "http://357ac948-6e1e-4dc9-9f36-c05500555637"
-						}
-					],
-					"related": ""
-				},
-				{
-					"@id": "http://d5b759fd-f31b-4df4-829c-dc6878c00f9a",
-					"@type": "sc:Canvas",
-					"label": "Book Of Tea - 37",
-					"height": 1028,
-					"width": 598,
-					"images": [
-						{
-							"@context": "http://iiif.io/api/presentation/2/context.json",
-							"@id": "http://8fe9a96d-e9be-47fc-81bc-a7d4e48ae096",
-							"@type": "oa:Annotation",
-							"motivation": "sc:painting",
-							"resource": {
-								"@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-37/full/full/0/default.jpg",
-								"@type": "dctypes:Image",
-								"format": "image/jpeg",
-								"service": {
-									"@context": "http://iiif.io/api/image/2/context.json",
-									"@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-37",
-									"profile": "http://iiif.io/api/image/2/level0.json"
-								},
-								"height": 1028,
-								"width": 598
-							},
-							"on": "http://d5b759fd-f31b-4df4-829c-dc6878c00f9a"
-						}
-					],
-					"related": ""
-				},
-				{
-					"@id": "http://96669969-6eae-4543-84ac-fde2b82cbb5a",
-					"@type": "sc:Canvas",
-					"label": "Book Of Tea - 38",
-					"height": 1028,
-					"width": 598,
-					"images": [
-						{
-							"@context": "http://iiif.io/api/presentation/2/context.json",
-							"@id": "http://98607106-30f8-449a-abd4-d0b36a48b4a4",
-							"@type": "oa:Annotation",
-							"motivation": "sc:painting",
-							"resource": {
-								"@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-38/full/full/0/default.jpg",
-								"@type": "dctypes:Image",
-								"format": "image/jpeg",
-								"service": {
-									"@context": "http://iiif.io/api/image/2/context.json",
-									"@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-38",
-									"profile": "http://iiif.io/api/image/2/level0.json"
-								},
-								"height": 1028,
-								"width": 598
-							},
-							"on": "http://96669969-6eae-4543-84ac-fde2b82cbb5a"
-						}
-					],
-					"related": ""
-				},
-				{
-					"@id": "http://93ad1cbf-6fa9-409a-a71a-6b06afd23db9",
-					"@type": "sc:Canvas",
-					"label": "Book Of Tea - 39",
-					"height": 1028,
-					"width": 598,
-					"images": [
-						{
-							"@context": "http://iiif.io/api/presentation/2/context.json",
-							"@id": "http://24eeae9f-b7fc-4bcb-bfe9-5824df5cfbb7",
-							"@type": "oa:Annotation",
-							"motivation": "sc:painting",
-							"resource": {
-								"@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-39/full/full/0/default.jpg",
-								"@type": "dctypes:Image",
-								"format": "image/jpeg",
-								"service": {
-									"@context": "http://iiif.io/api/image/2/context.json",
-									"@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-39",
-									"profile": "http://iiif.io/api/image/2/level0.json"
-								},
-								"height": 1028,
-								"width": 598
-							},
-							"on": "http://93ad1cbf-6fa9-409a-a71a-6b06afd23db9"
-						}
-					],
-					"related": ""
-				},
-				{
-					"@id": "http://fb0d7cd7-f48f-4b79-b1c9-b31153277e77",
-					"@type": "sc:Canvas",
-					"label": "Book Of Tea - 39",
-					"height": 1028,
-					"width": 598,
-					"images": [
-						{
-							"@context": "http://iiif.io/api/presentation/2/context.json",
-							"@id": "http://8594221d-ff08-46c7-80a2-cdf7e76c6a19",
-							"@type": "oa:Annotation",
-							"motivation": "sc:painting",
-							"resource": {
-								"@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-40/full/full/0/default.jpg",
-								"@type": "dctypes:Image",
-								"format": "image/jpeg",
-								"service": {
-									"@context": "http://iiif.io/api/image/2/context.json",
-									"@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-40",
-									"profile": "http://iiif.io/api/image/2/level0.json"
-								},
-								"height": 1028,
-								"width": 598
-							},
-							"on": "http://fb0d7cd7-f48f-4b79-b1c9-b31153277e77"
-						}
-					],
-					"related": ""
-				},
-				{
-					"@id": "http://912703ce-e962-4025-8cf4-a2d548c43524",
-					"@type": "sc:Canvas",
-					"label": "Book Of Tea - 40",
-					"height": 1028,
-					"width": 598,
-					"images": [
-						{
-							"@context": "http://iiif.io/api/presentation/2/context.json",
-							"@id": "http://b97566ee-f208-4b27-9cf9-32069ef202ec",
-							"@type": "oa:Annotation",
-							"motivation": "sc:painting",
-							"resource": {
-								"@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-41/full/full/0/default.jpg",
-								"@type": "dctypes:Image",
-								"format": "image/jpeg",
-								"service": {
-									"@context": "http://iiif.io/api/image/2/context.json",
-									"@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-41",
-									"profile": "http://iiif.io/api/image/2/level0.json"
-								},
-								"height": 1028,
-								"width": 598
-							},
-							"on": "http://912703ce-e962-4025-8cf4-a2d548c43524"
-						}
-					],
-					"related": ""
-				},
-				{
-					"@id": "http://7f89c9f3-3829-44dd-91e2-a44b62b621d9",
-					"@type": "sc:Canvas",
-					"label": "Book Of Tea - 41",
-					"height": 1028,
-					"width": 598,
-					"images": [
-						{
-							"@context": "http://iiif.io/api/presentation/2/context.json",
-							"@id": "http://6cb9f0f5-03c9-4042-a272-1679a4b8d9e9",
-							"@type": "oa:Annotation",
-							"motivation": "sc:painting",
-							"resource": {
-								"@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-42/full/full/0/default.jpg",
-								"@type": "dctypes:Image",
-								"format": "image/jpeg",
-								"service": {
-									"@context": "http://iiif.io/api/image/2/context.json",
-									"@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-42",
-									"profile": "http://iiif.io/api/image/2/level0.json"
-								},
-								"height": 1028,
-								"width": 598
-							},
-							"on": "http://7f89c9f3-3829-44dd-91e2-a44b62b621d9"
-						}
-					],
-					"related": ""
-				},
-				{
-					"@id": "http://9812a523-b201-4a3c-9868-e4a2e7103e3e",
-					"@type": "sc:Canvas",
-					"label": "Book Of Tea - 42",
-					"height": 1028,
-					"width": 598,
-					"images": [
-						{
-							"@context": "http://iiif.io/api/presentation/2/context.json",
-							"@id": "http://6223a2f8-9713-4042-b00d-315eb994255b",
-							"@type": "oa:Annotation",
-							"motivation": "sc:painting",
-							"resource": {
-								"@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-43/full/full/0/default.jpg",
-								"@type": "dctypes:Image",
-								"format": "image/jpeg",
-								"service": {
-									"@context": "http://iiif.io/api/image/2/context.json",
-									"@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-43",
-									"profile": "http://iiif.io/api/image/2/level0.json"
-								},
-								"height": 1028,
-								"width": 598
-							},
-							"on": "http://9812a523-b201-4a3c-9868-e4a2e7103e3e"
-						}
-					],
-					"related": ""
-				},
-				{
-					"@id": "http://f3f3e676-be24-4828-900d-c7da5747c808",
-					"@type": "sc:Canvas",
-					"label": "Book Of Tea - 43",
-					"height": 1028,
-					"width": 598,
-					"images": [
-						{
-							"@context": "http://iiif.io/api/presentation/2/context.json",
-							"@id": "http://9560898e-7ed2-4d40-85f4-21f33a9bbf0c",
-							"@type": "oa:Annotation",
-							"motivation": "sc:painting",
-							"resource": {
-								"@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-44/full/full/0/default.jpg",
-								"@type": "dctypes:Image",
-								"format": "image/jpeg",
-								"service": {
-									"@context": "http://iiif.io/api/image/2/context.json",
-									"@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-44",
-									"profile": "http://iiif.io/api/image/2/level0.json"
-								},
-								"height": 1028,
-								"width": 598
-							},
-							"on": "http://f3f3e676-be24-4828-900d-c7da5747c808"
-						}
-					],
-					"related": ""
-				},
-				{
-					"@id": "http://3f6bfdaf-d665-450c-9fea-e2658e65fa3b",
-					"@type": "sc:Canvas",
-					"label": "Book Of Tea - 44",
-					"height": 1028,
-					"width": 598,
-					"images": [
-						{
-							"@context": "http://iiif.io/api/presentation/2/context.json",
-							"@id": "http://642c650b-3134-4046-86d9-49e60d404d14",
-							"@type": "oa:Annotation",
-							"motivation": "sc:painting",
-							"resource": {
-								"@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-45/full/full/0/default.jpg",
-								"@type": "dctypes:Image",
-								"format": "image/jpeg",
-								"service": {
-									"@context": "http://iiif.io/api/image/2/context.json",
-									"@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-45",
-									"profile": "http://iiif.io/api/image/2/level0.json"
-								},
-								"height": 1028,
-								"width": 598
-							},
-							"on": "http://3f6bfdaf-d665-450c-9fea-e2658e65fa3b"
-						}
-					],
-					"related": ""
-				},
-				{
-					"@id": "http://91f7e1e9-7505-4281-88a3-437fd0489cc3",
-					"@type": "sc:Canvas",
-					"label": "Book Of Tea - 45",
-					"height": 1028,
-					"width": 598,
-					"images": [
-						{
-							"@context": "http://iiif.io/api/presentation/2/context.json",
-							"@id": "http://371c59e0-7d4c-4c27-928f-9d97be4adadb",
-							"@type": "oa:Annotation",
-							"motivation": "sc:painting",
-							"resource": {
-								"@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-46/full/full/0/default.jpg",
-								"@type": "dctypes:Image",
-								"format": "image/jpeg",
-								"service": {
-									"@context": "http://iiif.io/api/image/2/context.json",
-									"@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-46",
-									"profile": "http://iiif.io/api/image/2/level0.json"
-								},
-								"height": 1028,
-								"width": 598
-							},
-							"on": "http://91f7e1e9-7505-4281-88a3-437fd0489cc3"
-						}
-					],
-					"related": ""
-				},
-				{
-					"@id": "http://0249206f-9355-4983-8b58-64662167e156",
-					"@type": "sc:Canvas",
-					"label": "Book Of Tea - 46",
-					"height": 1028,
-					"width": 598,
-					"images": [
-						{
-							"@context": "http://iiif.io/api/presentation/2/context.json",
-							"@id": "http://45474aea-60f4-474b-9fc8-721a375badb4",
-							"@type": "oa:Annotation",
-							"motivation": "sc:painting",
-							"resource": {
-								"@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-47/full/full/0/default.jpg",
-								"@type": "dctypes:Image",
-								"format": "image/jpeg",
-								"service": {
-									"@context": "http://iiif.io/api/image/2/context.json",
-									"@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-47",
-									"profile": "http://iiif.io/api/image/2/level0.json"
-								},
-								"height": 1028,
-								"width": 598
-							},
-							"on": "http://0249206f-9355-4983-8b58-64662167e156"
-						}
-					],
-					"related": ""
-				},
-				{
-					"@id": "http://ccd67e62-98d9-40c5-b6a6-924db4c6c614",
-					"@type": "sc:Canvas",
-					"label": "Book Of Tea - 47",
-					"height": 1028,
-					"width": 598,
-					"images": [
-						{
-							"@context": "http://iiif.io/api/presentation/2/context.json",
-							"@id": "http://d345f7ba-2265-4cd9-bbbd-2e365f65304f",
-							"@type": "oa:Annotation",
-							"motivation": "sc:painting",
-							"resource": {
-								"@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-48/full/full/0/default.jpg",
-								"@type": "dctypes:Image",
-								"format": "image/jpeg",
-								"service": {
-									"@context": "http://iiif.io/api/image/2/context.json",
-									"@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-48",
-									"profile": "http://iiif.io/api/image/2/level0.json"
-								},
-								"height": 1028,
-								"width": 598
-							},
-							"on": "http://ccd67e62-98d9-40c5-b6a6-924db4c6c614"
-						}
-					],
-					"related": ""
-				},
-				{
-					"@id": "http://64813c07-95b6-4079-a1da-eccf6808e5aa",
-					"@type": "sc:Canvas",
-					"label": "Book Of Tea - 48",
-					"height": 1028,
-					"width": 598,
-					"images": [
-						{
-							"@context": "http://iiif.io/api/presentation/2/context.json",
-							"@id": "http://18007d45-60f7-4f34-a259-7a7c57e8c13e",
-							"@type": "oa:Annotation",
-							"motivation": "sc:painting",
-							"resource": {
-								"@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-49/full/full/0/default.jpg",
-								"@type": "dctypes:Image",
-								"format": "image/jpeg",
-								"service": {
-									"@context": "http://iiif.io/api/image/2/context.json",
-									"@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-49",
-									"profile": "http://iiif.io/api/image/2/level0.json"
-								},
-								"height": 1028,
-								"width": 598
-							},
-							"on": "http://64813c07-95b6-4079-a1da-eccf6808e5aa"
-						}
-					],
-					"related": ""
-				},
-				{
-					"@id": "http://858197d3-07c8-42f6-9a78-5d06690411d9",
-					"@type": "sc:Canvas",
-					"label": "Book Of Tea - 49",
-					"height": 1028,
-					"width": 598,
-					"images": [
-						{
-							"@context": "http://iiif.io/api/presentation/2/context.json",
-							"@id": "http://05254a8b-29f6-472a-8f6b-e877e1385e6f",
-							"@type": "oa:Annotation",
-							"motivation": "sc:painting",
-							"resource": {
-								"@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-50/full/full/0/default.jpg",
-								"@type": "dctypes:Image",
-								"format": "image/jpeg",
-								"service": {
-									"@context": "http://iiif.io/api/image/2/context.json",
-									"@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-50",
-									"profile": "http://iiif.io/api/image/2/level0.json"
-								},
-								"height": 1028,
-								"width": 598
-							},
-							"on": "http://858197d3-07c8-42f6-9a78-5d06690411d9"
-						}
-					],
-					"related": ""
-				},
-				{
-					"@id": "http://f0177e04-af81-4355-8083-4ab6473cd1b7",
-					"@type": "sc:Canvas",
-					"label": "Book Of Tea - 50",
-					"height": 1028,
-					"width": 598,
-					"images": [
-						{
-							"@context": "http://iiif.io/api/presentation/2/context.json",
-							"@id": "http://f89351ed-9fb2-4e77-9cc9-aaab08f6a3b8",
-							"@type": "oa:Annotation",
-							"motivation": "sc:painting",
-							"resource": {
-								"@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-51/full/full/0/default.jpg",
-								"@type": "dctypes:Image",
-								"format": "image/jpeg",
-								"service": {
-									"@context": "http://iiif.io/api/image/2/context.json",
-									"@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-51",
-									"profile": "http://iiif.io/api/image/2/level0.json"
-								},
-								"height": 1028,
-								"width": 598
-							},
-							"on": "http://f0177e04-af81-4355-8083-4ab6473cd1b7"
-						}
-					],
-					"related": ""
-				},
-				{
-					"@id": "http://5ba7428b-dbb1-4313-af2e-a11df7f933c2",
-					"@type": "sc:Canvas",
-					"label": "Book Of Tea - 51",
-					"height": 1028,
-					"width": 598,
-					"images": [
-						{
-							"@context": "http://iiif.io/api/presentation/2/context.json",
-							"@id": "http://648b7210-c5ac-4c3a-8235-fc792577d524",
-							"@type": "oa:Annotation",
-							"motivation": "sc:painting",
-							"resource": {
-								"@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-52/full/full/0/default.jpg",
-								"@type": "dctypes:Image",
-								"format": "image/jpeg",
-								"service": {
-									"@context": "http://iiif.io/api/image/2/context.json",
-									"@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-52",
-									"profile": "http://iiif.io/api/image/2/level0.json"
-								},
-								"height": 1028,
-								"width": 598
-							},
-							"on": "http://5ba7428b-dbb1-4313-af2e-a11df7f933c2"
-						}
-					],
-					"related": ""
-				},
-				{
-					"@id": "http://3d322dc7-3e85-4f61-b7ce-a9d9a9dd743c",
-					"@type": "sc:Canvas",
-					"label": "Book Of Tea - 52",
-					"height": 1028,
-					"width": 598,
-					"images": [
-						{
-							"@context": "http://iiif.io/api/presentation/2/context.json",
-							"@id": "http://59607152-7fef-47e5-9955-bb77cc8e74ed",
-							"@type": "oa:Annotation",
-							"motivation": "sc:painting",
-							"resource": {
-								"@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-53/full/full/0/default.jpg",
-								"@type": "dctypes:Image",
-								"format": "image/jpeg",
-								"service": {
-									"@context": "http://iiif.io/api/image/2/context.json",
-									"@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-53",
-									"profile": "http://iiif.io/api/image/2/level0.json"
-								},
-								"height": 1028,
-								"width": 598
-							},
-							"on": "http://3d322dc7-3e85-4f61-b7ce-a9d9a9dd743c"
-						}
-					],
-					"related": ""
-				},
-				{
-					"@id": "http://1245f1ee-d906-4e0e-914d-6abf6ece89fc",
-					"@type": "sc:Canvas",
-					"label": "Book Of Tea - 53",
-					"height": 1028,
-					"width": 598,
-					"images": [
-						{
-							"@context": "http://iiif.io/api/presentation/2/context.json",
-							"@id": "http://c6b65543-31e4-441a-a346-d40b7ac9417d",
-							"@type": "oa:Annotation",
-							"motivation": "sc:painting",
-							"resource": {
-								"@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-54/full/full/0/default.jpg",
-								"@type": "dctypes:Image",
-								"format": "image/jpeg",
-								"service": {
-									"@context": "http://iiif.io/api/image/2/context.json",
-									"@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-54",
-									"profile": "http://iiif.io/api/image/2/level0.json"
-								},
-								"height": 1028,
-								"width": 598
-							},
-							"on": "http://1245f1ee-d906-4e0e-914d-6abf6ece89fc"
-						}
-					],
-					"related": ""
-				},
-				{
-					"@id": "http://2ae5ed30-a294-4b9a-a08b-8e7e339cc0f2",
-					"@type": "sc:Canvas",
-					"label": "Book Of Tea - 54",
-					"height": 1028,
-					"width": 598,
-					"images": [
-						{
-							"@context": "http://iiif.io/api/presentation/2/context.json",
-							"@id": "http://ad6b7ee3-25f4-4b42-b733-459ae5ea39df",
-							"@type": "oa:Annotation",
-							"motivation": "sc:painting",
-							"resource": {
-								"@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-55/full/full/0/default.jpg",
-								"@type": "dctypes:Image",
-								"format": "image/jpeg",
-								"service": {
-									"@context": "http://iiif.io/api/image/2/context.json",
-									"@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-55",
-									"profile": "http://iiif.io/api/image/2/level0.json"
-								},
-								"height": 1028,
-								"width": 598
-							},
-							"on": "http://2ae5ed30-a294-4b9a-a08b-8e7e339cc0f2"
-						}
-					],
-					"related": ""
-				},
-				{
-					"@id": "http://faf4880f-7873-496d-b0b6-f45250bfee04",
-					"@type": "sc:Canvas",
-					"label": "Book Of Tea - 55",
-					"height": 1028,
-					"width": 598,
-					"images": [
-						{
-							"@context": "http://iiif.io/api/presentation/2/context.json",
-							"@id": "http://0e81b706-be0e-45bc-9174-66db0afe6573",
-							"@type": "oa:Annotation",
-							"motivation": "sc:painting",
-							"resource": {
-								"@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-56/full/full/0/default.jpg",
-								"@type": "dctypes:Image",
-								"format": "image/jpeg",
-								"service": {
-									"@context": "http://iiif.io/api/image/2/context.json",
-									"@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-56",
-									"profile": "http://iiif.io/api/image/2/level0.json"
-								},
-								"height": 1028,
-								"width": 598
-							},
-							"on": "http://faf4880f-7873-496d-b0b6-f45250bfee04"
-						}
-					],
-					"related": ""
-				},
-				{
-					"@id": "http://0c715dd9-f337-4a1f-b3e8-0b2975c66277",
-					"@type": "sc:Canvas",
-					"label": "Book Of Tea - 56",
-					"height": 1028,
-					"width": 598,
-					"images": [
-						{
-							"@context": "http://iiif.io/api/presentation/2/context.json",
-							"@id": "http://a34ac695-1a99-4a06-ac03-92e0cd6f2232",
-							"@type": "oa:Annotation",
-							"motivation": "sc:painting",
-							"resource": {
-								"@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-57/full/full/0/default.jpg",
-								"@type": "dctypes:Image",
-								"format": "image/jpeg",
-								"service": {
-									"@context": "http://iiif.io/api/image/2/context.json",
-									"@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-57",
-									"profile": "http://iiif.io/api/image/2/level0.json"
-								},
-								"height": 1028,
-								"width": 598
-							},
-							"on": "http://0c715dd9-f337-4a1f-b3e8-0b2975c66277"
-						}
-					],
-					"related": ""
-				},
-				{
-					"@id": "http://f4ee93cd-c8c0-46ef-b010-49a0e9e50f7d",
-					"@type": "sc:Canvas",
-					"label": "Book Of Tea - 57",
-					"height": 1028,
-					"width": 598,
-					"images": [
-						{
-							"@context": "http://iiif.io/api/presentation/2/context.json",
-							"@id": "http://bf1d05e3-b163-402b-a2c4-773ab2a1b791",
-							"@type": "oa:Annotation",
-							"motivation": "sc:painting",
-							"resource": {
-								"@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-58/full/full/0/default.jpg",
-								"@type": "dctypes:Image",
-								"format": "image/jpeg",
-								"service": {
-									"@context": "http://iiif.io/api/image/2/context.json",
-									"@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-58",
-									"profile": "http://iiif.io/api/image/2/level0.json"
-								},
-								"height": 1028,
-								"width": 598
-							},
-							"on": "http://f4ee93cd-c8c0-46ef-b010-49a0e9e50f7d"
-						}
-					],
-					"related": ""
-				},
-				{
-					"@id": "http://b01206f6-60da-4b0d-9b50-bb9f5c1b8ee0",
-					"@type": "sc:Canvas",
-					"label": "Book Of Tea - 58",
-					"height": 1028,
-					"width": 598,
-					"images": [
-						{
-							"@context": "http://iiif.io/api/presentation/2/context.json",
-							"@id": "http://0d50277c-1dcb-4507-9d37-4c28db39fd4c",
-							"@type": "oa:Annotation",
-							"motivation": "sc:painting",
-							"resource": {
-								"@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-59/full/full/0/default.jpg",
-								"@type": "dctypes:Image",
-								"format": "image/jpeg",
-								"service": {
-									"@context": "http://iiif.io/api/image/2/context.json",
-									"@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-59",
-									"profile": "http://iiif.io/api/image/2/level0.json"
-								},
-								"height": 1028,
-								"width": 598
-							},
-							"on": "http://b01206f6-60da-4b0d-9b50-bb9f5c1b8ee0"
-						}
-					],
-					"related": ""
-				},
-				{
-					"@id": "http://78df6686-2739-4b62-a407-ef12756fa928",
-					"@type": "sc:Canvas",
-					"label": "Book Of Tea - 59",
-					"height": 1028,
-					"width": 598,
-					"images": [
-						{
-							"@context": "http://iiif.io/api/presentation/2/context.json",
-							"@id": "http://3ac360d5-3098-47dc-b6c9-5d5e151bc831",
-							"@type": "oa:Annotation",
-							"motivation": "sc:painting",
-							"resource": {
-								"@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-60/full/full/0/default.jpg",
-								"@type": "dctypes:Image",
-								"format": "image/jpeg",
-								"service": {
-									"@context": "http://iiif.io/api/image/2/context.json",
-									"@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-60",
-									"profile": "http://iiif.io/api/image/2/level0.json"
-								},
-								"height": 1028,
-								"width": 598
-							},
-							"on": "http://78df6686-2739-4b62-a407-ef12756fa928"
-						}
-					],
-					"related": ""
-				},
-				{
-					"@id": "http://c61bda37-d73e-4605-ab1c-50052d97f05d",
-					"@type": "sc:Canvas",
-					"label": "Book Of Tea - 60",
-					"height": 1028,
-					"width": 598,
-					"images": [
-						{
-							"@context": "http://iiif.io/api/presentation/2/context.json",
-							"@id": "http://6338e535-6c84-4673-87fe-d21e013ee03d",
-							"@type": "oa:Annotation",
-							"motivation": "sc:painting",
-							"resource": {
-								"@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-61/full/full/0/default.jpg",
-								"@type": "dctypes:Image",
-								"format": "image/jpeg",
-								"service": {
-									"@context": "http://iiif.io/api/image/2/context.json",
-									"@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-61",
-									"profile": "http://iiif.io/api/image/2/level0.json"
-								},
-								"height": 1028,
-								"width": 598
-							},
-							"on": "http://c61bda37-d73e-4605-ab1c-50052d97f05d"
-						}
-					],
-					"related": ""
-				},
-				{
-					"@id": "http://b6b2894f-fa07-401d-b180-6e7f1ab681c1",
-					"@type": "sc:Canvas",
-					"label": "Book Of Tea - 61",
-					"height": 1028,
-					"width": 598,
-					"images": [
-						{
-							"@context": "http://iiif.io/api/presentation/2/context.json",
-							"@id": "http://95e5495f-21ca-498a-8ed5-66221c9092c8",
-							"@type": "oa:Annotation",
-							"motivation": "sc:painting",
-							"resource": {
-								"@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-18/full/full/0/default.jpg",
-								"@type": "dctypes:Image",
-								"format": "image/jpeg",
-								"service": {
-									"@context": "http://iiif.io/api/image/2/context.json",
-									"@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-18",
-									"profile": "http://iiif.io/api/image/2/level0.json"
-								},
-								"height": 1028,
-								"width": 598
-							},
-							"on": "http://b6b2894f-fa07-401d-b180-6e7f1ab681c1"
-						}
-					],
-					"related": {
-						"@id": "",
-						"label": "",
-						"format": ""
-					}
-				}
-			]
-		}
-	],
-	"structures": []
+  "@context": "http://iiif.io/api/presentation/3/context.json",
+  "id": "http://ec86424d-6b7d-47c1-8db2-86f0adb2f69c",
+  "type": "Manifest",
+  "label": {
+    "none": [
+      "The Book of Tea by Okakura, Kakuzo, 1862-1913"
+    ]
+  },
+  "metadata": [
+    {
+      "label": {
+        "none": [
+          "External ID"
+        ]
+      },
+      "value": {
+        "none": [
+          " urn:oclc:record:1041561203"
+        ]
+      }
+    },
+    {
+      "label": {
+        "none": [
+          "Language: [en]"
+        ]
+      },
+      "value": {
+        "en": [
+          "English"
+        ]
+      }
+    },
+    {
+      "label": {
+        "none": [
+          "Source"
+        ]
+      },
+      "value": {
+        "none": [
+          "https://archive.org/details/bookoftea00okakrich/page/38/mode/2up"
+        ]
+      }
+    }
+  ],
+  "summary": {
+    "en": [
+      "The Book of Tea (茶の本, Cha no Hon) A Japanese Harmony of Art, Culture, and the Simple Life [1] by Okakura Kakuzō is a long 1906 essay linking the role of chadō (teaism) to the aesthetic and cultural aspects of Japanese life and protesting Western caricatures of \"the East\"."
+    ]
+  },
+  "requiredStatement": {
+    "label": {
+      "none": [
+        "Attribution"
+      ]
+    },
+    "value": {
+      "none": [
+        "Okakura, Kakuzo, 1862-1913",
+        "http://viaf.org/viaf/99830297"
+      ]
+    }
+  },
+  "items": [
+    {
+      "id": "http://cbd22096-b0c8-4d15-bd3a-affc457c277f",
+      "type": "Canvas",
+      "height": 1056,
+      "width": 668,
+      "label": {
+        "none": [
+          "Book Of Tea - 1"
+        ]
+      },
+      "items": [
+        {
+          "id": "http://cbd22096-b0c8-4d15-bd3a-affc457c277f/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "http://ccdaf2f8-fd66-47d9-9a7b-515abcea38ea",
+              "type": "Annotation",
+              "@context": "http://iiif.io/api/presentation/3/context.json",
+              "motivation": "painting",
+              "target": "http://cbd22096-b0c8-4d15-bd3a-affc457c277f",
+              "body": {
+                "id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-1/full/full/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "height": 1056,
+                "width": 668,
+                "service": [
+                  {
+                    "@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-1",
+                    "@type": "ImageService2",
+                    "profile": "level0"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "http://e42bb744-5db5-42ed-a939-c7a56d951fa4",
+      "type": "Canvas",
+      "height": 1028,
+      "width": 604,
+      "label": {
+        "none": [
+          "Book Of Tea - 2"
+        ]
+      },
+      "items": [
+        {
+          "id": "http://e42bb744-5db5-42ed-a939-c7a56d951fa4/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "http://c2897e49-ace2-4a63-bd48-b0ddbcd3d4c2",
+              "type": "Annotation",
+              "@context": "http://iiif.io/api/presentation/3/context.json",
+              "motivation": "painting",
+              "target": "http://e42bb744-5db5-42ed-a939-c7a56d951fa4",
+              "body": {
+                "id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-2/full/full/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "height": 1028,
+                "width": 604,
+                "service": [
+                  {
+                    "@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-2",
+                    "@type": "ImageService2",
+                    "profile": "level0"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "http://644f3f4d-5486-4b69-90ff-ae4812c371d5",
+      "type": "Canvas",
+      "height": 1028,
+      "width": 604,
+      "label": {
+        "none": [
+          "Book Of Tea - 3"
+        ]
+      },
+      "items": [
+        {
+          "id": "http://644f3f4d-5486-4b69-90ff-ae4812c371d5/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "http://9d8dbc7e-f001-473a-844c-28f830429fe8",
+              "type": "Annotation",
+              "@context": "http://iiif.io/api/presentation/3/context.json",
+              "motivation": "painting",
+              "target": "http://644f3f4d-5486-4b69-90ff-ae4812c371d5",
+              "body": {
+                "id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-3/full/full/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "height": 1028,
+                "width": 604,
+                "service": [
+                  {
+                    "@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-3",
+                    "@type": "ImageService2",
+                    "profile": "level0"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "http://f169a049-fbd4-4ca6-aa6e-64970962e8c2",
+      "type": "Canvas",
+      "height": 1028,
+      "width": 604,
+      "label": {
+        "none": [
+          "Book Of Tea - 4"
+        ]
+      },
+      "items": [
+        {
+          "id": "http://f169a049-fbd4-4ca6-aa6e-64970962e8c2/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "http://ac117e95-b36d-4ec1-b328-95e296549f2d",
+              "type": "Annotation",
+              "@context": "http://iiif.io/api/presentation/3/context.json",
+              "motivation": "painting",
+              "target": "http://f169a049-fbd4-4ca6-aa6e-64970962e8c2",
+              "body": {
+                "id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-4/full/full/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "height": 1028,
+                "width": 604,
+                "service": [
+                  {
+                    "@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-4",
+                    "@type": "ImageService2",
+                    "profile": "level0"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "http://c8322e17-da18-490b-9c2e-05fc189c5275",
+      "type": "Canvas",
+      "height": 1028,
+      "width": 604,
+      "label": {
+        "none": [
+          "Book Of Tea - 5"
+        ]
+      },
+      "items": [
+        {
+          "id": "http://c8322e17-da18-490b-9c2e-05fc189c5275/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "http://fa74c668-2503-4b8e-81ce-f10e4e358427",
+              "type": "Annotation",
+              "@context": "http://iiif.io/api/presentation/3/context.json",
+              "motivation": "painting",
+              "target": "http://c8322e17-da18-490b-9c2e-05fc189c5275",
+              "body": {
+                "id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-5/full/full/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "height": 1028,
+                "width": 604,
+                "service": [
+                  {
+                    "@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-5",
+                    "@type": "ImageService2",
+                    "profile": "level0"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "http://bb9499c0-4a5c-4936-a4d9-176716f1ba07",
+      "type": "Canvas",
+      "height": 1028,
+      "width": 604,
+      "label": {
+        "none": [
+          "Book Of Tea - 6"
+        ]
+      },
+      "items": [
+        {
+          "id": "http://bb9499c0-4a5c-4936-a4d9-176716f1ba07/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "http://4dfaee57-2d1e-4f10-8f80-f96700fc2942",
+              "type": "Annotation",
+              "@context": "http://iiif.io/api/presentation/3/context.json",
+              "motivation": "painting",
+              "target": "http://bb9499c0-4a5c-4936-a4d9-176716f1ba07",
+              "body": {
+                "id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-6/full/full/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "height": 1028,
+                "width": 604,
+                "service": [
+                  {
+                    "@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-6",
+                    "@type": "ImageService2",
+                    "profile": "level0"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "http://13a49ab6-5d7b-4451-8291-b790973eeaec",
+      "type": "Canvas",
+      "height": 1028,
+      "width": 604,
+      "label": {
+        "none": [
+          "Book Of Tea - 7"
+        ]
+      },
+      "items": [
+        {
+          "id": "http://13a49ab6-5d7b-4451-8291-b790973eeaec/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "http://b3818d18-573f-4a4c-8dbe-a8f54aeae786",
+              "type": "Annotation",
+              "@context": "http://iiif.io/api/presentation/3/context.json",
+              "motivation": "painting",
+              "target": "http://13a49ab6-5d7b-4451-8291-b790973eeaec",
+              "body": {
+                "id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-7/full/full/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "height": 1028,
+                "width": 604,
+                "service": [
+                  {
+                    "@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-7",
+                    "@type": "ImageService2",
+                    "profile": "level0"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "http://60b637c7-83c7-48c0-8ac5-c7f54a255d76",
+      "type": "Canvas",
+      "height": 1028,
+      "width": 604,
+      "label": {
+        "none": [
+          "Book Of Tea - 8"
+        ]
+      },
+      "items": [
+        {
+          "id": "http://60b637c7-83c7-48c0-8ac5-c7f54a255d76/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "http://e81933ca-c3f8-4889-9938-986ec700a434",
+              "type": "Annotation",
+              "@context": "http://iiif.io/api/presentation/3/context.json",
+              "motivation": "painting",
+              "target": "http://60b637c7-83c7-48c0-8ac5-c7f54a255d76",
+              "body": {
+                "id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-8/full/full/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "height": 1028,
+                "width": 604,
+                "service": [
+                  {
+                    "@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-8",
+                    "@type": "ImageService2",
+                    "profile": "level0"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "http://04a44df8-e31d-48ba-ad9d-12ae5c7741c4",
+      "type": "Canvas",
+      "height": 1028,
+      "width": 604,
+      "label": {
+        "none": [
+          "Book Of Tea - 9"
+        ]
+      },
+      "items": [
+        {
+          "id": "http://04a44df8-e31d-48ba-ad9d-12ae5c7741c4/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "http://27485c9b-822e-4a0a-90a9-4cc18744435c",
+              "type": "Annotation",
+              "@context": "http://iiif.io/api/presentation/3/context.json",
+              "motivation": "painting",
+              "target": "http://04a44df8-e31d-48ba-ad9d-12ae5c7741c4",
+              "body": {
+                "id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-9/full/full/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "height": 1028,
+                "width": 604,
+                "service": [
+                  {
+                    "@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-9",
+                    "@type": "ImageService2",
+                    "profile": "level0"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "http://ac789d67-4154-40cc-9d13-0269ef8094f4",
+      "type": "Canvas",
+      "height": 1028,
+      "width": 604,
+      "label": {
+        "none": [
+          "Book Of Tea - 10"
+        ]
+      },
+      "items": [
+        {
+          "id": "http://ac789d67-4154-40cc-9d13-0269ef8094f4/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "http://155a1a41-291b-418a-a777-4b6a7ebeb360",
+              "type": "Annotation",
+              "@context": "http://iiif.io/api/presentation/3/context.json",
+              "motivation": "painting",
+              "target": "http://ac789d67-4154-40cc-9d13-0269ef8094f4",
+              "body": {
+                "id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-10/full/full/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "height": 1028,
+                "width": 604,
+                "service": [
+                  {
+                    "@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-10",
+                    "@type": "ImageService2",
+                    "profile": "level0"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "http://a1dbcef2-e572-426b-a00e-7c0f57b6b224",
+      "type": "Canvas",
+      "height": 1028,
+      "width": 604,
+      "label": {
+        "none": [
+          "Book Of Tea - 11"
+        ]
+      },
+      "items": [
+        {
+          "id": "http://a1dbcef2-e572-426b-a00e-7c0f57b6b224/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "http://03f258b5-8612-46f5-ac82-49a63c9a1fde",
+              "type": "Annotation",
+              "@context": "http://iiif.io/api/presentation/3/context.json",
+              "motivation": "painting",
+              "target": "http://a1dbcef2-e572-426b-a00e-7c0f57b6b224",
+              "body": {
+                "id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-11/full/full/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "height": 1028,
+                "width": 604,
+                "service": [
+                  {
+                    "@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-11",
+                    "@type": "ImageService2",
+                    "profile": "level0"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "http://fcc4d909-7507-47d2-8128-33c3e2ae907d",
+      "type": "Canvas",
+      "height": 1028,
+      "width": 604,
+      "label": {
+        "none": [
+          "Book Of Tea - 12"
+        ]
+      },
+      "items": [
+        {
+          "id": "http://fcc4d909-7507-47d2-8128-33c3e2ae907d/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "http://f676135c-8ce3-462d-8dd5-5d07c4120213",
+              "type": "Annotation",
+              "@context": "http://iiif.io/api/presentation/3/context.json",
+              "motivation": "painting",
+              "target": "http://fcc4d909-7507-47d2-8128-33c3e2ae907d",
+              "body": {
+                "id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-12/full/full/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "height": 1028,
+                "width": 604,
+                "service": [
+                  {
+                    "@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-12",
+                    "@type": "ImageService2",
+                    "profile": "level0"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "http://c95a22ae-a4e4-46c0-80d6-0590ada60db6",
+      "type": "Canvas",
+      "height": 1028,
+      "width": 604,
+      "label": {
+        "none": [
+          "Book Of Tea - 13"
+        ]
+      },
+      "items": [
+        {
+          "id": "http://c95a22ae-a4e4-46c0-80d6-0590ada60db6/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "http://d61eac11-4a73-4cbb-b7d9-f0991417a480",
+              "type": "Annotation",
+              "@context": "http://iiif.io/api/presentation/3/context.json",
+              "motivation": "painting",
+              "target": "http://c95a22ae-a4e4-46c0-80d6-0590ada60db6",
+              "body": {
+                "id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-13/full/full/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "height": 1028,
+                "width": 604,
+                "service": [
+                  {
+                    "@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-13",
+                    "@type": "ImageService2",
+                    "profile": "level0"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "http://797a2029-8e66-404f-ac58-01940e37e5d0",
+      "type": "Canvas",
+      "height": 1028,
+      "width": 604,
+      "label": {
+        "none": [
+          "Book Of Tea - 14"
+        ]
+      },
+      "items": [
+        {
+          "id": "http://797a2029-8e66-404f-ac58-01940e37e5d0/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "http://53b9b77b-79c6-40f5-8355-d551806a72a2",
+              "type": "Annotation",
+              "@context": "http://iiif.io/api/presentation/3/context.json",
+              "motivation": "painting",
+              "target": "http://797a2029-8e66-404f-ac58-01940e37e5d0",
+              "body": {
+                "id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-14/full/full/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "height": 1028,
+                "width": 604,
+                "service": [
+                  {
+                    "@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-14",
+                    "@type": "ImageService2",
+                    "profile": "level0"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "http://c46579a0-cdb8-45a4-a71e-492e1ec48a68",
+      "type": "Canvas",
+      "height": 1028,
+      "width": 604,
+      "label": {
+        "none": [
+          "Book Of Tea - 15"
+        ]
+      },
+      "items": [
+        {
+          "id": "http://c46579a0-cdb8-45a4-a71e-492e1ec48a68/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "http://85fe8fc3-c859-4335-ab1f-c9ca3bd7aa83",
+              "type": "Annotation",
+              "@context": "http://iiif.io/api/presentation/3/context.json",
+              "motivation": "painting",
+              "target": "http://c46579a0-cdb8-45a4-a71e-492e1ec48a68",
+              "body": {
+                "id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-15/full/full/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "height": 1028,
+                "width": 604,
+                "service": [
+                  {
+                    "@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-15",
+                    "@type": "ImageService2",
+                    "profile": "level0"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "http://452cf5e2-564e-4ea2-80e9-9916f168d611",
+      "type": "Canvas",
+      "height": 1028,
+      "width": 598,
+      "label": {
+        "none": [
+          "Book Of Tea - 16"
+        ]
+      },
+      "items": [
+        {
+          "id": "http://452cf5e2-564e-4ea2-80e9-9916f168d611/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "http://a68924e0-922c-4e90-aab2-65bf96698201",
+              "type": "Annotation",
+              "@context": "http://iiif.io/api/presentation/3/context.json",
+              "motivation": "painting",
+              "target": "http://452cf5e2-564e-4ea2-80e9-9916f168d611",
+              "body": {
+                "id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-16/full/full/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "height": 1028,
+                "width": 598,
+                "service": [
+                  {
+                    "@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-16",
+                    "@type": "ImageService2",
+                    "profile": "level0"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "http://33debc71-1964-477c-b9a3-d3c2d8d6a534",
+      "type": "Canvas",
+      "height": 1028,
+      "width": 598,
+      "label": {
+        "none": [
+          "Book Of Tea - 17"
+        ]
+      },
+      "items": [
+        {
+          "id": "http://33debc71-1964-477c-b9a3-d3c2d8d6a534/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "http://0e24bbeb-64b6-4874-8cfa-e3972fab9bb1",
+              "type": "Annotation",
+              "@context": "http://iiif.io/api/presentation/3/context.json",
+              "motivation": "painting",
+              "target": "http://33debc71-1964-477c-b9a3-d3c2d8d6a534",
+              "body": {
+                "id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-17/full/full/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "height": 1028,
+                "width": 598,
+                "service": [
+                  {
+                    "@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-17",
+                    "@type": "ImageService2",
+                    "profile": "level0"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "http://7a269798-384e-4e16-b84e-1ada12537a7f",
+      "type": "Canvas",
+      "height": 1028,
+      "width": 598,
+      "label": {
+        "none": [
+          "Book Of Tea - 18"
+        ]
+      },
+      "items": [
+        {
+          "id": "http://7a269798-384e-4e16-b84e-1ada12537a7f/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "http://847249a6-2438-4a8b-b24d-da85d241be71",
+              "type": "Annotation",
+              "@context": "http://iiif.io/api/presentation/3/context.json",
+              "motivation": "painting",
+              "target": "http://7a269798-384e-4e16-b84e-1ada12537a7f",
+              "body": {
+                "id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-18/full/full/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "height": 1028,
+                "width": 598,
+                "service": [
+                  {
+                    "@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-18",
+                    "@type": "ImageService2",
+                    "profile": "level0"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "http://bb212504-0896-40ff-bf8b-f8abd552fecd",
+      "type": "Canvas",
+      "height": 1028,
+      "width": 598,
+      "label": {
+        "none": [
+          "Book Of Tea - 19"
+        ]
+      },
+      "items": [
+        {
+          "id": "http://bb212504-0896-40ff-bf8b-f8abd552fecd/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "http://12b1a6ff-271e-4913-b2b3-bf719bee935c",
+              "type": "Annotation",
+              "@context": "http://iiif.io/api/presentation/3/context.json",
+              "motivation": "painting",
+              "target": "http://bb212504-0896-40ff-bf8b-f8abd552fecd",
+              "body": {
+                "id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-19/full/full/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "height": 1028,
+                "width": 598,
+                "service": [
+                  {
+                    "@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-19",
+                    "@type": "ImageService2",
+                    "profile": "level0"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "http://209cb54b-6f07-43bc-97d0-a212e4c4ab06",
+      "type": "Canvas",
+      "height": 1028,
+      "width": 598,
+      "label": {
+        "none": [
+          "Book Of Tea - 20"
+        ]
+      },
+      "items": [
+        {
+          "id": "http://209cb54b-6f07-43bc-97d0-a212e4c4ab06/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "http://dd7c8106-a8ed-4799-ae79-32ef777a007c",
+              "type": "Annotation",
+              "@context": "http://iiif.io/api/presentation/3/context.json",
+              "motivation": "painting",
+              "target": "http://209cb54b-6f07-43bc-97d0-a212e4c4ab06",
+              "body": {
+                "id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-20/full/full/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "height": 1028,
+                "width": 598,
+                "service": [
+                  {
+                    "@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-20",
+                    "@type": "ImageService2",
+                    "profile": "level0"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "http://377afafb-e04e-4ab2-afb7-979853f1db93",
+      "type": "Canvas",
+      "height": 1028,
+      "width": 598,
+      "label": {
+        "none": [
+          "Book Of Tea - 21"
+        ]
+      },
+      "items": [
+        {
+          "id": "http://377afafb-e04e-4ab2-afb7-979853f1db93/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "http://6bbecc4e-669a-4923-b993-46d1008774f0",
+              "type": "Annotation",
+              "@context": "http://iiif.io/api/presentation/3/context.json",
+              "motivation": "painting",
+              "target": "http://377afafb-e04e-4ab2-afb7-979853f1db93",
+              "body": {
+                "id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-21/full/full/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "height": 1028,
+                "width": 598,
+                "service": [
+                  {
+                    "@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-21",
+                    "@type": "ImageService2",
+                    "profile": "level0"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "http://7b58710b-b2c0-4faa-ad6c-edb2df0d90d3",
+      "type": "Canvas",
+      "height": 1028,
+      "width": 598,
+      "label": {
+        "none": [
+          "Book Of Tea - 22"
+        ]
+      },
+      "items": [
+        {
+          "id": "http://7b58710b-b2c0-4faa-ad6c-edb2df0d90d3/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "http://42e02157-c0c9-431a-b254-7a76f12dafd5",
+              "type": "Annotation",
+              "@context": "http://iiif.io/api/presentation/3/context.json",
+              "motivation": "painting",
+              "target": "http://7b58710b-b2c0-4faa-ad6c-edb2df0d90d3",
+              "body": {
+                "id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-22/full/full/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "height": 1028,
+                "width": 598,
+                "service": [
+                  {
+                    "@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-22",
+                    "@type": "ImageService2",
+                    "profile": "level0"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "http://cbf0a941-5daa-4d28-8cec-6d1b2f61b767",
+      "type": "Canvas",
+      "height": 1028,
+      "width": 598,
+      "label": {
+        "none": [
+          "Book Of Tea - 23"
+        ]
+      },
+      "items": [
+        {
+          "id": "http://cbf0a941-5daa-4d28-8cec-6d1b2f61b767/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "http://cae06fce-074e-4c4a-9ae7-c798ec6e2aec",
+              "type": "Annotation",
+              "@context": "http://iiif.io/api/presentation/3/context.json",
+              "motivation": "painting",
+              "target": "http://cbf0a941-5daa-4d28-8cec-6d1b2f61b767",
+              "body": {
+                "id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-23/full/full/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "height": 1028,
+                "width": 598,
+                "service": [
+                  {
+                    "@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-23",
+                    "@type": "ImageService2",
+                    "profile": "level0"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "http://ce9469b5-235e-422f-bcd8-0a7375ebcd1c",
+      "type": "Canvas",
+      "height": 1028,
+      "width": 598,
+      "label": {
+        "none": [
+          "Book Of Tea - 24"
+        ]
+      },
+      "items": [
+        {
+          "id": "http://ce9469b5-235e-422f-bcd8-0a7375ebcd1c/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "http://135da3a6-e102-439d-89e1-a41c4296e816",
+              "type": "Annotation",
+              "@context": "http://iiif.io/api/presentation/3/context.json",
+              "motivation": "painting",
+              "target": "http://ce9469b5-235e-422f-bcd8-0a7375ebcd1c",
+              "body": {
+                "id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-24/full/full/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "height": 1028,
+                "width": 598,
+                "service": [
+                  {
+                    "@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-24",
+                    "@type": "ImageService2",
+                    "profile": "level0"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "http://ae59fed9-41da-4378-89ca-6dc2ed297ad9",
+      "type": "Canvas",
+      "height": 1028,
+      "width": 598,
+      "label": {
+        "none": [
+          "Book Of Tea - 25"
+        ]
+      },
+      "items": [
+        {
+          "id": "http://ae59fed9-41da-4378-89ca-6dc2ed297ad9/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "http://dbc94a35-1484-47dc-a0f2-6361fa71e73d",
+              "type": "Annotation",
+              "@context": "http://iiif.io/api/presentation/3/context.json",
+              "motivation": "painting",
+              "target": "http://ae59fed9-41da-4378-89ca-6dc2ed297ad9",
+              "body": {
+                "id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-25/full/full/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "height": 1028,
+                "width": 598,
+                "service": [
+                  {
+                    "@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-25",
+                    "@type": "ImageService2",
+                    "profile": "level0"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "http://39abe23e-0e8d-4348-8ae7-0eeb36d63fb0",
+      "type": "Canvas",
+      "height": 1028,
+      "width": 598,
+      "label": {
+        "none": [
+          "26"
+        ]
+      },
+      "items": [
+        {
+          "id": "http://39abe23e-0e8d-4348-8ae7-0eeb36d63fb0/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "http://c11fb8f0-2486-4646-b1ab-5df0126ad422",
+              "type": "Annotation",
+              "@context": "http://iiif.io/api/presentation/3/context.json",
+              "motivation": "painting",
+              "target": "http://39abe23e-0e8d-4348-8ae7-0eeb36d63fb0",
+              "body": {
+                "id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-26/full/full/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "height": 1028,
+                "width": 598,
+                "service": [
+                  {
+                    "@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-26",
+                    "@type": "ImageService2",
+                    "profile": "level0"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "http://d6e4bf84-0517-4e61-95c2-004e9f1a60fe",
+      "type": "Canvas",
+      "height": 1028,
+      "width": 598,
+      "label": {
+        "none": [
+          "Book Of Tea - 27"
+        ]
+      },
+      "items": [
+        {
+          "id": "http://d6e4bf84-0517-4e61-95c2-004e9f1a60fe/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "http://76699493-9552-45ca-8f69-22ffd5405c20",
+              "type": "Annotation",
+              "@context": "http://iiif.io/api/presentation/3/context.json",
+              "motivation": "painting",
+              "target": "http://d6e4bf84-0517-4e61-95c2-004e9f1a60fe",
+              "body": {
+                "id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-27/full/full/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "height": 1028,
+                "width": 598,
+                "service": [
+                  {
+                    "@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-27",
+                    "@type": "ImageService2",
+                    "profile": "level0"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "http://79b420e1-9814-4502-b366-dbe87a8318c3",
+      "type": "Canvas",
+      "height": 1028,
+      "width": 598,
+      "label": {
+        "none": [
+          "Book Of Tea - 28"
+        ]
+      },
+      "items": [
+        {
+          "id": "http://79b420e1-9814-4502-b366-dbe87a8318c3/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "http://8e825fd3-0f75-4178-adf3-32569195d156",
+              "type": "Annotation",
+              "@context": "http://iiif.io/api/presentation/3/context.json",
+              "motivation": "painting",
+              "target": "http://79b420e1-9814-4502-b366-dbe87a8318c3",
+              "body": {
+                "id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-28/full/full/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "height": 1028,
+                "width": 598,
+                "service": [
+                  {
+                    "@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-28",
+                    "@type": "ImageService2",
+                    "profile": "level0"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "http://1c09ed92-2eaf-440a-9534-5c60a0dd2e06",
+      "type": "Canvas",
+      "height": 1028,
+      "width": 598,
+      "label": {
+        "none": [
+          "Book Of Tea - 29"
+        ]
+      },
+      "items": [
+        {
+          "id": "http://1c09ed92-2eaf-440a-9534-5c60a0dd2e06/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "http://05ddb297-bb45-40a6-8519-08318a106568",
+              "type": "Annotation",
+              "@context": "http://iiif.io/api/presentation/3/context.json",
+              "motivation": "painting",
+              "target": "http://1c09ed92-2eaf-440a-9534-5c60a0dd2e06",
+              "body": {
+                "id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-29/full/full/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "height": 1028,
+                "width": 598,
+                "service": [
+                  {
+                    "@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-29",
+                    "@type": "ImageService2",
+                    "profile": "level0"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "http://e7c403d8-817c-46fe-bd4b-fec2187b9ac9",
+      "type": "Canvas",
+      "height": 1028,
+      "width": 598,
+      "label": {
+        "none": [
+          "Book Of Tea - 30"
+        ]
+      },
+      "items": [
+        {
+          "id": "http://e7c403d8-817c-46fe-bd4b-fec2187b9ac9/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "http://863fe773-eef4-41a2-894b-37d48085f52c",
+              "type": "Annotation",
+              "@context": "http://iiif.io/api/presentation/3/context.json",
+              "motivation": "painting",
+              "target": "http://e7c403d8-817c-46fe-bd4b-fec2187b9ac9",
+              "body": {
+                "id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-30/full/full/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "height": 1028,
+                "width": 598,
+                "service": [
+                  {
+                    "@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-30",
+                    "@type": "ImageService2",
+                    "profile": "level0"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "http://049835b1-c115-4035-b0cf-a142322039a5",
+      "type": "Canvas",
+      "height": 1028,
+      "width": 598,
+      "label": {
+        "none": [
+          "Book Of Tea - 31"
+        ]
+      },
+      "items": [
+        {
+          "id": "http://049835b1-c115-4035-b0cf-a142322039a5/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "http://5169c0fe-6ebe-4bac-af8e-52cc85e017a6",
+              "type": "Annotation",
+              "@context": "http://iiif.io/api/presentation/3/context.json",
+              "motivation": "painting",
+              "target": "http://049835b1-c115-4035-b0cf-a142322039a5",
+              "body": {
+                "id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-31/full/full/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "height": 1028,
+                "width": 598,
+                "service": [
+                  {
+                    "@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-31",
+                    "@type": "ImageService2",
+                    "profile": "level0"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "http://04b9e31c-11dd-4463-b635-281b3304e2f7",
+      "type": "Canvas",
+      "height": 1028,
+      "width": 598,
+      "label": {
+        "none": [
+          "Book Of Tea - 32"
+        ]
+      },
+      "items": [
+        {
+          "id": "http://04b9e31c-11dd-4463-b635-281b3304e2f7/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "http://49f370d8-5f5b-4564-8adc-60fc5ed97dc4",
+              "type": "Annotation",
+              "@context": "http://iiif.io/api/presentation/3/context.json",
+              "motivation": "painting",
+              "target": "http://04b9e31c-11dd-4463-b635-281b3304e2f7",
+              "body": {
+                "id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-32/full/full/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "height": 1028,
+                "width": 598,
+                "service": [
+                  {
+                    "@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-32",
+                    "@type": "ImageService2",
+                    "profile": "level0"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "http://c3f20c3f-1715-4bd6-af87-ddc72e3059f4",
+      "type": "Canvas",
+      "height": 1028,
+      "width": 598,
+      "label": {
+        "none": [
+          "Book Of Tea - 33"
+        ]
+      },
+      "items": [
+        {
+          "id": "http://c3f20c3f-1715-4bd6-af87-ddc72e3059f4/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "http://110030c2-61a1-4d57-8ae1-653c2ae4d539",
+              "type": "Annotation",
+              "@context": "http://iiif.io/api/presentation/3/context.json",
+              "motivation": "painting",
+              "target": "http://c3f20c3f-1715-4bd6-af87-ddc72e3059f4",
+              "body": {
+                "id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-33/full/full/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "height": 1028,
+                "width": 598,
+                "service": [
+                  {
+                    "@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-33",
+                    "@type": "ImageService2",
+                    "profile": "level0"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "http://c693932e-17f9-4e9b-af6d-9c7336581f66",
+      "type": "Canvas",
+      "height": 1028,
+      "width": 598,
+      "label": {
+        "none": [
+          "Book Of Tea - 34"
+        ]
+      },
+      "items": [
+        {
+          "id": "http://c693932e-17f9-4e9b-af6d-9c7336581f66/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "http://75f07a67-21fa-453d-a7c4-b15658e2d125",
+              "type": "Annotation",
+              "@context": "http://iiif.io/api/presentation/3/context.json",
+              "motivation": "painting",
+              "target": "http://c693932e-17f9-4e9b-af6d-9c7336581f66",
+              "body": {
+                "id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-34/full/full/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "height": 1028,
+                "width": 598,
+                "service": [
+                  {
+                    "@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-34",
+                    "@type": "ImageService2",
+                    "profile": "level0"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "http://941d5b6f-5241-4157-9daf-d777f3f71aaf",
+      "type": "Canvas",
+      "height": 1028,
+      "width": 598,
+      "label": {
+        "none": [
+          "Book Of Tea - 35"
+        ]
+      },
+      "items": [
+        {
+          "id": "http://941d5b6f-5241-4157-9daf-d777f3f71aaf/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "http://c9cdb64e-3384-45e4-b2db-6a7b21c6a313",
+              "type": "Annotation",
+              "@context": "http://iiif.io/api/presentation/3/context.json",
+              "motivation": "painting",
+              "target": "http://941d5b6f-5241-4157-9daf-d777f3f71aaf",
+              "body": {
+                "id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-35/full/full/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "height": 1028,
+                "width": 598,
+                "service": [
+                  {
+                    "@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-35",
+                    "@type": "ImageService2",
+                    "profile": "level0"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "http://357ac948-6e1e-4dc9-9f36-c05500555637",
+      "type": "Canvas",
+      "height": 1028,
+      "width": 598,
+      "label": {
+        "none": [
+          "Book Of Tea - 36"
+        ]
+      },
+      "items": [
+        {
+          "id": "http://357ac948-6e1e-4dc9-9f36-c05500555637/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "http://c0be36a4-a514-4da0-8338-32911f596ec0",
+              "type": "Annotation",
+              "@context": "http://iiif.io/api/presentation/3/context.json",
+              "motivation": "painting",
+              "target": "http://357ac948-6e1e-4dc9-9f36-c05500555637",
+              "body": {
+                "id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-36/full/full/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "height": 1028,
+                "width": 598,
+                "service": [
+                  {
+                    "@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-36",
+                    "@type": "ImageService2",
+                    "profile": "level0"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "http://d5b759fd-f31b-4df4-829c-dc6878c00f9a",
+      "type": "Canvas",
+      "height": 1028,
+      "width": 598,
+      "label": {
+        "none": [
+          "Book Of Tea - 37"
+        ]
+      },
+      "items": [
+        {
+          "id": "http://d5b759fd-f31b-4df4-829c-dc6878c00f9a/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "http://8fe9a96d-e9be-47fc-81bc-a7d4e48ae096",
+              "type": "Annotation",
+              "@context": "http://iiif.io/api/presentation/3/context.json",
+              "motivation": "painting",
+              "target": "http://d5b759fd-f31b-4df4-829c-dc6878c00f9a",
+              "body": {
+                "id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-37/full/full/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "height": 1028,
+                "width": 598,
+                "service": [
+                  {
+                    "@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-37",
+                    "@type": "ImageService2",
+                    "profile": "level0"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "http://96669969-6eae-4543-84ac-fde2b82cbb5a",
+      "type": "Canvas",
+      "height": 1028,
+      "width": 598,
+      "label": {
+        "none": [
+          "Book Of Tea - 38"
+        ]
+      },
+      "items": [
+        {
+          "id": "http://96669969-6eae-4543-84ac-fde2b82cbb5a/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "http://98607106-30f8-449a-abd4-d0b36a48b4a4",
+              "type": "Annotation",
+              "@context": "http://iiif.io/api/presentation/3/context.json",
+              "motivation": "painting",
+              "target": "http://96669969-6eae-4543-84ac-fde2b82cbb5a",
+              "body": {
+                "id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-38/full/full/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "height": 1028,
+                "width": 598,
+                "service": [
+                  {
+                    "@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-38",
+                    "@type": "ImageService2",
+                    "profile": "level0"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "http://93ad1cbf-6fa9-409a-a71a-6b06afd23db9",
+      "type": "Canvas",
+      "height": 1028,
+      "width": 598,
+      "label": {
+        "none": [
+          "Book Of Tea - 39"
+        ]
+      },
+      "items": [
+        {
+          "id": "http://93ad1cbf-6fa9-409a-a71a-6b06afd23db9/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "http://24eeae9f-b7fc-4bcb-bfe9-5824df5cfbb7",
+              "type": "Annotation",
+              "@context": "http://iiif.io/api/presentation/3/context.json",
+              "motivation": "painting",
+              "target": "http://93ad1cbf-6fa9-409a-a71a-6b06afd23db9",
+              "body": {
+                "id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-39/full/full/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "height": 1028,
+                "width": 598,
+                "service": [
+                  {
+                    "@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-39",
+                    "@type": "ImageService2",
+                    "profile": "level0"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "http://fb0d7cd7-f48f-4b79-b1c9-b31153277e77",
+      "type": "Canvas",
+      "height": 1028,
+      "width": 598,
+      "label": {
+        "none": [
+          "Book Of Tea - 39"
+        ]
+      },
+      "items": [
+        {
+          "id": "http://fb0d7cd7-f48f-4b79-b1c9-b31153277e77/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "http://8594221d-ff08-46c7-80a2-cdf7e76c6a19",
+              "type": "Annotation",
+              "@context": "http://iiif.io/api/presentation/3/context.json",
+              "motivation": "painting",
+              "target": "http://fb0d7cd7-f48f-4b79-b1c9-b31153277e77",
+              "body": {
+                "id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-40/full/full/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "height": 1028,
+                "width": 598,
+                "service": [
+                  {
+                    "@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-40",
+                    "@type": "ImageService2",
+                    "profile": "level0"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "http://912703ce-e962-4025-8cf4-a2d548c43524",
+      "type": "Canvas",
+      "height": 1028,
+      "width": 598,
+      "label": {
+        "none": [
+          "Book Of Tea - 40"
+        ]
+      },
+      "items": [
+        {
+          "id": "http://912703ce-e962-4025-8cf4-a2d548c43524/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "http://b97566ee-f208-4b27-9cf9-32069ef202ec",
+              "type": "Annotation",
+              "@context": "http://iiif.io/api/presentation/3/context.json",
+              "motivation": "painting",
+              "target": "http://912703ce-e962-4025-8cf4-a2d548c43524",
+              "body": {
+                "id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-41/full/full/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "height": 1028,
+                "width": 598,
+                "service": [
+                  {
+                    "@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-41",
+                    "@type": "ImageService2",
+                    "profile": "level0"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "http://7f89c9f3-3829-44dd-91e2-a44b62b621d9",
+      "type": "Canvas",
+      "height": 1028,
+      "width": 598,
+      "label": {
+        "none": [
+          "Book Of Tea - 41"
+        ]
+      },
+      "items": [
+        {
+          "id": "http://7f89c9f3-3829-44dd-91e2-a44b62b621d9/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "http://6cb9f0f5-03c9-4042-a272-1679a4b8d9e9",
+              "type": "Annotation",
+              "@context": "http://iiif.io/api/presentation/3/context.json",
+              "motivation": "painting",
+              "target": "http://7f89c9f3-3829-44dd-91e2-a44b62b621d9",
+              "body": {
+                "id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-42/full/full/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "height": 1028,
+                "width": 598,
+                "service": [
+                  {
+                    "@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-42",
+                    "@type": "ImageService2",
+                    "profile": "level0"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "http://9812a523-b201-4a3c-9868-e4a2e7103e3e",
+      "type": "Canvas",
+      "height": 1028,
+      "width": 598,
+      "label": {
+        "none": [
+          "Book Of Tea - 42"
+        ]
+      },
+      "items": [
+        {
+          "id": "http://9812a523-b201-4a3c-9868-e4a2e7103e3e/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "http://6223a2f8-9713-4042-b00d-315eb994255b",
+              "type": "Annotation",
+              "@context": "http://iiif.io/api/presentation/3/context.json",
+              "motivation": "painting",
+              "target": "http://9812a523-b201-4a3c-9868-e4a2e7103e3e",
+              "body": {
+                "id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-43/full/full/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "height": 1028,
+                "width": 598,
+                "service": [
+                  {
+                    "@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-43",
+                    "@type": "ImageService2",
+                    "profile": "level0"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "http://f3f3e676-be24-4828-900d-c7da5747c808",
+      "type": "Canvas",
+      "height": 1028,
+      "width": 598,
+      "label": {
+        "none": [
+          "Book Of Tea - 43"
+        ]
+      },
+      "items": [
+        {
+          "id": "http://f3f3e676-be24-4828-900d-c7da5747c808/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "http://9560898e-7ed2-4d40-85f4-21f33a9bbf0c",
+              "type": "Annotation",
+              "@context": "http://iiif.io/api/presentation/3/context.json",
+              "motivation": "painting",
+              "target": "http://f3f3e676-be24-4828-900d-c7da5747c808",
+              "body": {
+                "id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-44/full/full/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "height": 1028,
+                "width": 598,
+                "service": [
+                  {
+                    "@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-44",
+                    "@type": "ImageService2",
+                    "profile": "level0"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "http://3f6bfdaf-d665-450c-9fea-e2658e65fa3b",
+      "type": "Canvas",
+      "height": 1028,
+      "width": 598,
+      "label": {
+        "none": [
+          "Book Of Tea - 44"
+        ]
+      },
+      "items": [
+        {
+          "id": "http://3f6bfdaf-d665-450c-9fea-e2658e65fa3b/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "http://642c650b-3134-4046-86d9-49e60d404d14",
+              "type": "Annotation",
+              "@context": "http://iiif.io/api/presentation/3/context.json",
+              "motivation": "painting",
+              "target": "http://3f6bfdaf-d665-450c-9fea-e2658e65fa3b",
+              "body": {
+                "id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-45/full/full/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "height": 1028,
+                "width": 598,
+                "service": [
+                  {
+                    "@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-45",
+                    "@type": "ImageService2",
+                    "profile": "level0"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "http://91f7e1e9-7505-4281-88a3-437fd0489cc3",
+      "type": "Canvas",
+      "height": 1028,
+      "width": 598,
+      "label": {
+        "none": [
+          "Book Of Tea - 45"
+        ]
+      },
+      "items": [
+        {
+          "id": "http://91f7e1e9-7505-4281-88a3-437fd0489cc3/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "http://371c59e0-7d4c-4c27-928f-9d97be4adadb",
+              "type": "Annotation",
+              "@context": "http://iiif.io/api/presentation/3/context.json",
+              "motivation": "painting",
+              "target": "http://91f7e1e9-7505-4281-88a3-437fd0489cc3",
+              "body": {
+                "id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-46/full/full/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "height": 1028,
+                "width": 598,
+                "service": [
+                  {
+                    "@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-46",
+                    "@type": "ImageService2",
+                    "profile": "level0"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "http://0249206f-9355-4983-8b58-64662167e156",
+      "type": "Canvas",
+      "height": 1028,
+      "width": 598,
+      "label": {
+        "none": [
+          "Book Of Tea - 46"
+        ]
+      },
+      "items": [
+        {
+          "id": "http://0249206f-9355-4983-8b58-64662167e156/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "http://45474aea-60f4-474b-9fc8-721a375badb4",
+              "type": "Annotation",
+              "@context": "http://iiif.io/api/presentation/3/context.json",
+              "motivation": "painting",
+              "target": "http://0249206f-9355-4983-8b58-64662167e156",
+              "body": {
+                "id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-47/full/full/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "height": 1028,
+                "width": 598,
+                "service": [
+                  {
+                    "@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-47",
+                    "@type": "ImageService2",
+                    "profile": "level0"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "http://ccd67e62-98d9-40c5-b6a6-924db4c6c614",
+      "type": "Canvas",
+      "height": 1028,
+      "width": 598,
+      "label": {
+        "none": [
+          "Book Of Tea - 47"
+        ]
+      },
+      "items": [
+        {
+          "id": "http://ccd67e62-98d9-40c5-b6a6-924db4c6c614/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "http://d345f7ba-2265-4cd9-bbbd-2e365f65304f",
+              "type": "Annotation",
+              "@context": "http://iiif.io/api/presentation/3/context.json",
+              "motivation": "painting",
+              "target": "http://ccd67e62-98d9-40c5-b6a6-924db4c6c614",
+              "body": {
+                "id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-48/full/full/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "height": 1028,
+                "width": 598,
+                "service": [
+                  {
+                    "@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-48",
+                    "@type": "ImageService2",
+                    "profile": "level0"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "http://64813c07-95b6-4079-a1da-eccf6808e5aa",
+      "type": "Canvas",
+      "height": 1028,
+      "width": 598,
+      "label": {
+        "none": [
+          "Book Of Tea - 48"
+        ]
+      },
+      "items": [
+        {
+          "id": "http://64813c07-95b6-4079-a1da-eccf6808e5aa/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "http://18007d45-60f7-4f34-a259-7a7c57e8c13e",
+              "type": "Annotation",
+              "@context": "http://iiif.io/api/presentation/3/context.json",
+              "motivation": "painting",
+              "target": "http://64813c07-95b6-4079-a1da-eccf6808e5aa",
+              "body": {
+                "id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-49/full/full/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "height": 1028,
+                "width": 598,
+                "service": [
+                  {
+                    "@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-49",
+                    "@type": "ImageService2",
+                    "profile": "level0"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "http://858197d3-07c8-42f6-9a78-5d06690411d9",
+      "type": "Canvas",
+      "height": 1028,
+      "width": 598,
+      "label": {
+        "none": [
+          "Book Of Tea - 49"
+        ]
+      },
+      "items": [
+        {
+          "id": "http://858197d3-07c8-42f6-9a78-5d06690411d9/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "http://05254a8b-29f6-472a-8f6b-e877e1385e6f",
+              "type": "Annotation",
+              "@context": "http://iiif.io/api/presentation/3/context.json",
+              "motivation": "painting",
+              "target": "http://858197d3-07c8-42f6-9a78-5d06690411d9",
+              "body": {
+                "id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-50/full/full/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "height": 1028,
+                "width": 598,
+                "service": [
+                  {
+                    "@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-50",
+                    "@type": "ImageService2",
+                    "profile": "level0"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "http://f0177e04-af81-4355-8083-4ab6473cd1b7",
+      "type": "Canvas",
+      "height": 1028,
+      "width": 598,
+      "label": {
+        "none": [
+          "Book Of Tea - 50"
+        ]
+      },
+      "items": [
+        {
+          "id": "http://f0177e04-af81-4355-8083-4ab6473cd1b7/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "http://f89351ed-9fb2-4e77-9cc9-aaab08f6a3b8",
+              "type": "Annotation",
+              "@context": "http://iiif.io/api/presentation/3/context.json",
+              "motivation": "painting",
+              "target": "http://f0177e04-af81-4355-8083-4ab6473cd1b7",
+              "body": {
+                "id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-51/full/full/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "height": 1028,
+                "width": 598,
+                "service": [
+                  {
+                    "@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-51",
+                    "@type": "ImageService2",
+                    "profile": "level0"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "http://5ba7428b-dbb1-4313-af2e-a11df7f933c2",
+      "type": "Canvas",
+      "height": 1028,
+      "width": 598,
+      "label": {
+        "none": [
+          "Book Of Tea - 51"
+        ]
+      },
+      "items": [
+        {
+          "id": "http://5ba7428b-dbb1-4313-af2e-a11df7f933c2/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "http://648b7210-c5ac-4c3a-8235-fc792577d524",
+              "type": "Annotation",
+              "@context": "http://iiif.io/api/presentation/3/context.json",
+              "motivation": "painting",
+              "target": "http://5ba7428b-dbb1-4313-af2e-a11df7f933c2",
+              "body": {
+                "id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-52/full/full/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "height": 1028,
+                "width": 598,
+                "service": [
+                  {
+                    "@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-52",
+                    "@type": "ImageService2",
+                    "profile": "level0"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "http://3d322dc7-3e85-4f61-b7ce-a9d9a9dd743c",
+      "type": "Canvas",
+      "height": 1028,
+      "width": 598,
+      "label": {
+        "none": [
+          "Book Of Tea - 52"
+        ]
+      },
+      "items": [
+        {
+          "id": "http://3d322dc7-3e85-4f61-b7ce-a9d9a9dd743c/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "http://59607152-7fef-47e5-9955-bb77cc8e74ed",
+              "type": "Annotation",
+              "@context": "http://iiif.io/api/presentation/3/context.json",
+              "motivation": "painting",
+              "target": "http://3d322dc7-3e85-4f61-b7ce-a9d9a9dd743c",
+              "body": {
+                "id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-53/full/full/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "height": 1028,
+                "width": 598,
+                "service": [
+                  {
+                    "@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-53",
+                    "@type": "ImageService2",
+                    "profile": "level0"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "http://1245f1ee-d906-4e0e-914d-6abf6ece89fc",
+      "type": "Canvas",
+      "height": 1028,
+      "width": 598,
+      "label": {
+        "none": [
+          "Book Of Tea - 53"
+        ]
+      },
+      "items": [
+        {
+          "id": "http://1245f1ee-d906-4e0e-914d-6abf6ece89fc/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "http://c6b65543-31e4-441a-a346-d40b7ac9417d",
+              "type": "Annotation",
+              "@context": "http://iiif.io/api/presentation/3/context.json",
+              "motivation": "painting",
+              "target": "http://1245f1ee-d906-4e0e-914d-6abf6ece89fc",
+              "body": {
+                "id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-54/full/full/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "height": 1028,
+                "width": 598,
+                "service": [
+                  {
+                    "@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-54",
+                    "@type": "ImageService2",
+                    "profile": "level0"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "http://2ae5ed30-a294-4b9a-a08b-8e7e339cc0f2",
+      "type": "Canvas",
+      "height": 1028,
+      "width": 598,
+      "label": {
+        "none": [
+          "Book Of Tea - 54"
+        ]
+      },
+      "items": [
+        {
+          "id": "http://2ae5ed30-a294-4b9a-a08b-8e7e339cc0f2/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "http://ad6b7ee3-25f4-4b42-b733-459ae5ea39df",
+              "type": "Annotation",
+              "@context": "http://iiif.io/api/presentation/3/context.json",
+              "motivation": "painting",
+              "target": "http://2ae5ed30-a294-4b9a-a08b-8e7e339cc0f2",
+              "body": {
+                "id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-55/full/full/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "height": 1028,
+                "width": 598,
+                "service": [
+                  {
+                    "@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-55",
+                    "@type": "ImageService2",
+                    "profile": "level0"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "http://faf4880f-7873-496d-b0b6-f45250bfee04",
+      "type": "Canvas",
+      "height": 1028,
+      "width": 598,
+      "label": {
+        "none": [
+          "Book Of Tea - 55"
+        ]
+      },
+      "items": [
+        {
+          "id": "http://faf4880f-7873-496d-b0b6-f45250bfee04/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "http://0e81b706-be0e-45bc-9174-66db0afe6573",
+              "type": "Annotation",
+              "@context": "http://iiif.io/api/presentation/3/context.json",
+              "motivation": "painting",
+              "target": "http://faf4880f-7873-496d-b0b6-f45250bfee04",
+              "body": {
+                "id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-56/full/full/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "height": 1028,
+                "width": 598,
+                "service": [
+                  {
+                    "@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-56",
+                    "@type": "ImageService2",
+                    "profile": "level0"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "http://0c715dd9-f337-4a1f-b3e8-0b2975c66277",
+      "type": "Canvas",
+      "height": 1028,
+      "width": 598,
+      "label": {
+        "none": [
+          "Book Of Tea - 56"
+        ]
+      },
+      "items": [
+        {
+          "id": "http://0c715dd9-f337-4a1f-b3e8-0b2975c66277/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "http://a34ac695-1a99-4a06-ac03-92e0cd6f2232",
+              "type": "Annotation",
+              "@context": "http://iiif.io/api/presentation/3/context.json",
+              "motivation": "painting",
+              "target": "http://0c715dd9-f337-4a1f-b3e8-0b2975c66277",
+              "body": {
+                "id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-57/full/full/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "height": 1028,
+                "width": 598,
+                "service": [
+                  {
+                    "@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-57",
+                    "@type": "ImageService2",
+                    "profile": "level0"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "http://f4ee93cd-c8c0-46ef-b010-49a0e9e50f7d",
+      "type": "Canvas",
+      "height": 1028,
+      "width": 598,
+      "label": {
+        "none": [
+          "Book Of Tea - 57"
+        ]
+      },
+      "items": [
+        {
+          "id": "http://f4ee93cd-c8c0-46ef-b010-49a0e9e50f7d/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "http://bf1d05e3-b163-402b-a2c4-773ab2a1b791",
+              "type": "Annotation",
+              "@context": "http://iiif.io/api/presentation/3/context.json",
+              "motivation": "painting",
+              "target": "http://f4ee93cd-c8c0-46ef-b010-49a0e9e50f7d",
+              "body": {
+                "id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-58/full/full/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "height": 1028,
+                "width": 598,
+                "service": [
+                  {
+                    "@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-58",
+                    "@type": "ImageService2",
+                    "profile": "level0"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "http://b01206f6-60da-4b0d-9b50-bb9f5c1b8ee0",
+      "type": "Canvas",
+      "height": 1028,
+      "width": 598,
+      "label": {
+        "none": [
+          "Book Of Tea - 58"
+        ]
+      },
+      "items": [
+        {
+          "id": "http://b01206f6-60da-4b0d-9b50-bb9f5c1b8ee0/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "http://0d50277c-1dcb-4507-9d37-4c28db39fd4c",
+              "type": "Annotation",
+              "@context": "http://iiif.io/api/presentation/3/context.json",
+              "motivation": "painting",
+              "target": "http://b01206f6-60da-4b0d-9b50-bb9f5c1b8ee0",
+              "body": {
+                "id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-59/full/full/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "height": 1028,
+                "width": 598,
+                "service": [
+                  {
+                    "@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-59",
+                    "@type": "ImageService2",
+                    "profile": "level0"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "http://78df6686-2739-4b62-a407-ef12756fa928",
+      "type": "Canvas",
+      "height": 1028,
+      "width": 598,
+      "label": {
+        "none": [
+          "Book Of Tea - 59"
+        ]
+      },
+      "items": [
+        {
+          "id": "http://78df6686-2739-4b62-a407-ef12756fa928/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "http://3ac360d5-3098-47dc-b6c9-5d5e151bc831",
+              "type": "Annotation",
+              "@context": "http://iiif.io/api/presentation/3/context.json",
+              "motivation": "painting",
+              "target": "http://78df6686-2739-4b62-a407-ef12756fa928",
+              "body": {
+                "id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-60/full/full/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "height": 1028,
+                "width": 598,
+                "service": [
+                  {
+                    "@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-60",
+                    "@type": "ImageService2",
+                    "profile": "level0"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "http://c61bda37-d73e-4605-ab1c-50052d97f05d",
+      "type": "Canvas",
+      "height": 1028,
+      "width": 598,
+      "label": {
+        "none": [
+          "Book Of Tea - 60"
+        ]
+      },
+      "items": [
+        {
+          "id": "http://c61bda37-d73e-4605-ab1c-50052d97f05d/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "http://6338e535-6c84-4673-87fe-d21e013ee03d",
+              "type": "Annotation",
+              "@context": "http://iiif.io/api/presentation/3/context.json",
+              "motivation": "painting",
+              "target": "http://c61bda37-d73e-4605-ab1c-50052d97f05d",
+              "body": {
+                "id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-61/full/full/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "height": 1028,
+                "width": 598,
+                "service": [
+                  {
+                    "@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-61",
+                    "@type": "ImageService2",
+                    "profile": "level0"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "http://b6b2894f-fa07-401d-b180-6e7f1ab681c1",
+      "type": "Canvas",
+      "height": 1028,
+      "width": 598,
+      "label": {
+        "none": [
+          "Book Of Tea - 61"
+        ]
+      },
+      "provider": [
+        {
+          "id": "http://example.org/provider",
+          "type": "Agent",
+          "label": {
+            "none": [
+              ""
+            ]
+          },
+          "homepage": [
+            {
+              "id": "http://example.org/undefined/1",
+              "type": "unknown"
+            }
+          ]
+        }
+      ],
+      "items": [
+        {
+          "id": "http://b6b2894f-fa07-401d-b180-6e7f1ab681c1/annotation-page",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "http://95e5495f-21ca-498a-8ed5-66221c9092c8",
+              "type": "Annotation",
+              "@context": "http://iiif.io/api/presentation/3/context.json",
+              "motivation": "painting",
+              "target": "http://b6b2894f-fa07-401d-b180-6e7f1ab681c1",
+              "body": {
+                "id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-18/full/full/0/default.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "height": 1028,
+                "width": 598,
+                "service": [
+                  {
+                    "@id": "https://theair-hub.github.io/The-art-of-Tea/images/bookoftea-18",
+                    "@type": "ImageService2",
+                    "profile": "http://iiif.io/api/image/2/level0.json"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }
