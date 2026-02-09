@@ -34,6 +34,19 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+
+  <link
+   rel="stylesheet"
+   href="https://cdn.jsdelivr.net/npm/universalviewer@4.0.0/dist/uv.css"/>
+ <script
+   type="application/javascript"
+   src="https://cdn.jsdelivr.net/npm/universalviewer@4.0.0/dist/umd/UV.js"></script>
+ <style>
+   #uv {
+     width: 100%;
+     height: 800px;
+   }
+ </style>
 </head>
 
 <body class="portfolio-details-page">
@@ -87,7 +100,7 @@
         <div class="container">
           <div class="row d-flex justify-content-center text-center">
             <div class="col-lg-8">
-              <h1>Portfolio Details</h1>
+              <h1>Reading Nook</h1>
               <p class="mb-0">Odio et unde deleniti. Deserunt numquam exercitationem. Officiis quo odio sint voluptas consequatur ut a odio voluptatem. Sit dolorum debitis veritatis natus dolores. Quasi ratione sint. Sit quaerat ipsum dolorem.</p>
             </div>
           </div>
@@ -97,7 +110,7 @@
         <div class="container">
           <ol>
             <li><a href="index.html">Home</a></li>
-            <li class="current">Portfolio Details</li>
+            <li class="current">Reading Nook</li>
           </ol>
         </div>
       </nav>
@@ -111,7 +124,8 @@
         <div class="row gy-4">
 
           <div class="col-lg-8">
-            <iframe src="https://www.universalviewer.dev/uv.html#?manifest=https%3A%2F%2Fshiho1000.github.io%2FSDL_project%2Fmanifests%2Fthe_little_tea_book_manifest.json&c=0&m=0&cv=9&config=&locales=en-GB%3AEnglish+%28GB%29%2Ccy-GB%3ACymraeg%2Cfr-FR%3AFran%C3%A7ais+%28FR%29%2Cpl-PL%3APolski%2Csv-SE%3ASvenska&xywh=-1%2C-157%2C2250%2C1921&r=0" width="800" height="600" allowfullscreen frameborder="0" title="The Little Tea Book"></iframe>
+            <!-- <iframe src="https://www.universalviewer.dev/uv.html#?manifest=https%3A%2F%2Fshiho1000.github.io%2FSDL_project%2Fmanifests%2Fthe_little_tea_book_manifest.json&c=0&m=0&cv=9&config=&locales=en-GB%3AEnglish+%28GB%29%2Ccy-GB%3ACymraeg%2Cfr-FR%3AFran%C3%A7ais+%28FR%29%2Cpl-PL%3APolski%2Csv-SE%3ASvenska&xywh=-1%2C-157%2C2250%2C1921&r=0" width="800" height="600" allowfullscreen frameborder="0" title="The Little Tea Book"></iframe> -->
+            <div class="uv" id="uv"></div>
           </div>
 
           <div class="col-lg-4">
@@ -221,6 +235,24 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script>
+    let selectedManifest = localStorage.getItem("manifestID");
+    console.log(selectedManifest);
+
+    const manifestsURL = {
+      "arTea01": "https://shiho1000.github.io/SDL_project/manifests/afternoontea.json",
+      "arTea02": "https://shiho1000.github.io/SDL_project/manifests/manifest_mantastingtea.json",
+      "arTea03": "https://theair-hub.github.io/The-art-of-Tea/manifests/WomanTeaCeremony.json",
+      "arTea04": "https://theair-hub.github.io/The-art-of-Tea/manifests/LydiaHerMother.json"
+    };
+
+    const data = {
+      manifest: `${manifestsURL.arTea01}`,
+      embedded: true // needed for codesandbox frame
+    };
+
+    uv = UV.init("uv", data);
+ </script>
 </body>
 
 </html>

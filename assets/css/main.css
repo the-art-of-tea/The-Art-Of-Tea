@@ -1103,17 +1103,20 @@ section,
   inset: 0;
   z-index: 3;
   transition: all ease-in-out 0.3s;
-  background: rgba(0, 0, 0, 0.6);
+  background: color-mix(in srgb, var(--heading-color), transparent 30%);
   padding: 15px;
 }
 
 .portfolio .portfolio-content .portfolio-info h4 {
-  font-size: 14px;
+  font-size: 20px;
   padding: 5px 10px;
   font-weight: 400;
   color: #ffffff;
-  display: inline-block;
-  background-color: var(--accent-color);
+  /* display: inline-block; */
+  /* background-color: var(--heading-color); */
+  text-align: center;
+  align-content: center;
+  justify-content: center;
 }
 
 .portfolio .portfolio-content .portfolio-info p {
@@ -1131,12 +1134,13 @@ section,
 .portfolio .portfolio-content .portfolio-info .preview-link,
 .portfolio .portfolio-content .portfolio-info .details-link {
   position: absolute;
-  left: calc(50% - 40px);
+  left: calc(50%);
   font-size: 26px;
-  top: calc(50% - 14px);
+  top: calc(50%);
   color: #fff;
   transition: 0.3s;
   line-height: 1.2;
+  align-content: center;
 }
 
 .portfolio .portfolio-content .portfolio-info .preview-link:hover,
