@@ -44,7 +44,7 @@
  <style>
    #uv {
      width: 100%;
-     height: 800px;
+     height: 600px;
    }
  </style>
 </head>
@@ -243,16 +243,23 @@
       "arTea01": "https://shiho1000.github.io/SDL_project/manifests/afternoontea.json",
       "arTea02": "https://shiho1000.github.io/SDL_project/manifests/manifest_mantastingtea.json",
       "arTea03": "https://theair-hub.github.io/The-art-of-Tea/manifests/WomanTeaCeremony.json",
-      "arTea04": "https://theair-hub.github.io/The-art-of-Tea/manifests/LydiaHerMother.json"
+      "arTea04": "https://theair-hub.github.io/The-art-of-Tea/manifests/LydiaHerMother.json",
+      "arTea05": "https://shiho1000.github.io/SDL_project/manifests/the_little_tea_book_manifest.json"
     };
 
-    const data = {
-      manifest: `${manifestsURL.arTea01}`,
-      embedded: true // needed for codesandbox frame
-    };
+    const manifestURL = manifestsURL[selectedManifest];
+    
+    if (manifestURL) {
+      const data = {
+        manifest: manifestURL,
+        embedded: true // needed for codesandbox frame
+      };
 
-    uv = UV.init("uv", data);
- </script>
+      uv = UV.init("uv", data);
+    } else {
+      console.error(`Manifest not found for key: ${selectedManifest}`);
+    }
+  </script>
 </body>
 
 </html>
