@@ -2,17 +2,18 @@
 @prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix schema: <http://schema.org/> .
-@prefix fabio: <http://purl.org/spar/fabio> .
+@prefix fabio: <http://purl.org/spar/fabio/> .
 @prefix prism: <http://prismstandard.org/namespaces/basic/2.0/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix ArTea: <https://w3id.org/ArtOfTea/> .
 @prefix loc: <https://lccn.loc.gov/> .
 
-
-# ! Defining Tea
+# Defining Tea as an object, not a concept
 ArTea:Tea a crm:E22_Human_Made_Object ;
     rdfs:label "Tea" ;
+    schema:identifier <https://lccn.loc.gov/sh85132924> ;
     crm:P129_is_subject_of 
         ArTea:arTea01,
         ArTea:arTea02,
@@ -33,33 +34,25 @@ ArTea:Tea a crm:E22_Human_Made_Object ;
 # ArTea XML Entities
 
 ArTea:BookOfTeaXML a schema:DigitalDocument ;
-    bf:responsibilityStatement "XML created by The Art of Team Team" ;
+    bf:responsibilityStatement "XML created by The Art of Tea Team" ;
     bf:mainTitle "The Book of Tea XML" ;
     bf:originDate "2026" ;
     bf:originPlace "University of Bologna (BO)" ;
-    dcterms:source "https://github.com/the-art-of-tea/The-Art-Of-Tea/tree/main" ;
-    dcterms:rights <https://creativecommons.org/publicdomain/mark/1.0/> .
-
-ArTea:LittleTeaBookXML a schema:DigitalDocument ;
-    bf:responsibilityStatement "XML created by The Art of Team Team" ;
-    bf:mainTitle "Little Tea Book XML" ;
-    bf:originDate "2026" ;
-    bf:originPlace "University of Bologna (BO)" ;
-    dcterms:source "https://github.com/the-art-of-tea/The-Art-Of-Tea/tree/main" ;
+    dcterms:source <https://github.com/the-art-of-tea/The-Art-Of-Tea/tree/main> ;
     dcterms:rights <https://creativecommons.org/publicdomain/mark/1.0/> .
 
 ArTea:TeaRoomXML a schema:DigitalDocument ;
-    bf:responsibilityStatement "XML created by The Art of Team Team" ;
+    bf:responsibilityStatement "XML created by The Art of Tea Team" ;
     bf:mainTitle "Tea Room Booklet XML" ;
     bf:originDate "2026" ;
     bf:originPlace "University of Bologna (BO)" ;
-    dcterms:source "https://github.com/the-art-of-tea/The-Art-Of-Tea/tree/main" ;
+    dcterms:source <https://github.com/the-art-of-tea/The-Art-Of-Tea/tree/main> ;
     dcterms:rights <https://creativecommons.org/publicdomain/mark/1.0/> .
 
 # Books 
 
-ArTea:arTea07 a schema:Book; # The Book of Tea
-    bf:identifiedby <https://archive.org/search.php?query=external-identifier%3A%22urn%3Aoclc%3Arecord%3A1041561203%22> ;
+ArTea:arTea07 a schema:Book ;
+    bf:identifiedBy <https://archive.org/search.php?query=external-identifier%3A%22urn%3Aoclc%3Arecord%3A1041561203%22> ;
     bf:mainTitle "The Book of Tea" ;
     dcterms:contributor <http://viaf.org/viaf/99830297> ;
     bf:responsibilityStatement "University of California Libraries" ;
@@ -72,22 +65,120 @@ ArTea:arTea07 a schema:Book; # The Book of Tea
     dcterms:rights "Free eBook from the Internet Archive" ;
     dcterms:format "310.5M" ;
     dcterms:abstract "The Book of Tea describes all aspects of the Japanese tea ceremony and explains how its rituals blend seamlessly with traditional Japanese life." ;
-    dcterms:subject "-" ; # URIs of the Subject Headings
-    dcterms:hasVersion ArTea:BookOfTeaXML; # our XML
-    crm:P129_is_about ArTea:Tea . 
+    dcterms:subject 
+        <http://id.loc.gov/authorities/subjects/sh85132924>,
+        <http://id.loc.gov/authorities/subjects/sh85069725>,
+        <http://id.loc.gov/authorities/subjects/sh85022727>,
+        <http://id.loc.gov/authorities/subjects/sh85149720>,
+        <http://id.loc.gov/authorities/subjects/sh85132392>,
+        <http://id.loc.gov/authorities/subjects/sh2020004829> ;
+    dcterms:hasVersion ArTea:BookOfTeaXML ;
+    crm:P129_is_about ArTea:Tea .
+
+ArTea:arTea15 a schema:WebPage ;
+    bf:mainTitle "The Classic of Tea" ;
+    dcterms:contributor <http://viaf.org/viaf/98018752> ;
+    bf:responsibilityStatement "Studentoftea.com" ;
+    bf:date "2025-10-14"^^xsd:date ;
+    bf:place <https://archive.org/details/bookoftea00okakrich/mode/2up> ;
+    bf:originPlace "-" ;
+    bf:originDate "-" ;
+    dcterms:source <https://www.studentoftea.com/p/the-classic-of-tea-and-its-english-translation> ;
+    dcterms:rights "-" ;
+    dcterms:abstract "Before moving further into the art of tea, it is worth returning to where written tea culture began. The Classic of Tea (茶经) was written by Lu Yu (陆羽) during the Tang dynasty (618 to 907 AD). It is the first known monograph on tea and tea culture in the world." ;
+    dcterms:subject 
+        <http://id.loc.gov/authorities/subjects/sh85019114>,
+        <http://id.loc.gov/authorities/subjects/sh98001340>,
+        <http://id.loc.gov/authorities/subjects/sh97008800>,
+        <http://id.loc.gov/authorities/subjects/sh85069734>,
+        <http://id.loc.gov/authorities/subjects/sh2009000722>,
+        <http://id.loc.gov/authorities/subjects/sh2008112604>,
+        <http://id.loc.gov/authorities/subjects/sh2020004829>,
+        <http://id.loc.gov/authorities/subjects/sh85132940>,
+        <http://id.loc.gov/authorities/subjects/sh85132942>,
+        <http://id.loc.gov/authorities/subjects/sh85132392>,
+        <http://id.loc.gov/authorities/subjects/sh85149720> ;
+    crm:P129_is_about ArTea:Tea .
 
 # Images
 
 ArTea:arTea03 a schema:ImageObject ; 
-    dcterms:identifier <https://www.jstor.org/stable/community.24570642> ;
     dcterms:title "Woman Performing the Tea Ceremony" ;
     dcterms:creator <http://viaf.org/viaf/96576651> ;
-    dcterms:coverage "Japan, Edo period (1615-1868)" ;
+    dcterms:coverage <https://www.geonames.org/1861060/> ;
     dcterms:medium "Print - color woodblock" ;
     dcterms:date "c. 1820" ;
-    dcterms:description "inscription: Signature: Eizan hitsu; inscription_translation: None; inscription_remark: None" ;
-    dcterms:subject "-" ; # URIs of the Subject Headings
+    dcterms:description "inscription: Signature: Eizan hitsu" ; 
+    dcterms:subject 
+        <https://lccn.loc.gov/sh85132924>,
+        <https://lccn.loc.gov/sh85069725> ;
     schema:hasMeasurement "Sheet: 20.6 x 18.1 cm (8 1/8 x 7 1/8 in.)" ;
+    dcterms:rights <https://creativecommons.org/publicdomain/mark/1.0/> ;
+    crm:P129_is_about ArTea:Tea ;
     dcterms:source <https://www.jstor.org/stable/community.24570642> .
 
+ArTea:arTea11 a schema:ImageObject ; 
+    dcterms:title "A Chinese woman picking tea leaves. Wood engraving, 1857, after a pen and ink drawing." ;
+    dcterms:creator "N/A" ;
+    dcterms:coverage <https://www.geonames.org/2635167/> ;
+    dcterms:medium "1 print : wood engraving" ;
+    dcterms:date "1857" ;
+    dcterms:description "Chinese woman gathering tea - from a drawing by a Chinese artist" ;
+    dcterms:subject 
+        <https://lccn.loc.gov/sh85132924>,
+        <https://lccn.loc.gov/sh85019114>,
+        <https://lccn.loc.gov/sh90004329> ;
+    schema:hasMeasurement "image and text 15.8 x 14.5 cm" ;
+    dcterms:rights <https://creativecommons.org/publicdomain/mark/1.0/> ;
+    crm:P129_is_about ArTea:Tea ;
+    dcterms:source <https://www.jstor.org/stable/community.24844945> .
 
+ArTea:arTea12 a schema:ImageObject ; 
+    dcterms:title "A man pours tea for a resting Chinese warrior as a kettle steams on the stove beside them. Coloured etching with ornamentation after F. Boucher, early 18th century." ;
+    dcterms:creator <http://viaf.org/viaf/66517093> ;
+    dcterms:coverage <https://www.geonames.org/3017382/> ;
+    dcterms:medium "1 print : etching, with watercolour and colour printed ornamentation" ;
+    dcterms:date "early 18th century" ;
+    dcterms:description "A man pours tea for a resting Chinese warrior as a kettle steams on the stove beside them." ;
+    dcterms:subject 
+        <https://lccn.loc.gov/sh2008112604>,
+        <https://lccn.loc.gov/sh85132940> ;
+    schema:hasMeasurement "image 27.7 x 21.2 cm" ;
+    dcterms:rights <https://creativecommons.org/publicdomain/mark/1.0/> ;
+    crm:P129_is_about ArTea:Tea ;
+    dcterms:source <https://www.jstor.org/stable/community.24844933> .
+
+ArTea:arTea13 a schema:ImageObject ; 
+    dcterms:title "A Chinese tea plantation with workers cleaning the racks on which the leaves are laid. Coloured etching, early 19th century." ;
+    dcterms:creator "N/A" ;
+    dcterms:coverage <https://www.geonames.org/2635167/> ;
+    dcterms:medium "1 print : etching, with watercolour" ;
+    dcterms:date "early 19th century" ;
+    dcterms:description "The manner of cleaning the ozier hurdles that hold the leaves; Bears number '5'" ;
+    dcterms:subject 
+        <https://lccn.loc.gov/sh85132924>,
+        <https://lccn.loc.gov/sh85019114>,
+        <https://lccn.loc.gov/sh2009000722>,
+        <https://lccn.loc.gov/sh85132938>,
+        <https://lccn.loc.gov/sh2008112604> ;
+    schema:hasMeasurement "platemark 17.5 x 25.8 cm" ;
+    dcterms:rights <https://creativecommons.org/publicdomain/mark/1.0/> ;
+    crm:P129_is_about ArTea:Tea ;
+    dcterms:source <https://www.jstor.org/stable/community.24844937> .
+
+ArTea:arTea14 a schema:ImageObject ;
+    dcterms:title "A tea plant (Camellia sinensis), its flowers and seeds, bordered by six scenes illustrating its use by man. Coloured lithograph, c. 1840." ;
+    dcterms:creator "N/A" ;
+    dcterms:coverage <https://www.geonames.org/2635167/> ;
+    dcterms:medium "Print - color woodblock" ;
+    dcterms:date "c. 1840" ;
+    dcterms:description "The tea plant, the flowers, seeds, watering the plants, gathering the leaves, drying and rolling the leaves, packing, selling tea, drinking tea" ;
+    dcterms:subject 
+        <https://lccn.loc.gov/sh85019114>,
+        <https://lccn.loc.gov/sh2009000722>,
+        <https://lccn.loc.gov/sh85132938>,
+        <https://lccn.loc.gov/sh85132942> ;
+    schema:hasMeasurement "border 22.5 x 17.7 cm" ;
+    dcterms:rights <https://creativecommons.org/publicdomain/mark/1.0/> ;
+    crm:P129_is_about ArTea:Tea ;
+    dcterms:source <https://www.jstor.org/stable/community.24898184> .
