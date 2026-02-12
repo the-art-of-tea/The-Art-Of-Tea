@@ -7,9 +7,8 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix ArTea: <https://w3id.org/ArtOfTea/> .
+@prefix loc: <https://lccn.loc.gov/> .
 
-# ? Entities (From Dewey, to be decided)
-# bla bla bla 
 
 # ! Defining Tea
 ArTea:Tea a crm:E22_Human_Made_Object ;
@@ -18,17 +17,20 @@ ArTea:Tea a crm:E22_Human_Made_Object ;
     ArTea:Chanoyu,
     ArTea:WomanPerforming . # etc.
 
-# ! Defining each chapter/section with their dewey labels
+# ArTea XML Entities
 
-ArTea:BookOfTea_Paragraph1 a crm:E33_Linguistic_Object ;
-    dcterms:subject "Tea, Japanese tea ceremony, Japan, Social life and customs" ; # ! note: they should be Dewey Entities    
-    rdfs:label "Paragraph about the philosophy of tea" ;
-    crm:P129_is_about ArTea:Tea .
+ArTea:BookOfTeaXML a schema:DigitalDocument ;
+    bf:responsibilityStatement "XML created by The Art of Team Team" ;
+    bf:mainTitle "The Book of Tea XML" ;
+    bf:originDate "2026" ;
+    bf:originPlace "University of Bologna (BO)" ;
+    dcterms:source "https://github.com/the-art-of-tea/The-Art-Of-Tea/tree/main" ;
+    dcterms:rights <https://creativecommons.org/publicdomain/mark/1.0/> .
 
 # Books 
 
 ArTea:BookOfTea a schema:Book;
-    bf:identifiedby "!" ; # to be written
+    bf:identifiedby <https://archive.org/search.php?query=external-identifier%3A%22urn%3Aoclc%3Arecord%3A1041561203%22> ; # to be written
     bf:mainTitle "The Book of Tea" ;
     dcterms:contributor <http://viaf.org/viaf/99830297> ;
     bf:responsibilityStatement "University of California Libraries" ;
@@ -41,26 +43,9 @@ ArTea:BookOfTea a schema:Book;
     dcterms:rights "Free eBook from the Internet Archive" ;
     dcterms:format "310.5M" ;
     dcterms:abstract "!" ; # to be written
-    crm:P129_is_about ArTea:Tea ; # ! so the Work is linked to the Tea.
-    crm:P148_has_component ArTea:BookOfTea_Paragraph1 . # ! Links to the paragraph(s) and/or section(s)
-
-# Articles
-ArTea:Chanoyu a fabio:JournalArticle ;
-    dcterms:identifier "!" ;
-    dcterms:title "Chanoyu or The Tea Philosophy of Japan a Western Evaluation" ;
-    dcterms:creator <http://viaf.org/viaf/38149717251710950257> ;
-    dcterms:title "Pacific Affairs" ; # Journal title
-    prism:volume "2" ;
-    prism:issueIdentifier "10" ;
-    dcterms:hasPublisher "University of Columbia" ;
-    fabio:hasPublicationYear "1929";
-    prism:publicationDate "1929-10"^^xsd:gYearMonth ;
-    fabio:hasURL <https://www-jstor-org.ezproxy.unibo.it/stable/2750271> ;
-    prism:doi <https://doi.org/10.2307/2750271> ;
-    prism:startingPage "635" ;
-    prism:endingPage "644" ;
-    prism:keyword "!" ; # to be written
-    dcterms:abstract "!" . # to be written
+    dcterms:subject "-" ; # URIs of the Subject Headings
+    dcterms:hasVersion ArTea:BookOfTeaXML; # our XML
+    crm:P129_is_about ArTea:Tea . # ! so the Work is linked to the Tea
 
 # Images
 
@@ -72,7 +57,7 @@ ArTea:WomanPerforming a schema:ImageObject ;
     dcterms:medium "Print - color woodblock" ;
     dcterms:date "c. 1820" ;
     dcterms:description "inscription: Signature: Eizan hitsu; inscription_translation: None; inscription_remark: None" ;
-    dcterms:subject "-" ;
+    dcterms:subject "-" ; # URIs of the Subject Headings
     schema:hasMeasurement "Sheet: 20.6 x 18.1 cm (8 1/8 x 7 1/8 in.)" ;
     dcterms:source "https://www.jstor.org/stable/community.24570642" .
 
