@@ -12,10 +12,23 @@
 
 # ! Defining Tea
 ArTea:Tea a crm:E22_Human_Made_Object ;
-    rdfs:label "Tea";
-    crm:P129_is_subject_of ArTea:BookOfTea, 
-    ArTea:Chanoyu,
-    ArTea:WomanPerforming . # etc.
+    rdfs:label "Tea" ;
+    crm:P129_is_subject_of 
+        ArTea:arTea01,
+        ArTea:arTea02,
+        ArTea:arTea03,
+        ArTea:arTea04,
+        ArTea:arTea05,
+        ArTea:arTea06,
+        ArTea:arTea07,
+        ArTea:arTea08,
+        ArTea:arTea09,
+        ArTea:arTea10,
+        ArTea:arTea11,
+        ArTea:arTea12,
+        ArTea:arTea13,
+        ArTea:arTea14,
+        ArTea:arTea15 .
 
 # ArTea XML Entities
 
@@ -27,10 +40,26 @@ ArTea:BookOfTeaXML a schema:DigitalDocument ;
     dcterms:source "https://github.com/the-art-of-tea/The-Art-Of-Tea/tree/main" ;
     dcterms:rights <https://creativecommons.org/publicdomain/mark/1.0/> .
 
+ArTea:LittleTeaBookXML a schema:DigitalDocument ;
+    bf:responsibilityStatement "XML created by The Art of Team Team" ;
+    bf:mainTitle "Little Tea Book XML" ;
+    bf:originDate "2026" ;
+    bf:originPlace "University of Bologna (BO)" ;
+    dcterms:source "https://github.com/the-art-of-tea/The-Art-Of-Tea/tree/main" ;
+    dcterms:rights <https://creativecommons.org/publicdomain/mark/1.0/> .
+
+ArTea:TeaRoomXML a schema:DigitalDocument ;
+    bf:responsibilityStatement "XML created by The Art of Team Team" ;
+    bf:mainTitle "Tea Room Booklet XML" ;
+    bf:originDate "2026" ;
+    bf:originPlace "University of Bologna (BO)" ;
+    dcterms:source "https://github.com/the-art-of-tea/The-Art-Of-Tea/tree/main" ;
+    dcterms:rights <https://creativecommons.org/publicdomain/mark/1.0/> .
+
 # Books 
 
-ArTea:BookOfTea a schema:Book;
-    bf:identifiedby <https://archive.org/search.php?query=external-identifier%3A%22urn%3Aoclc%3Arecord%3A1041561203%22> ; # to be written
+ArTea:arTea07 a schema:Book; # The Book of Tea
+    bf:identifiedby <https://archive.org/search.php?query=external-identifier%3A%22urn%3Aoclc%3Arecord%3A1041561203%22> ;
     bf:mainTitle "The Book of Tea" ;
     dcterms:contributor <http://viaf.org/viaf/99830297> ;
     bf:responsibilityStatement "University of California Libraries" ;
@@ -39,18 +68,18 @@ ArTea:BookOfTea a schema:Book;
     bf:place <https://archive.org/details/bookoftea00okakrich/mode/2up> ;
     bf:originPlace "New York" ;
     bf:originDate "1906" ;
-    dcterms:source "!" ; # to be found
+    dcterms:source <https://archive.org/details/bookoftea00okakrich/page/44/mode/2up> ;
     dcterms:rights "Free eBook from the Internet Archive" ;
     dcterms:format "310.5M" ;
-    dcterms:abstract "!" ; # to be written
+    dcterms:abstract "The Book of Tea describes all aspects of the Japanese tea ceremony and explains how its rituals blend seamlessly with traditional Japanese life." ;
     dcterms:subject "-" ; # URIs of the Subject Headings
     dcterms:hasVersion ArTea:BookOfTeaXML; # our XML
-    crm:P129_is_about ArTea:Tea . # ! so the Work is linked to the Tea
+    crm:P129_is_about ArTea:Tea . 
 
 # Images
 
-ArTea:WomanPerforming a schema:ImageObject ; 
-    dcterms:identifier "-" ; # to be added
+ArTea:arTea03 a schema:ImageObject ; 
+    dcterms:identifier <https://www.jstor.org/stable/community.24570642> ;
     dcterms:title "Woman Performing the Tea Ceremony" ;
     dcterms:creator <http://viaf.org/viaf/96576651> ;
     dcterms:coverage "Japan, Edo period (1615-1868)" ;
@@ -59,6 +88,6 @@ ArTea:WomanPerforming a schema:ImageObject ;
     dcterms:description "inscription: Signature: Eizan hitsu; inscription_translation: None; inscription_remark: None" ;
     dcterms:subject "-" ; # URIs of the Subject Headings
     schema:hasMeasurement "Sheet: 20.6 x 18.1 cm (8 1/8 x 7 1/8 in.)" ;
-    dcterms:source "https://www.jstor.org/stable/community.24570642" .
+    dcterms:source <https://www.jstor.org/stable/community.24570642> .
 
 
