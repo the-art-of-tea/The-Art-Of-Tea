@@ -9,8 +9,8 @@
   <meta name="keywords" content="">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="assets/img/artoftea_logo.png" rel="icon">
+  <link href="assets/img/artoftea_logo.png" rel="apple-touch-icon">
 
   <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -50,28 +50,8 @@
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="#hero" class="active">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#team">Team</a></li>
-          <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="#">Dropdown 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <li><a href="#">Deep Dropdown 1</a></li>
-                  <li><a href="#">Deep Dropdown 2</a></li>
-                  <li><a href="#">Deep Dropdown 3</a></li>
-                  <li><a href="#">Deep Dropdown 4</a></li>
-                  <li><a href="#">Deep Dropdown 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Dropdown 2</a></li>
-              <li><a href="#">Dropdown 3</a></li>
-              <li><a href="#">Dropdown 4</a></li>
-            </ul>
-          </li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#collection">Collection</a></li>
+          <li><a href="">Documentation</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -91,37 +71,207 @@
           <div class="col-lg-8">
             <h2 class="fleur-de-leah-regular">The Art of Tea</h2>
             <p>A digital library of the art, history and culture of tea</p>
-            <a href="#about" class="btn-get-started">Get Started</a>
+            <a href="#collection" class="btn-get-started">Go to Collection</a>
           </div>
         </div>
       </div>
 
     </section><!-- /Hero Section -->
 
-    <!-- Cards Section -->
-    <section id="cards" class="cards section">
+    <!-- Portfolio Section -->
+    <section id="collection" class="portfolio section">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Our Collection</h2>
+        <!-- <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p> -->
       </div><!-- End Section Title -->
 
       <div class="container">
 
-        <div class="row gy-4">
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
 
-          <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
-            <div class="card-item">
-              <span class="sirivennela-regular">Book</span>
-              <h4><a href="viewer.html" class="stretched-link">The Book of Tea</a></h4>
-              <p>Okakura Kakuzo</p>
-            </div>
-          </div><!-- Card Item -->
+          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+            <li data-filter="*" class="filter-active">All</li>
+            <li data-filter=".filter-book">Books</li>
+            <li data-filter=".filter-art">Art</li>
+            <!-- <li data-filter=".filter-video">Videos</li> -->
+            <!-- <li data-filter=".filter-books">Books</li> -->
+          </ul><!-- End Portfolio Filters -->
+
+          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+            <!-- Book of Tea -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-book">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/book-cover/bookoftea00okakrich_0009.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>The Book of Tea</h4>
+                  <a id="arTea07" href="viewer.html" title="Reading Nook" class="details-link manifest-selector"><i class="bi bi-book"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+            
+            <!-- Little Tea Book-->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-book">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/book-cover/littleteabookcover.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>The Little Tea Book</h4>
+                  <a id="arTea05" href="viewer.html" title="Reading Nook" class="details-link manifest-selector"><i class="bi bi-book"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <!-- Tea Booklet -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-book">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/book-cover/tearoombooklet-cover.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>The Tea Room Booklet</h4>
+                  <a id="arTea08" href="viewer.html" title="Reading Nook" class="details-link manifest-selector"><i class="bi bi-book"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <!-- Lydia and her Mother -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-art">
+              <div class="portfolio-content h-100">
+                <img src="Resources/Images/LydiaHerMother.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Lydia and Her Mother at Tea</h4>
+                  <a id="arTea04" href="viewer.html" title="Reading Nook" class="details-link manifest-selector"><i class="bi bi-book"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <!-- Japanese Woman Performing Tea Ceremony -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-art">
+              <div class="portfolio-content h-100">
+                <img src="Resources/Images/Japanese-WomanPerformingTea.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Japanese Woman Performing Tea Ceremony</h4>
+                  <a id="arTea03" href="viewer.html" title="Reading Nook" class="details-link manifest-selector"><i class="bi bi-book"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <!-- Indian Tea Plantation -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-art">
+              <div class="portfolio-content h-100">
+                <img src="Resources/Images/Indianteaplantation.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Indian Tea Plantation</h4>
+                  <a id="arTea09" href="viewer.html" title="Reading Nook" class="details-link manifest-selector"><i class="bi bi-book"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <!-- three young women -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-art">
+              <div class="portfolio-content h-100">
+                <img src="Resources/Images/Threeyoungwoman.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Three Young Women</h4>
+                  <a id="arTea01" href="viewer.html" title="Reading Nook" class="details-link manifest-selector"><i class="bi bi-book"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <!-- journey to tea countries -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-book">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/book-cover/journeytoteacoun00fort_0006.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>A Journey to the Tea Countries of China</h4>
+                  <a id="arTea06" href="viewer.html" title="Reading Nook" class="details-link manifest-selector"><i class="bi bi-book"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <!-- A Man tasting tea -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-art">
+              <div class="portfolio-content h-100">
+                <img src="Resources/Images/English-mantastingtea-1890.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>A Man Tasting Tea</h4>
+                  <a id="arTea02" href="viewer.html" title="Reading Nook" class="details-link manifest-selector"><i class="bi bi-book"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <!-- A Tea House Scene -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-art">
+              <div class="portfolio-content h-100">
+                <img src="Resources/Images/-Atea-housescene:-[1815].jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>A Tea House Scene</h4>
+                  <a id="arTea10" href="viewer.html" title="Reading Nook" class="details-link manifest-selector"><i class="bi bi-book"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <!-- Chinese Woman Picking Tea -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-art">
+              <div class="portfolio-content h-100">
+                <img src="Resources/Images/English-Chinesewomanpicking-[1857].jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Chinese Woman Picking Tea Leaves</h4>
+                  <a id="arTea11" href="viewer.html" title="Reading Nook" class="details-link manifest-selector"><i class="bi bi-book"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <!-- Man pours tea -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-art">
+              <div class="portfolio-content h-100">
+                <img src="Resources/Images/Boucher-manpourstea.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>A Man Pours Tea for Resting Chinese Warrior</h4>
+                  <a id="arTea12" href="viewer.html" title="Reading Nook" class="details-link manifest-selector"><i class="bi bi-book"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <!-- A Chinese tea plantation -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-art">
+              <div class="portfolio-content h-100">
+                <img src="Resources/Images/English-Chineseteaplantation.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>A Chinese Tea Plantation</h4>
+                  <a id="arTea13" href="viewer.html" title="Reading Nook" class="details-link manifest-selector"><i class="bi bi-book"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <!-- A tea plant (Camellia sinensis) -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-art">
+              <div class="portfolio-content h-100">
+                <img src="Resources/Images/English-teaplantCamellia-[c 1840].jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>A Tea Plant (Camellia Sinensis)</h4>
+                  <a id="arTea14" href="viewer.html" title="Reading Nook" class="details-link manifest-selector"><i class="bi bi bi-book"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+                        
+            <!-- The Classic of Tea -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-book">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/book-cover/classicoftea-cover.webp" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>The Classic of Tea - Translation by Student of Tea</h4>
+                  <a href="https://www.studentoftea.com/p/the-classic-of-tea-and-its-english-translation" title="Student of Tea" class="details-link" target="_blank"><i class="bi bi bi-book"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+          </div><!-- End Portfolio Container -->
+
         </div>
 
       </div>
 
-    </section><!-- /Cards Section -->
+    </section><!-- /Portfolio Section -->
 
   </main>
 
@@ -205,6 +355,19 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+
+    <script>
+        const artTeaItem = document.querySelectorAll(".manifest-selector");
+        console.log(artTeaItem)
+        artTeaItem.forEach(link => {
+          link.addEventListener("click", () => {
+            const itemID = link.getAttribute("id");
+            console.log("Setting manifestID:", itemID);
+            localStorage.setItem("manifestID", itemID);
+            console.log(localStorage.getItem("manifestID"));
+          });
+        });
+    </script>
 
 </body>
 

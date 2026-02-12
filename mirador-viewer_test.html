@@ -9,8 +9,8 @@
   <meta name="keywords" content="">
 
   <!-- Favicons -->
-  <link href="assets/img/artoftea_logo.png" rel="icon">
-  <link href="assets/img/artoftea_logo.png" rel="apple-touch-icon">
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -34,19 +34,28 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+  <script src="https://unpkg.com/mirador@latest/dist/mirador.min.js"></script>
 
-  <link
-   rel="stylesheet"
-   href="https://cdn.jsdelivr.net/npm/universalviewer@4.0.0/dist/uv.css"/>
- <script
-   type="application/javascript"
-   src="https://cdn.jsdelivr.net/npm/universalviewer@4.0.0/dist/umd/UV.js"></script>
- <style>
-   #uv {
-     width: 100%;
-     height: 600px;
-   }
- </style>
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    #my-mirador {
+      height: 700px;  /* Adjust as needed */
+      width: 100%;
+      position: relative;
+      margin-bottom: 30px;
+    }
+
+    #my-mirador .fullscreen {
+      position: relative;
+      height: 100%;
+      width: 100%;
+    }
+  </style>
 </head>
 
 <body class="portfolio-details-page">
@@ -100,8 +109,7 @@
         <div class="container">
           <div class="row d-flex justify-content-center text-center">
             <div class="col-lg-8">
-              <h1>Reading Nook</h1>
-              <p class="mb-0">Odio et unde deleniti. Deserunt numquam exercitationem. Officiis quo odio sint voluptas consequatur ut a odio voluptatem. Sit dolorum debitis veritatis natus dolores. Quasi ratione sint. Sit quaerat ipsum dolorem.</p>
+              <h1>Portfolio Details</h1>
             </div>
           </div>
         </div>
@@ -110,48 +118,14 @@
         <div class="container">
           <ol>
             <li><a href="index.html">Home</a></li>
-            <li class="current">Reading Nook</li>
+            <li class="current">Portfolio Details</li>
           </ol>
         </div>
       </nav>
     </div><!-- End Page Title -->
 
-    <!-- Portfolio Details Section -->
-    <section id="portfolio-details" class="portfolio-details section">
 
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-8">
-            <!-- <iframe src="https://www.universalviewer.dev/uv.html#?manifest=https%3A%2F%2Fshiho1000.github.io%2FSDL_project%2Fmanifests%2Fthe_little_tea_book_manifest.json&c=0&m=0&cv=9&config=&locales=en-GB%3AEnglish+%28GB%29%2Ccy-GB%3ACymraeg%2Cfr-FR%3AFran%C3%A7ais+%28FR%29%2Cpl-PL%3APolski%2Csv-SE%3ASvenska&xywh=-1%2C-157%2C2250%2C1921&r=0" width="800" height="600" allowfullscreen frameborder="0" title="The Little Tea Book"></iframe> -->
-            <div class="uv" id="uv"></div>
-          </div>
-
-          <div class="col-lg-4">
-            <div class="portfolio-info" data-aos="fade-up" data-aos-delay="200">
-              <h3>Item Details</h3>
-              <ul>
-                <li><strong>Creator</strong>: Okakura, Kakuzo</li>
-                <li><strong>Date</strong>: 1906</li>
-                <li><strong>Creation Location</strong>: Japan</li>
-                <li><strong>Subjects</strong>: <a href="#">History</a>, <a href="#">Spirituality</a></li>
-              </ul>
-            </div>
-            <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
-              <h2>Exercitationem repudiandae officiis neque suscipit</h2>
-              <p>
-                Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.
-              </p>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-
-    </section>
-    <!-- /Portfolio Details Section -->
+    <div id="my-mirador"></div>
 
   </main>
 
@@ -235,40 +209,28 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
-  <script>
-    let selectedManifest = localStorage.getItem("manifestID");
-    console.log(selectedManifest);
 
-    const manifestsURL = {
-      "arTea01": "https://shiho1000.github.io/SDL_project/manifests/afternoontea.json",
-      "arTea02": "https://shiho1000.github.io/SDL_project/manifests/manifest_mantastingtea.json",
-      "arTea03": "https://theair-hub.github.io/The-art-of-Tea/manifests/WomanTeaCeremony.json",
-      "arTea04": "https://theair-hub.github.io/The-art-of-Tea/manifests/LydiaHerMother.json",
-      "arTea05": "https://shiho1000.github.io/SDL_project/manifests/the_little_tea_book_manifest.json",
-      "arTea06": "https://valkyriecain9.github.io/artOfTea_IIIFStore/manifests/journeytoteacountries_manifest.json",
-      "arTea07": "https://valkyriecain9.github.io/artOfTea_IIIFStore/manifests/bookoftea_manifest.json",
-      "arTea08": "https://www.loc.gov/item/22019708/manifest.json",
-      "arTea09": "https://shiho1000.github.io/ArtOfTea/manifests/indian_tea_plantation_manifest.json",
-      "arTea10": "https://shiho1000.github.io/ArtOfTea/manifests/tea_house_scene_manifest.json",
-      "arTea11": "https://shiho1000.github.io/ArtOfTea/manifests/chinese_woman_manifest.json",
-      "arTea12": "https://shiho1000.github.io/ArtOfTea/manifests/man_pours_tea_manifest.json",
-      "arTea13": "https://shiho1000.github.io/ArtOfTea/manifests/chinese_tea_plantation.json",
-      "arTea14": "https://shiho1000.github.io/ArtOfTea/manifests/a_tea_plant_manifest.json"
-    };
-
-    const manifestURL = manifestsURL[selectedManifest];
-    
-    if (manifestURL) {
-      const data = {
-        manifest: manifestURL,
-        embedded: true // needed for codesandbox frame
-      };
-
-      uv = UV.init("uv", data);
-    } else {
-      console.error(`Manifest not found for key: ${selectedManifest}`);
-    }
+  <script type="text/javascript">
+  var mirador = Mirador.viewer({
+    "id": "my-mirador",
+    "manifests": {
+      "https://shiho1000.github.io/SDL_project/manifests/the_little_tea_book_manifest.json": {
+        "provider": "Harvard University"
+      },
+      "https://theair-hub.github.io/The-art-of-Tea/manifests/LydiaHerMother.json": {
+        "provider": "Harvard University"
+      }
+    },
+    "windows": [
+      {
+        "loadedManifest": "https://shiho1000.github.io/SDL_project/manifests/the_little_tea_book_manifest.json",
+        "canvasIndex": 2,
+        "thumbnailNavigationPosition": 'far-bottom'
+      }
+    ]
+  });
   </script>
+
 </body>
 
 </html>

@@ -123,11 +123,11 @@
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
 :root { 
-  --background-color: #ffffff; /* Background color for the entire website, including individual sections */
+  --background-color: #ECEBE9; /* Background color for the entire website, including individual sections */
   --default-color: #555555; /* Default color used for the majority of the text content across the entire website */
-  --heading-color: #073839; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #70b9b0; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
-  --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
+  --heading-color: #3C4D2D; /* Color for headings, subheadings and title throughout the website */
+  --accent-color: #2c321c; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --surface-color: #F4F6F4; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
 
@@ -135,10 +135,10 @@
 :root {
   --nav-color: rgba(255, 255, 255, 0.7);  /* The default color of the main navmenu links */
   --nav-hover-color: #ffffff; /* Applied to main navmenu links when they are hovered over or active */
-  --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
-  --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
-  --nav-dropdown-color: #555555; /* Used for navigation links of the dropdown items in the navigation menu. */
-  --nav-dropdown-hover-color: #70b9b0; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+  --nav-mobile-background-color: #2c321c; /* Used as the background color for mobile navigation menu */
+  --nav-dropdown-background-color: #2c321c; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
+  --nav-dropdown-color: rgba(255, 255, 255, 0.7); /* Used for navigation links of the dropdown items in the navigation menu. */
+  --nav-dropdown-hover-color: #ffffff; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
 }
 
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
@@ -149,10 +149,10 @@
 }
 
 .dark-background {
-  --background-color: #30ac9d;
+  --background-color: #2c321c;
   --default-color: #ffffff;
   --heading-color: #ffffff;
-  --surface-color: #44cbbb;
+  --surface-color: #3C4D2D;
   --contrast-color: #ffffff;
 }
 
@@ -193,7 +193,7 @@ h6 {
 
 /* PHP Email Form Messages
 ------------------------------*/
-.php-email-form .error-message {
+/* .php-email-form .error-message {
   display: none;
   background: #df1529;
   color: #ffffff;
@@ -241,13 +241,13 @@ h6 {
   100% {
     transform: rotate(360deg);
   }
-}
+} */
 
 /*--------------------------------------------------------------
 # Global Header
 --------------------------------------------------------------*/
 .header {
-  --background-color: #2c6861;
+  --background-color: #2c321c;
   --default-color: #ffffff;
   --heading-color: #ffffff;
   color: var(--default-color);
@@ -551,14 +551,18 @@ h6 {
   border-radius: 50%;
   border: 1px solid color-mix(in srgb, var(--default-color), transparent 50%);
   font-size: 16px;
-  color: color-mix(in srgb, var(--default-color), transparent 50%);
+  color: color-mix(in srgb, var(--default-color), transparent 0%);
   margin-right: 10px;
   transition: 0.3s;
 }
 
 .footer .social-links a:hover {
-  color: var(--accent-color);
-  border-color: var(--accent-color);
+  color: var(--contrast-color);
+  border-color: var(--contrast-color);
+}
+
+.footer a {
+  color: var(--default-color);
 }
 
 .footer .copyright {
@@ -740,7 +744,7 @@ section,
 --------------------------------------------------------------*/
 .hero {
   width: 100%;
-  min-height: 70vh;
+  min-height: 90vh;
   position: relative;
   padding: 80px 0;
   display: flex;
@@ -773,7 +777,7 @@ section,
 
 .hero h2 {
   margin: 0;
-  font-size: 48px;
+  font-size: 80px;
   font-weight: 700;
 }
 
@@ -965,7 +969,7 @@ section,
 }
 
 .services .service-item .title a:hover {
-  color: var(--accent-color);
+  color: var(--contrast-color);
 }
 
 .services .service-item .description {
@@ -1099,17 +1103,20 @@ section,
   inset: 0;
   z-index: 3;
   transition: all ease-in-out 0.3s;
-  background: rgba(0, 0, 0, 0.6);
+  background: color-mix(in srgb, var(--heading-color), transparent 30%);
   padding: 15px;
 }
 
 .portfolio .portfolio-content .portfolio-info h4 {
-  font-size: 14px;
+  font-size: 20px;
   padding: 5px 10px;
   font-weight: 400;
   color: #ffffff;
-  display: inline-block;
-  background-color: var(--accent-color);
+  /* display: inline-block; */
+  /* background-color: var(--heading-color); */
+  text-align: center;
+  align-content: center;
+  justify-content: center;
 }
 
 .portfolio .portfolio-content .portfolio-info p {
@@ -1133,6 +1140,7 @@ section,
   color: #fff;
   transition: 0.3s;
   line-height: 1.2;
+  align-content: center;
 }
 
 .portfolio .portfolio-content .portfolio-info .preview-link:hover,
@@ -1460,7 +1468,7 @@ section,
 }
 
 .team .team-member .social a:hover {
-  background: var(--accent-color);
+  background: var(--contrast-color);
 }
 
 .team .team-member .social a:hover i {
@@ -1635,7 +1643,7 @@ section,
 }
 
 .service-details .services-list a:hover {
-  border-color: var(--accent-color);
+  border-color: var(--contrast-color);
 }
 
 .service-details .services-img {
