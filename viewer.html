@@ -62,29 +62,9 @@
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="#hero">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#team">Team</a></li>
-          <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="#">Dropdown 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <li><a href="#">Deep Dropdown 1</a></li>
-                  <li><a href="#">Deep Dropdown 2</a></li>
-                  <li><a href="#">Deep Dropdown 3</a></li>
-                  <li><a href="#">Deep Dropdown 4</a></li>
-                  <li><a href="#">Deep Dropdown 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Dropdown 2</a></li>
-              <li><a href="#">Dropdown 3</a></li>
-              <li><a href="#">Dropdown 4</a></li>
-            </ul>
-          </li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="index.html#collection">Collection</a></li>
+          <li><a href="">Documentation</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -101,7 +81,7 @@
           <div class="row d-flex justify-content-center text-center">
             <div class="col-lg-8">
               <h1>Reading Nook</h1>
-              <p class="mb-0">Odio et unde deleniti. Deserunt numquam exercitationem. Officiis quo odio sint voluptas consequatur ut a odio voluptatem. Sit dolorum debitis veritatis natus dolores. Quasi ratione sint. Sit quaerat ipsum dolorem.</p>
+              <p class="mb-0 sirivennela-regular">There is nothing like a cup of tea and a good book to read</p>
             </div>
           </div>
         </div>
@@ -124,7 +104,6 @@
         <div class="row gy-4">
 
           <div class="col-lg-8">
-            <!-- <iframe src="https://www.universalviewer.dev/uv.html#?manifest=https%3A%2F%2Fshiho1000.github.io%2FSDL_project%2Fmanifests%2Fthe_little_tea_book_manifest.json&c=0&m=0&cv=9&config=&locales=en-GB%3AEnglish+%28GB%29%2Ccy-GB%3ACymraeg%2Cfr-FR%3AFran%C3%A7ais+%28FR%29%2Cpl-PL%3APolski%2Csv-SE%3ASvenska&xywh=-1%2C-157%2C2250%2C1921&r=0" width="800" height="600" allowfullscreen frameborder="0" title="The Little Tea Book"></iframe> -->
             <div class="uv" id="uv"></div>
           </div>
 
@@ -132,17 +111,16 @@
             <div class="portfolio-info" data-aos="fade-up" data-aos-delay="200">
               <h3>Item Details</h3>
               <ul>
-                <li><strong>Creator</strong>: Okakura, Kakuzo</li>
-                <li><strong>Date</strong>: 1906</li>
-                <li><strong>Creation Location</strong>: Japan</li>
-                <li><strong>Subjects</strong>: <a href="#">History</a>, <a href="#">Spirituality</a></li>
+                <li id="title"><strong>Title</strong>: </li>
+                <li id="creator"><strong>Creator</strong>: </li>
+                <li id="date"><strong>Date</strong>: </li>
+                <li id="loc"><strong>Creation Location</strong>: </li>
+                <li id="subject"><strong>Subjects</strong>: </li>
               </ul>
             </div>
             <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
-              <h2>Exercitationem repudiandae officiis neque suscipit</h2>
-              <p>
-                Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.
-              </p>
+              <h2>Description</h2>
+              <p id="description"></p>
             </div>
           </div>
 
@@ -239,24 +217,158 @@
     let selectedManifest = localStorage.getItem("manifestID");
     console.log(selectedManifest);
 
-    const manifestsURL = {
-      "arTea01": "https://shiho1000.github.io/SDL_project/manifests/afternoontea.json",
-      "arTea02": "https://shiho1000.github.io/SDL_project/manifests/manifest_mantastingtea.json",
-      "arTea03": "https://theair-hub.github.io/The-art-of-Tea/manifests/WomanTeaCeremony.json",
-      "arTea04": "https://theair-hub.github.io/The-art-of-Tea/manifests/LydiaHerMother.json",
-      "arTea05": "https://shiho1000.github.io/SDL_project/manifests/the_little_tea_book_manifest.json",
-      "arTea06": "https://valkyriecain9.github.io/artOfTea_IIIFStore/manifests/journeytoteacountries_manifest.json",
-      "arTea07": "https://valkyriecain9.github.io/artOfTea_IIIFStore/manifests/bookoftea_manifest.json",
-      "arTea08": "https://www.loc.gov/item/22019708/manifest.json",
-      "arTea09": "https://shiho1000.github.io/ArtOfTea/manifests/indian_tea_plantation_manifest.json",
-      "arTea10": "https://shiho1000.github.io/ArtOfTea/manifests/tea_house_scene_manifest.json",
-      "arTea11": "https://shiho1000.github.io/ArtOfTea/manifests/chinese_woman_manifest.json",
-      "arTea12": "https://shiho1000.github.io/ArtOfTea/manifests/man_pours_tea_manifest.json",
-      "arTea13": "https://shiho1000.github.io/ArtOfTea/manifests/chinese_tea_plantation.json",
-      "arTea14": "https://shiho1000.github.io/ArtOfTea/manifests/a_tea_plant_manifest.json"
+    const teaCollection = {
+      "arTea01": {
+        "manifest": "https://valkyriecain9.github.io/artOfTea_IIIFStore/manifests/afternoon_tea.json",
+        "title": "Afternoon Tea",
+        "creator":"Kate Greenway, Edmund Evans",
+        "date":"c. 19th Century",
+        "location":"England",
+        "subjects": {
+          "Afternoon Tea": "https://lccn.loc.gov/sj2021051488",
+          "Tea Gardens": "https://lccn.loc.gov/sh97008800",
+          "Black Tea": "https://lccn.loc.gov/sh2021008130"
+        },
+        "description":"Three young women sit in an English garden having afternoon tea. The tea is served with fruit cake and other small accompanying dishes. This work was drawn by Greenway and wood engraved by Evans."
+      },
+      "arTea02": {
+        "manifest": "https://valkyriecain9.github.io/artOfTea_IIIFStore/manifests/mantastingtea.json",
+        "title": "A man tasting tea with inset picture of kettles boiling",
+        "creator":"Unknown",
+        "date":"c.1890",
+        "location":"England",
+        "subjects": {
+          "Tea Trade": "https://lccn.loc.gov/sh85132942",
+          "Tea Tasting": "https://lccn.loc.gov/sh85132940"
+        },
+        "description":"Here we see a man sitting in front of several tea cups and a set of scales. It can be assumed he is tasting different tea leaves to assess their quality before they are put on the market. "
+      },
+      "arTea03": {
+        "manifest": "https://theair-hub.github.io/The-art-of-Tea/manifests/WomanTeaCeremony.json",
+        "title": "Japanese Woman Performing Tea Ceremony",
+        "creator":"Kikukawa Eizan",
+        "date":"c. 1820",
+        "location":"Japan",
+        "subjects": {
+          "Japanese Tea ceremony": "https://lccn.loc.gov/sh85069725",
+          "Japanese tea Garden": "https://lccn.loc.gov/sh94003172",
+          "Chashitsu (Japanese tearooms)": "https://lccn.loc.gov/sh85022727",
+          "Green Tea": "https://lccn.loc.gov/sh98001340"
+        },
+        "description":"This colour woodblock print depicts part of the Japanese tea ceremony, performed by a woman dressed formally for the occasion. Around her we can see the various tools involved in the ceremony."
+      },
+      "arTea04": {
+        "manifest": "https://theair-hub.github.io/The-art-of-Tea/manifests/LydiaHerMother.json",
+        "title": "Lydia and Her Mother at Tea",
+        "creator":"Mary Cassatt",
+        "date":"c. 1880",
+        "location":"America",
+        "subjects": {
+          "Afternoon Tea": "https://lccn.loc.gov/sj2021051488"
+        },
+        "description":"A unique impression between the fourth and fifth states, Cassatt added texture and tone to the composition so that the figures and objects in the room become flat shapes defined by bold contrasts of light and shadow. Lydia’s elegant, pale hands raising a porcelain cup to her lips are brilliantly highlighted against the inky black of her dress. (JSTOR)"
+      },
+      "arTea05": {
+        "manifest": "https://shiho1000.github.io/SDL_project/manifests/the_little_tea_book_manifest.json",
+        "title": "",
+        "creator":"",
+        "date":"",
+        "location":"",
+        "subjects":"",
+        "description":""
+      },
+      "arTea06": {
+        "manifest": "https://valkyriecain9.github.io/artOfTea_IIIFStore/manifests/journeytoteacountries_manifest.json",
+        "title": "Journey to the Tea Countries of China",
+        "creator":"Robert Fortune",
+        "date":"1852",
+        "location":"England, China",
+        "subjects": {
+          "Camelias (Tea Leaf)": "https://lccn.loc.gov/sh85019114",
+          "Tea Plantations": "https://lccn.loc.gov/sh2009000722",
+          "Indian Tea Plantations": "https://lccn.loc.gov/sh2009002994",
+          "Zen Budhism": "https://lccn.loc.gov/sh85149720",
+          "Opium": "https://lccn.loc.gov/sh85095095",
+          "China Tea History": "https://lccn.loc.gov/sh2008112604",
+          "Tea Trade": "https://lccn.loc.gov/sh85132942"
+        },
+        "description":"This book acts as the travelogue of the Scottish botanist Robert Fortune, probably the first western foreigner to travel to China in order to learn about the cultivation of tea, which up until that point had remained a mystery to the West. These secrets were of great interest to the East India Company who tasked Fortune with stealing a sample of tea leaves in order to start their own plantations in India."
+      },
+      "arTea07": {
+        "manifest": "https://valkyriecain9.github.io/artOfTea_IIIFStore/manifests/bookoftea_manifest.json",
+        "title": "",
+        "creator":"",
+        "date":"",
+        "location":"",
+        "subjects":"",
+        "description":""
+      },
+      "arTea08": {
+        "manifest": "https://www.loc.gov/item/22019708/manifest.json",
+        "title": "",
+        "creator":"",
+        "date":"",
+        "location":"",
+        "subjects":"",
+        "description":""
+      },
+      "arTea09": {
+        "manifest": "https://shiho1000.github.io/ArtOfTea/manifests/indian_tea_plantation_manifest.json",
+        "title": "",
+        "creator":"",
+        "date":"",
+        "location":"",
+        "subjects":"",
+        "description":""
+      },
+      "arTea10": {
+        "manifest": "https://shiho1000.github.io/ArtOfTea/manifests/tea_house_scene_manifest.json",
+        "title": "",
+        "creator":"",
+        "date":"",
+        "location":"",
+        "subjects":"",
+        "description":""
+      },
+      "arTea11": {
+        "manifest": "https://shiho1000.github.io/ArtOfTea/manifests/chinese_woman_manifest.json",
+        "title": "",
+        "creator":"",
+        "date":"",
+        "location":"",
+        "subjects":"",
+        "description":""
+      },
+      "arTea12": {
+        "manifest": "https://shiho1000.github.io/ArtOfTea/manifests/man_pours_tea_manifest.json",
+        "title": "",
+        "creator":"",
+        "date":"",
+        "location":"",
+        "subjects":"",
+        "description":""
+      },
+      "arTea13": {
+        "manifest": "https://shiho1000.github.io/ArtOfTea/manifests/chinese_tea_plantation.json",
+        "title": "",
+        "creator":"",
+        "date":"",
+        "location":"",
+        "subjects":"",
+        "description":""
+      },
+      "arTea14": {
+        "manifest": "https://shiho1000.github.io/ArtOfTea/manifests/a_tea_plant_manifest.json",
+        "title": "",
+        "creator":"",
+        "date":"",
+        "location":"",
+        "subjects":"",
+        "description":""
+      }
     };
 
-    const manifestURL = manifestsURL[selectedManifest];
+    const manifestURL = teaCollection[selectedManifest]["manifest"]
     
     if (manifestURL) {
       const data = {
@@ -268,6 +380,35 @@
     } else {
       console.error(`Manifest not found for key: ${selectedManifest}`);
     }
+
+    //adding item details
+    const title = document.querySelector("#title");
+    const creator = document.querySelector("#creator");
+    const date = document.querySelector("#date");
+    const loc = document.querySelector("#loc");
+    const subject = document.querySelector("#subject");
+    const description= document.querySelector("#description");
+
+    title.appendChild(document.createTextNode(teaCollection[selectedManifest]["title"]));
+    creator.appendChild(document.createTextNode(teaCollection[selectedManifest]["creator"]));
+    date.appendChild(document.createTextNode(teaCollection[selectedManifest]["date"]));
+    loc.appendChild(document.createTextNode(teaCollection[selectedManifest]["location"]));
+    // subject.appendChild(document.createTextNode(teaCollection[selectedManifest]["subjects"]));
+    description.appendChild(document.createTextNode(teaCollection[selectedManifest]["description"]));
+
+    //adding subject headings with uris
+    const subj = teaCollection[selectedManifest]["subjects"];
+    for (const s in subj) {
+      // console.log(`${s}: ${subj[s]}`);
+      const subjURI = document.createElement("a");
+      subjURI.textContent = s;
+      subjURI.href = subj[s];
+      subjURI.setAttribute("target", "_blank");
+      subject.appendChild(subjURI);
+      subject.appendChild(document.createTextNode(", "));
+    }
+
+
   </script>
 </body>
 
