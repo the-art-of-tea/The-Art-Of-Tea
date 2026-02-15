@@ -41,15 +41,37 @@ ArTea:BookOfTeaXML a schema:DigitalDocument ;
     dcterms:source <https://github.com/the-art-of-tea/The-Art-Of-Tea/tree/main> ;
     dcterms:rights <https://creativecommons.org/publicdomain/mark/1.0/> .
 
-ArTea:TeaRoomXML a schema:DigitalDocument ;
+ArTea:LitteTeaBookXML a schema:DigitalDocument ;
     bf:responsibilityStatement "XML created by The Art of Tea Team" ;
-    bf:mainTitle "Tea Room Booklet XML" ;
+    bf:mainTitle "Little Tea Book XML" ;
     bf:originDate "2026" ;
     bf:originPlace "University of Bologna (BO)" ;
     dcterms:source <https://github.com/the-art-of-tea/The-Art-Of-Tea/tree/main> ;
     dcterms:rights <https://creativecommons.org/publicdomain/mark/1.0/> .
 
 # Books 
+
+ArTea:arTea05 a schema:Book ;
+    bf:identifiedBy <https://archive.org/search?query=external-identifier%3A%22urn%3Aoclc%3Arecord%3A1048789310%22> ;
+    bf:mainTitle "The little tea book" ;
+    dcterms:contributor "http://viaf.org/viaf/44670260" ;
+    bf:responsibilityStatement "University of California Libraries" ;
+    bf:agent "New York : Baker & Taylor" ;
+    bf:date "2007-01-25 00:30:45"^^xsd:dateTime ;
+    bf:place <https://archive.org/details/littleteabook00grayrich/> ;
+    bf:originPlace "New York" ;
+    bf:originDate "1903" ;
+    dcterms:source <https://archive.org/details/littleteabook00grayrich/> ;
+    dcterms:rights "Free eBook from the Internet Archive" ;
+    dcterms:format "310.5M" ;
+    dcterms:abstract "The little book of tea is a collection of short tales and poems about tea, exploring its history, traditions, and tea drinking customs across different cultures." ;
+    dcterms:subject 
+        <http://id.loc.gov/authorities/subjects/sh85132924>,
+        <https://lccn.loc.gov/sh85132933>,
+        <https://lccn.loc.gov/sh2010115714>,
+        <https://lccn.loc.gov/sh85132940> ;
+    dcterms:hasVersion ArTea:LittleTeaBookXML ;
+    crm:P129_is_about ArTea:Tea .
 
 ArTea:arTea07 a schema:Book ;
     bf:identifiedBy <https://archive.org/search.php?query=external-identifier%3A%22urn%3Aoclc%3Arecord%3A1041561203%22> ;
@@ -73,6 +95,23 @@ ArTea:arTea07 a schema:Book ;
         <http://id.loc.gov/authorities/subjects/sh85132392>,
         <http://id.loc.gov/authorities/subjects/sh2020004829> ;
     dcterms:hasVersion ArTea:BookOfTeaXML ;
+    crm:P129_is_about ArTea:Tea .
+
+ArTea:arTea08 a schema:Book ;
+    bf:mainTitle "Tea room booklet" ;
+    dcterms:contributor "N/A" ;
+    bf:responsibilityStatement "New York, Woman's home companion" ;
+    bf:place <https://www.loc.gov/item/22019708/> ;
+    bf:originPlace "New York" ;
+    bf:originDate "1922" ;
+    dcterms:source <https://www.loc.gov/item/22019708/> ;
+    dcterms:rights "Free eBook from the Library of Congress" ;
+    dcterms:abstract "This collection of narratives and guides explores the founding and management of early 20th-century tea rooms, offering both practical business advice and personal success stories." ;
+    dcterms:subject 
+        <http://id.loc.gov/authorities/subjects/sh85132924>,
+        <https://lccn.loc.gov/sh96001108>,
+        <https://lccn.loc.gov/sh85032133>,
+        <https://lccn.loc.gov/sh85113249> ;
     crm:P129_is_about ArTea:Tea .
 
 ArTea:arTea15 a schema:WebPage ;
@@ -116,6 +155,40 @@ ArTea:arTea03 a schema:ImageObject ;
     dcterms:rights <https://creativecommons.org/publicdomain/mark/1.0/> ;
     crm:P129_is_about ArTea:Tea ;
     dcterms:source <https://www.jstor.org/stable/community.24570642> .
+
+ArTea:arTea09 a schema:ImageObject ; 
+    dcterms:title "Indian tea plantation" ;
+    dcterms:creator "N/A" ;
+    dcterms:coverage <https://www.geonames.org/1269750/> ;
+    dcterms:medium "1 painting : watercolour, with pencil" ;
+    dcterms:date "[between 1800 and 1899?]" ;
+    dcterms:description "Indian tea plantation, an European lady and gentleman on horseback approach the main house, where a number of people await their arrival. Watercolour by an Indian artist." ;
+    dcterms:subject 
+        <https://lccn.loc.gov/sh85132924>,
+        <https://lccn.loc.gov/sh2004001990>,
+        <https://lccn.loc.gov/sh2009002994>;
+    schema:hasMeasurement "image 19.5 x 16.5 cm" ;
+    dcterms:rights <https://creativecommons.org/publicdomain/mark/1.0/> ;
+    crm:P129_is_about ArTea:Tea ;
+    dcterms:source <https://www.jstor.org/stable/community.24902257> .
+
+ArTea:arTea10 a schema:ImageObject ; 
+    dcterms:title "A tea-house scene: evening cooling (noryo)" ;
+    dcterms:creator "N/A" ;
+    dcterms:coverage <https://www.geonames.org/1861060/> ;
+    dcterms:medium "1 painting : watercolour, with pencil" ;
+    dcterms:date "1815" ;
+    dcterms:description "A tea-house scene: evening cooling (noryo).
+Lettering in Japanese" ;
+    dcterms:subject 
+        <https://lccn.loc.gov/sh85132924>,
+        <https://lccn.loc.gov/sh2004001990>,
+        <https://lccn.loc.gov/sh96001108>,
+	    <https://lccn.loc.gov/sh85069579> ;
+    schema:hasMeasurement "sheet 22.7 x 26.1 cm" ;
+    dcterms:rights <https://creativecommons.org/publicdomain/mark/1.0/> ;
+    crm:P129_is_about ArTea:Tea ;
+    dcterms:source <https://www.jstor.org/stable/community.24903985> .
 
 ArTea:arTea11 a schema:ImageObject ; 
     dcterms:title "A Chinese woman picking tea leaves. Wood engraving, 1857, after a pen and ink drawing." ;
