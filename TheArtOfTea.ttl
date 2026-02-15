@@ -52,8 +52,8 @@ ArTea:LitteTeaBookXML a schema:DigitalDocument ;
 # Books 
 
 ArTea:arTea05 a schema:Book ;
-    bf:identifiedBy <https://archive.org/search?query=external-identifier%3A%22urn%3Aoclc%3Arecord%3A1048789310%22> ;
-    bf:mainTitle "The little tea book" ;
+    bf:identifiedBy "littleteabook00grayrich" ;
+    bf:mainTitle "The Little Tea Book" ;
     dcterms:contributor "http://viaf.org/viaf/44670260" ;
     bf:responsibilityStatement "University of California Libraries" ;
     bf:agent "New York : Baker & Taylor" ;
@@ -73,8 +73,32 @@ ArTea:arTea05 a schema:Book ;
     dcterms:hasVersion ArTea:LittleTeaBookXML ;
     crm:P129_is_about ArTea:Tea .
 
+ArTea:arTea06 a schema:Book ;
+    bf:identifiedBy "journeytoteacoun00fort" ;
+    bf:mainTitle "Journey to the Tea Countries of China" ;
+    dcterms:contributor <http://viaf.org/viaf/4988075> ;
+    bf:responsibilityStatement "Harold B. Lee Library" ;
+    bf:agent "John Murray" ;
+    bf:date "2011-12-15T03:31:02"^^xsd:dateTime ;
+    bf:place <https://archive.org/details/journeytoteacoun00fort/> ;
+    bf:originPlace "London" ;
+    bf:originDate "1852" ;
+    dcterms:source <https://archive.org/details/journeytoteacoun00fort/> ;
+    dcterms:rights "Free eBook from the Internet Archive" ;
+    dcterms:format "781.0M" ;
+    dcterms:abstract "Including Sung-Lo and the Bohea hills; with a short notice of the East India Company's tea plantations in the Himalaya mountains - This book acts as the travelogue of the Scottish botanist Robert Fortune, probably the first western foreigner to travel to China in order to learn about the cultivation of tea, which up until that point had remained a mystery to the West. These secrets were of great interest to the East India Company who tasked Fortune with stealing a sample of tea leaves in order to start their own plantations in India." ;
+    dcterms:subject 
+        <https://lccn.loc.gov/sh85019114>,
+        <https://lccn.loc.gov/sh2009000722>,
+        <https://lccn.loc.gov/sh2009002994>,
+        <https://lccn.loc.gov/sh85149720>,
+        <https://lccn.loc.gov/sh85095095>,
+        <https://lccn.loc.gov/sh8513294>,
+        <https://lccn.loc.gov/sh2008112604> ;
+    crm:P129_is_about ArTea:Tea .
+
 ArTea:arTea07 a schema:Book ;
-    bf:identifiedBy <https://archive.org/search.php?query=external-identifier%3A%22urn%3Aoclc%3Arecord%3A1041561203%22> ;
+    bf:identifiedBy "bookoftea00okakrich" ;
     bf:mainTitle "The Book of Tea" ;
     dcterms:contributor <http://viaf.org/viaf/99830297> ;
     bf:responsibilityStatement "University of California Libraries" ;
@@ -119,7 +143,6 @@ ArTea:arTea15 a schema:WebPage ;
     dcterms:contributor <http://viaf.org/viaf/98018752> ;
     bf:responsibilityStatement "Studentoftea.com" ;
     bf:date "2025-10-14"^^xsd:date ;
-    bf:place <https://archive.org/details/bookoftea00okakrich/mode/2up> ;
     bf:originPlace "-" ;
     bf:originDate "-" ;
     dcterms:source <https://www.studentoftea.com/p/the-classic-of-tea-and-its-english-translation> ;
@@ -137,12 +160,44 @@ ArTea:arTea15 a schema:WebPage ;
         <http://id.loc.gov/authorities/subjects/sh85132942>,
         <http://id.loc.gov/authorities/subjects/sh85132392>,
         <http://id.loc.gov/authorities/subjects/sh85149720> ;
-    crm:P129_is_about ArTea:Tea .
+    crm:P129_is_about ArTea:Tea ;
+    dcterms:isVersionOf <https://www.wikidata.org/wiki/Q259153> .
 
 # Images
 
+ArTea:arTea01 a schema:ImageObject ; 
+    dcterms:title "Afternoon Tea" ;
+    dcterms:creator <http://viaf.org/viaf/64163914> ;
+    dcterms:creator <http://viaf.org/viaf/71519059> ;
+    dcterms:coverage <https://www.geonames.org/2635167/> ;
+    dcterms:medium "1 print : wood engraving, printed in colours" ;
+    dcterms:date "c. 19th century" ;
+    dcterms:description "Three young woman are sitting at table in a garden having afternoon tea, with a large fruit cake. Colour wood engraving by E. Evans after Kate Greenaway." ; 
+    dcterms:subject 
+        <https://lccn.loc.gov/sj2021051488>,
+        <https://lccn.loc.gov/sh97008800>,
+        <https://lccn.loc.gov/sh2021008130> ;
+    schema:hasMeasurement "image 14.9 x 20.2 cm" ;
+    dcterms:rights <https://creativecommons.org/publicdomain/mark/1.0/> ;
+    crm:P129_is_about ArTea:Tea ;
+    dcterms:source <https://www.jstor.org/stable/community.24885633> .
+
+ArTea:arTea02 a schema:ImageObject ; 
+    dcterms:title "A man tasting tea with inset picture of kettles boiling." ;
+    dcterms:creator "Uknown" ;
+    dcterms:coverage <https://www.geonames.org/2635167/> ;
+    dcterms:medium "1 drawing : pen and ink" ;
+    dcterms:date "c. 1890" ;
+    dcterms:description "The tea taster at work The kettles ...; Lettering continues on top right: '2 cols'" ; 
+    dcterms:subject 
+        <https://lccn.loc.gov/sh85132942>,
+        <https://lccn.loc.gov/sh85132940> ;
+    dcterms:rights <https://creativecommons.org/publicdomain/mark/1.0/> ;
+    crm:P129_is_about ArTea:Tea ;
+    dcterms:source <https://www.jstor.org/stable/community.24844948> .
+
 ArTea:arTea03 a schema:ImageObject ; 
-    dcterms:title "Woman Performing the Tea Ceremony" ;
+    dcterms:title "Japanese Woman Performing the Tea Ceremony" ;
     dcterms:creator <http://viaf.org/viaf/96576651> ;
     dcterms:coverage <https://www.geonames.org/1861060/> ;
     dcterms:medium "Print - color woodblock" ;
@@ -155,6 +210,21 @@ ArTea:arTea03 a schema:ImageObject ;
     dcterms:rights <https://creativecommons.org/publicdomain/mark/1.0/> ;
     crm:P129_is_about ArTea:Tea ;
     dcterms:source <https://www.jstor.org/stable/community.24570642> .
+
+ArTea:arTea04 a schema:ImageObject ; 
+    dcterms:title "Lydia and Her Mother at Tea" ;
+    dcterms:creator <http://viaf.org/viaf/2478969> ;
+    dcterms:coverage <https://www.geonames.org/6252001/> ;
+    dcterms:medium "Print - aquatint and etching, unique impression between fourth and fifth states wove paper" ;
+    dcterms:date "c. 1880" ;
+    dcterms:description "A unique impression between the fourth and fifth states, Cassatt added texture and tone to the composition so that the figures and objects in the room become flat shapes defined by bold contrasts of light and shadow. Lydia’s elegant, pale hands raising a porcelain cup to her lips are brilliantly highlighted against the inky black of her dress." ; 
+    dcterms:subject 
+        <https://lccn.loc.gov/sj2021051488>,
+        <https://lccn.loc.gov/sh2004001990> ;
+    schema:hasMeasurement "Sheet: 27.5 x 36 cm (10 13/16 x 14 3/16 in.); Platemark: 18 x 28 cm (7 1/16 x 11 in.)" ;
+    dcterms:rights <https://creativecommons.org/publicdomain/mark/1.0/> ;
+    crm:P129_is_about ArTea:Tea ;
+    dcterms:source <https://www.jstor.org/stable/community.24626602> .
 
 ArTea:arTea09 a schema:ImageObject ; 
     dcterms:title "Indian tea plantation" ;
@@ -178,8 +248,7 @@ ArTea:arTea10 a schema:ImageObject ;
     dcterms:coverage <https://www.geonames.org/1861060/> ;
     dcterms:medium "1 painting : watercolour, with pencil" ;
     dcterms:date "1815" ;
-    dcterms:description "A tea-house scene: evening cooling (noryo).
-Lettering in Japanese" ;
+    dcterms:description "A tea-house scene: evening cooling (noryo). Lettering in Japanese" ;
     dcterms:subject 
         <https://lccn.loc.gov/sh85132924>,
         <https://lccn.loc.gov/sh2004001990>,
