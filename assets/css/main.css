@@ -1110,6 +1110,7 @@ section,
   transition: all ease-in-out 0.3s;
   background: color-mix(in srgb, var(--heading-color), transparent 30%);
   padding: 15px;
+  
 }
 
 .portfolio .portfolio-content .portfolio-info h4 {
@@ -1117,7 +1118,19 @@ section,
   padding: 5px 10px;
   font-weight: 400;
   color: #ffffff;
-  /* display: inline-block; */
+  display: inline-block;
+  /* background-color: var(--heading-color); */
+  text-align: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.portfolio .portfolio-content .portfolio-info h5 {
+  font-size: 28px;
+  padding: 5px 10px;
+  font-weight: 400;
+  color: #ffffff;
+  display: inline-block;
   /* background-color: var(--heading-color); */
   text-align: center;
   align-content: center;
@@ -1157,6 +1170,7 @@ section,
   left: 50%;
   font-size: 34px;
   line-height: 0;
+  transform: translateX(-50%);
 }
 
 .portfolio .portfolio-content:hover .portfolio-info {
