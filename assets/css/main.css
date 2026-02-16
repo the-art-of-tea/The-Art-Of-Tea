@@ -203,6 +203,45 @@ h6 {
   font-family: var(--heading-font);
 }
 
+/* ===== TABLET (≥768px) ===== */
+
+@media (min-width: 768px) {
+
+  h1 {
+    font-size: 3rem !important;
+  }
+
+  h2 {
+    font-size: 2.4rem !important;
+  }
+
+  p,
+  li {
+    font-size: 1.3rem !important;
+  }
+}
+
+
+/* ===== DESKTOP (≥1024px) ===== */
+
+@media (min-width: 1024px) {
+
+  h1 {
+    font-size: 4rem !important;
+  }
+
+  h2 {
+    font-size: 3rem !important;
+  }
+
+  p,
+  li {
+    font-size: 1.8rem !important;
+  }
+}
+
+
+
 /*--------------------------------------------------------------
 # Global Header
 --------------------------------------------------------------*/
