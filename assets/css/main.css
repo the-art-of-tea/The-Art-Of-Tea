@@ -216,7 +216,8 @@ h6 {
   }
 
   p,
-  li {
+  li,
+  a {
     font-size: 1.3rem !important;
   }
 }
@@ -235,7 +236,8 @@ h6 {
   }
 
   p,
-  li {
+  li,
+  a {
     font-size: 1.8rem !important;
   }
 }
