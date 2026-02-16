@@ -324,3 +324,21 @@ ArTea:arTea14 a schema:ImageObject ;
     dcterms:rights <https://creativecommons.org/publicdomain/mark/1.0/> ;
     crm:P129_is_about ArTea:Tea ;
     dcterms:source <https://www.jstor.org/stable/community.24898184> .
+
+
+ArTea:arTea16 a schema:ImageObject ;
+    dcterms:title "Shennong" ;
+    dcterms:creator "Guo Xu" ;
+    dcterms:coverage <https://www.geonames.org/1814991/> ;
+    dcterms:medium "Album leaf; ink and colors on paper" ;
+    dcterms:date "1503" ;
+    dcterms:description "This painting depicts Shennong as he chews a branch, illustrating his role as healer." ;
+    dcterms:subject 
+        <https://lccn.loc.gov/sh85019114>,
+        <https://lccn.loc.gov/sh2004001990>,
+        <https://lccn.loc.gov/sh2008112604> ;
+    schema:hasMeasurement "29.8 × 49.3 cm" ;
+    dcterms:rights <https://creativecommons.org/publicdomain/mark/1.0/> ;
+    crm:P129_is_about ArTea:Tea ;
+    dcterms:source <https://commons.wikimedia.org/wiki/File:Guo_Xu_album_dated_1503_(2).jpg> .
+
