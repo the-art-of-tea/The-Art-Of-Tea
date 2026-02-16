@@ -13,8 +13,8 @@
 /* Fonts */
 :root {
   --default-font: "EB+Garamond", serif;
-  --heading-font: "Fleur+De+Leah",  serif;
-  --nav-font: "Alegreya+Sans",  sans-serif;
+  --heading-font: "Fleur+De+Leah", serif;
+  --nav-font: "Alegreya+Sans", sans-serif;
 }
 
 .fleur-de-leah-regular {
@@ -122,23 +122,35 @@
 
 
 /* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
-:root { 
-  --background-color: #ECEBE9; /* Background color for the entire website, including individual sections */
-  --default-color: #555555; /* Default color used for the majority of the text content across the entire website */
-  --heading-color: #3C4D2D; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #2c321c; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
-  --surface-color: #F4F6F4; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
-  --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
+:root {
+  --background-color: #ECEBE9;
+  /* Background color for the entire website, including individual sections */
+  --default-color: #555555;
+  /* Default color used for the majority of the text content across the entire website */
+  --heading-color: #3C4D2D;
+  /* Color for headings, subheadings and title throughout the website */
+  --accent-color: #2c321c;
+  /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --surface-color: #F4F6F4;
+  /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
+  --contrast-color: #ffffff;
+  /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
 
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
-  --nav-color: rgba(255, 255, 255, 0.7);  /* The default color of the main navmenu links */
-  --nav-hover-color: #ffffff; /* Applied to main navmenu links when they are hovered over or active */
-  --nav-mobile-background-color: #2c321c; /* Used as the background color for mobile navigation menu */
-  --nav-dropdown-background-color: #2c321c; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
-  --nav-dropdown-color: rgba(255, 255, 255, 0.7); /* Used for navigation links of the dropdown items in the navigation menu. */
-  --nav-dropdown-hover-color: #ffffff; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+  --nav-color: rgba(255, 255, 255, 0.7);
+  /* The default color of the main navmenu links */
+  --nav-hover-color: #ffffff;
+  /* Applied to main navmenu links when they are hovered over or active */
+  --nav-mobile-background-color: #2c321c;
+  /* Used as the background color for mobile navigation menu */
+  --nav-dropdown-background-color: #2c321c;
+  /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
+  --nav-dropdown-color: rgba(255, 255, 255, 0.7);
+  /* Used for navigation links of the dropdown items in the navigation menu. */
+  --nav-dropdown-hover-color: #ffffff;
+  /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
 }
 
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
@@ -172,13 +184,13 @@ body {
 
 a {
   color: var(--accent-color);
-  text-decoration: none;
+  text-decoration: underline;
   transition: 0.3s;
 }
 
 a:hover {
   color: color-mix(in srgb, var(--accent-color), transparent 25%);
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 h1,
@@ -504,13 +516,18 @@ h6 {
   transition: 0.3s;
 }
 
-.footer .social-links a:hover {
-  color: var(--contrast-color);
+.footer .social-links {
+  color: color-mix(in srgb, var(--contrast-color)) !important;
   border-color: var(--contrast-color);
 }
 
 .footer a {
   color: var(--default-color);
+}
+
+.footer a:hover {
+  color: color-mix(in srgb, var(--contrast-color), transparent 25%) !important;
+  text-decoration: underline;
 }
 
 .footer .copyright {
@@ -689,7 +706,7 @@ section,
 .section {
   color: var(--default-color);
   background-color: var(--background-color);
-  padding: 60px 0;
+  padding: 20px 0;
   scroll-margin-top: 90px;
   overflow: clip;
 }
@@ -1158,6 +1175,7 @@ section,
 .portfolio-info a:hover {
   color: var(--heading-color);
 }
+
 /*--------------------------------------------------------------
 # Pricing Section
 --------------------------------------------------------------*/
