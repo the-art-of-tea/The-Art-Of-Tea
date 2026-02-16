@@ -204,7 +204,7 @@ h6 {
 }
 
 /* ===== TABLET (≥768px) ===== */
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
 
   h1 {
     font-size: 3rem !important;
@@ -219,11 +219,11 @@ h6 {
   a {
     font-size: 1.3rem !important;
   }
-}
+} */
 
 
 /* ===== SMALL DESKTOP / LAPTOP (≥1024px) ===== */
-@media (min-width: 1024px) {
+/* @media (min-width: 1024px) {
 
   h1 {
     font-size: 3rem !important;
@@ -238,11 +238,11 @@ h6 {
   a {
     font-size: 1.2rem !important;
   }
-}
+} */
 
 
 /* ===== LARGE DESKTOP (≥1440px) ===== */
-@media (min-width: 1440px) {
+/* @media (min-width: 1440px) {
 
   h1 {
     font-size: 3.4rem !important;
@@ -257,7 +257,7 @@ h6 {
   a {
     font-size: 1.5rem !important;
   }
-}
+} */
 
 
 
