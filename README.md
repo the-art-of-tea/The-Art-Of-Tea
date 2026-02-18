@@ -24,7 +24,7 @@ The final goal is to create a fully semantically interconnected digital library,
 The presentation is made through a website built with **Bootstrap**. The website includes three main sections:
 
 ### 1. Homepage (`index.html`)
-Contains general information about the project and its objectives.
+Contains general information about the project, its objectives and the full collection of items.
 
 ### 2. Documentation (`documentation.html`)
 Includes:
@@ -39,7 +39,7 @@ Includes:
 This page allows books and images to be viewed individually through IIIF.  
 Each item is displayed with its related metadata and description.
 
-The items are dynamically loaded through a script inside the page, based on the selection made by the user.
+The items are dynamically loaded through an inline script based on the selection made by the user.
 
 ---
 
@@ -52,6 +52,13 @@ The ontology connects works, subjects, and entities in a structured semantic gra
 
 ## About the Project
 
-This project was developed as part of the **Semantic Digital Library** course at the University of Bologna, within the Master's Degree Program in **Digital Humanities and Digital Knowledge**.
+This project was developed as part of the [**Semantic Digital Library**](https://www.unibo.it/en/study/course-units-transferable-skills-moocs/course-unit-catalogue/course-unit/2025/424786) course at the University of Bologna, within the Master's Degree Program in **Digital Humanities and Digital Knowledge**.
 
 All materials included in the library are openly accessible.
+
+---
+
+## Contributors
+- [Ilaria De Dominicis](https://github.com/theair-hub)
+- [Regina Manyara](https://github.com/ValkyrieCain9)
+- [Shiho Nakamura](https://github.com/shiho1000)
