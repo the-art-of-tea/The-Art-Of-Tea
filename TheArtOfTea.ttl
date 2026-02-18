@@ -69,6 +69,7 @@ ArTea:arTea05 a schema:Book ;
         <http://id.loc.gov/authorities/subjects/sh85132924>,
         <https://lccn.loc.gov/sh85132933>,
         <https://lccn.loc.gov/sh2010115714>,
+        <http://viaf.org/viaf/29565694>,
         <https://lccn.loc.gov/sh85132940> ;
     dcterms:hasVersion ArTea:LittleTeaBookXML ;
     crm:P129_is_about ArTea:Tea .
@@ -117,6 +118,9 @@ ArTea:arTea07 a schema:Book ;
         <http://id.loc.gov/authorities/subjects/sh85022727>,
         <http://id.loc.gov/authorities/subjects/sh85149720>,
         <http://id.loc.gov/authorities/subjects/sh85132392>,
+        <https://www.wikidata.org/wiki/Q9333>,
+        <http://viaf.org/viaf/77109647>,
+        <http://viaf.org/viaf/77154987>,
         <http://id.loc.gov/authorities/subjects/sh2020004829> ;
     dcterms:hasVersion ArTea:BookOfTeaXML ;
     crm:P129_is_about ArTea:Tea .

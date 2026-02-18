@@ -321,8 +321,9 @@ h6 {
   .navmenu a:focus {
     color: var(--nav-color);
     padding: 18px 15px;
-    font-size: 16px;
-    font-family: var(--nav-font);
+    font-size: 18px;
+    font-family: var(--default-font);
+    text-decoration: none;
     font-weight: 400;
     display: flex;
     align-items: center;
@@ -441,7 +442,8 @@ h6 {
   .navmenu a:focus {
     color: var(--nav-dropdown-color);
     padding: 10px 20px;
-    font-family: var(--nav-font);
+    font-family: var(--default-font);
+    text-decoration: none;
     font-size: 17px;
     font-weight: 500;
     display: flex;
@@ -905,6 +907,10 @@ section,
 
 .about .content p:last-child {
   margin-bottom: 0;
+}
+
+.about .section-title {
+  padding: 0px 70px 12px;
 }
 
 /*--------------------------------------------------------------
