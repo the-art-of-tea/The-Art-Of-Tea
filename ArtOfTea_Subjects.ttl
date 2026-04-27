@@ -1,0 +1,237 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix schema: <http://schema.org/> .
+@prefix fabio: <http://purl.org/spar/fabio/> .
+@prefix prism: <http://prismstandard.org/namespaces/basic/2.0/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix ArTea: <https://w3id.org/ArtOfTea/> .
+@prefix loc: <http://id.loc.gov/authorities/subjects/> .
+@prefix aspect: <https://w3id.org/ArtOfTea/aspects/> .
+@prefix : <https://w3id.org/ArtOfTea/aspects#> .
+
+:ResearchObject a owl:Class;
+    rdfs:label "Research Object";
+    rdfs:comment "The cultural object or area of focus which will form the heart of the library";
+    owl:equivalentClass crm:E73_Information_Object .
+
+:Aspect a owl:Class;
+    rdfs:label "Aspect";
+    rdfs:comment "The various aspects which form the understanding of the research object - derived from the Dewey Decimal Classification";
+    owl:equivalentClass crm:E90_Symbolic_Object .
+
+:BroadArea a owl:Class;
+    rdfs:label "Broad Area";
+    rdfs:comment "Subsection of the research aspects" ;
+    owl:equivalentClass crm:E90_Symbolic_Object .
+
+:NarrowSubject a owl:Class;
+    rdfs:label "Narrow Subject";
+    rdfs:comment "The specific topics that address the research object in question";
+    owl:equivalentClass crm:E90_Symbolic_Object .
+
+
+#Defining Tea as the cultural/research object 
+ArTea:Tea a :ResearchObject;
+    rdfs:label "Tea" ;
+    rdfs:seeAlso loc:sh85132924 .
+
+#The cultural/research object is made up of several aspects - following the DDC 
+aspect:Philosophy a :Aspect ;
+    rdfs:label "Philosophy"@en ;
+    crm:P106i_forms_part_of ArTea:Tea .
+aspect:Religion a :Aspect ;
+    rdfs:label "Religion"@en ;
+    crm:P106i_forms_part_of ArTea:Tea .
+aspect:History a :Aspect ;
+    rdfs:label "History"@en ;
+    crm:P106i_forms_part_of ArTea:Tea .
+aspect:Linguistics a :Aspect ;
+    rdfs:label "Linguistics"@en ;
+    crm:P106i_forms_part_of ArTea:Tea .
+aspect:ScienceAndTechnology a :Aspect ;
+    rdfs:label "Science and Technology"@en ;
+    crm:P106i_forms_part_of ArTea:Tea .
+aspect:Art a :Aspect ;
+    rdfs:label "Art"@en ;
+    crm:P106i_forms_part_of ArTea:Tea .
+aspect:Literature a :Aspect ;
+    rdfs:label "Literature"@en ;
+    crm:P106i_forms_part_of ArTea:Tea .
+aspect:Culture a :Aspect ;
+    rdfs:label "Culture"@en ;
+    crm:P106i_forms_part_of ArTea:Tea .
+aspect:PoliticsAndEconomics a :Aspect ;
+    rdfs:label "Politics and Economics"@en ;
+    crm:P106i_forms_part_of ArTea:Tea .
+
+#Within each aspect are broad areas
+aspect:Botany a :BroadArea ;
+    rdfs:label "Botany"@en ;
+    crm:P106i_forms_part_of aspect:ScienceAndTechnology .
+aspect:Narcotics a :BroadArea ;
+    rdfs:label "Narcotics"@en ;
+    crm:P106i_forms_part_of aspect:ScienceAndTechnology .
+aspect:Oxidation a :BroadArea ;
+    rdfs:label "Oxidation"@en ;
+    crm:P106i_forms_part_of aspect:ScienceAndTechnology .
+aspect:Manufacturing a :BroadArea ;
+    rdfs:label "Manufacturing"@en ;
+    crm:P106i_forms_part_of aspect:ScienceAndTechnology ;
+    crm:P106i_forms_part_of aspect:PoliticsAndEconomics ;
+    crm:P106i_forms_part_of aspect:History .
+aspect:Commerce a :BroadArea ;
+    rdfs:label "Commerce"@en ;
+    crm:P106i_forms_part_of aspect:PoliticsAndEconomics .
+aspect:WarConflict a :BroadArea ;
+    rdfs:label "War and Conflict"@en ;
+    crm:P106i_forms_part_of aspect:PoliticsAndEconomics ;
+    crm:P106i_forms_part_of aspect:History .
+aspect:Trade a :BroadArea ;
+    rdfs:label "Trade"@en ;
+    crm:P106i_forms_part_of aspect:PoliticsAndEconomics ;
+    crm:P106i_forms_part_of aspect:History .
+aspect:ReligiousPractice a :BroadArea ;
+    rdfs:label "Religious Practice"@en ;
+    crm:P106i_forms_part_of aspect:Religion .
+aspect:CulturalPractice a :BroadArea ;
+    rdfs:label "Cultural Practice"@en ;
+    crm:P106i_forms_part_of aspect:Culture .
+aspect:CulturalSpace a :BroadArea ;
+    rdfs:label "Cultural Space"@en ;
+    crm:P106i_forms_part_of aspect:Culture .
+
+#and narrow subjects
+aspect:TeaPlantation a :NarrowSubject ;
+    rdfs:label "Tea Plantation"@en ;
+    crm:P106i_forms_part_of aspect:Manufacturing ;
+    rdfs:seeAlso loc:sh2009000722 .
+
+aspect:TeaPlantationWorkers a :NarrowSubject ;
+    rdfs:label "Tea Plantation Workers"@en ;
+    crm:P106i_forms_part_of aspect:Manufacturing ;
+    rdfs:seeAlso loc:sh85132938 .
+
+aspect:WomenTeaPlantationWorkers a :NarrowSubject ;
+    rdfs:label "Women Tea Plantation Workers"@en ;
+    crm:P106i_forms_part_of aspect:Manufacturing ;
+    rdfs:seeAlso loc:sh90004329 .
+
+aspect:IndianTeaPlantation a :NarrowSubject ;
+    rdfs:label "Indian Tea Plantation"@en ;
+    crm:P106i_forms_part_of aspect:Manufacturing ;
+    rdfs:seeAlso loc:sh2009002994 .
+
+aspect:OpiumWar a :NarrowSubject ;
+    rdfs:label "Opium War"@en ;
+    crm:P106i_forms_part_of aspect:WarConflict ;
+    rdfs:seeAlso loc:sh85024090 .
+
+aspect:AncientTeaHorseRoad a :NarrowSubject ;
+    rdfs:label "Ancient Tea Horse Road"@en ;
+    crm:P106i_forms_part_of aspect:Trade ;
+    rdfs:seeAlso loc:sh2007008660 .
+
+aspect:BostonTeaParty a :NarrowSubject ;
+    rdfs:label "Boston Tea Party"@en ;
+    crm:P106i_forms_part_of aspect:WarConflict ;
+    rdfs:seeAlso loc:sh85015952 .
+
+
+aspect:Camellias a :NarrowSubject ;
+    rdfs:label "Camellias"@en ;
+    crm:P106i_forms_part_of aspect:Botany ;
+    rdfs:seeAlso loc:sh85019114 .
+
+aspect:BlackTea a :NarrowSubject ;
+    rdfs:label "Black Tea"@en ;
+    crm:P106i_forms_part_of aspect:Oxidation ;
+    rdfs:seeAlso loc:sh2021008130 .
+
+aspect:RooibosTea a :NarrowSubject ;
+    rdfs:label "Rooibos"@en ;
+    crm:P106i_forms_part_of aspect:Oxidation ;
+    rdfs:seeAlso loc:sh85115345 .
+
+aspect:GreenTea a :NarrowSubject ;
+    rdfs:label "Green Tea"@en ;
+    crm:P106i_forms_part_of aspect:Oxidation ;
+    rdfs:seeAlso loc:sh98001340 .
+
+aspect:Opium a :NarrowSubject ;
+    rdfs:label "Opium"@en ;
+    crm:P106i_forms_part_of aspect:Narcotics ;
+    rdfs:seeAlso loc:sh85095095 .
+
+aspect:TeaMachinery a :NarrowSubject ;
+    rdfs:label "Tea Machinery"@en ;
+    crm:P106i_forms_part_of aspect:Manufacturing ;
+    rdfs:seeAlso loc:sh85132935 .
+
+
+aspect:JapaneseTeaCeremony a :NarrowSubject ;
+    rdfs:label "Japanese Tea Ceremony"@en ;
+    crm:P106i_forms_part_of aspect:CulturalPractice ;
+    rdfs:seeAlso loc:sh85069725 .
+
+aspect:AfternoonTea a :NarrowSubject ;
+    rdfs:label "Afternoon Tea"@en ;
+    crm:P106i_forms_part_of aspect:CulturalPractice ;
+    rdfs:seeAlso loc:sh85002031 .
+
+aspect:TeaGarden a :NarrowSubject ;
+    rdfs:label "Tea Garden"@en ;
+    crm:P106i_forms_part_of aspect:CulturalSpace ;
+    rdfs:seeAlso loc:sh97008800 .
+
+aspect:JapaneseTeaGarden a :NarrowSubject ;
+    rdfs:label "Japanese Tea Garden"@en ;
+    crm:P106i_forms_part_of aspect:CulturalSpace ;
+    rdfs:seeAlso loc:sh94003172 .
+
+aspect:TeaRoom a :NarrowSubject ;
+    rdfs:label "Tea Room"@en ;
+    crm:P106i_forms_part_of aspect:CulturalSpace ;
+    rdfs:seeAlso loc:sh96001108 .
+
+aspect:ChineseTeaCeremony a :NarrowSubject ;
+    rdfs:label "Chinese Tea Ceremony"@en ;
+    crm:P106i_forms_part_of aspect:CulturalPractice ;
+    rdfs:seeAlso loc:sh2007010197 .
+
+aspect:TeaMasters a :NarrowSubject ;
+    rdfs:label "Tea Masters"@en ;
+    crm:P106i_forms_part_of aspect:CulturalPractice ;
+    rdfs:seeAlso loc:sh85132937 .
+
+aspect:Chashitsu a :NarrowSubject ;
+    rdfs:label "Chashitsu"@en ;
+    crm:P106i_forms_part_of aspect:CulturalSpace ;
+    rdfs:seeAlso loc:sh85022727 .
+
+
+aspect:TeaTasting a :NarrowSubject ;
+    rdfs:label "Tea Tasting"@en ;
+    crm:P106i_forms_part_of aspect:Manufacturing ;
+    rdfs:seeAlso loc:sh85132940 .
+
+aspect:TeaTrade a :NarrowSubject ;
+    rdfs:label "Tea Trade"@en ;
+    crm:P106i_forms_part_of aspect:Commerce ;
+    rdfs:seeAlso loc:sh85132942 .
+
+
+aspect:Taoism a :NarrowSubject ;
+    rdfs:label "Taoism"@en ;
+    crm:P106i_forms_part_of aspect:ReligiousPractice ;
+    rdfs:seeAlso loc:sh85132392 .
+
+aspect:ZenBuddhism a :NarrowSubject ;
+    rdfs:label "Zen Buddhism"@en ;
+    crm:P106i_forms_part_of aspect:ReligiousPractice ;
+    rdfs:seeAlso loc:sh85149720 .
+
+
