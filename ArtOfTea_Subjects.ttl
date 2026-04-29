@@ -11,7 +11,7 @@
 @prefix ArTea: <https://w3id.org/ArtOfTea/> .
 @prefix loc: <http://id.loc.gov/authorities/subjects/> .
 @prefix aspect: <https://w3id.org/ArtOfTea/aspects/> .
-@prefix : <https://w3id.org/ArtOfTea/aspects#> .
+@prefix : <https://w3id.org/ArtOfTea/aspects-schema#> .
 
 :ResearchObject a owl:Class;
     rdfs:label "Research Object";
