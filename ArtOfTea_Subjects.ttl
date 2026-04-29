@@ -35,7 +35,7 @@
 
 
 #Defining Tea as the cultural/research object 
-ArTea:Tea a :ResearchObject;
+aspect:Tea a :ResearchObject;
     rdfs:label "Tea" ;
     rdfs:seeAlso loc:sh85132924 .
 
