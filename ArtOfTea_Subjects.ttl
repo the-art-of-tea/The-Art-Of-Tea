@@ -16,22 +16,22 @@
 :ResearchObject a owl:Class;
     rdfs:label "Research Object";
     rdfs:comment "The cultural object or area of focus which will form the heart of the library";
-    owl:equivalentClass crm:E73_Information_Object .
+    rdfs:subClassOf crm:E73_Information_Object .
 
 :Aspect a owl:Class;
     rdfs:label "Aspect";
     rdfs:comment "The various aspects which form the understanding of the research object - derived from the Dewey Decimal Classification";
-    owl:equivalentClass crm:E90_Symbolic_Object .
+    rdfs:subClassOf crm:E90_Symbolic_Object .
 
 :BroadArea a owl:Class;
     rdfs:label "Broad Area";
     rdfs:comment "Subsection of the research aspects" ;
-    owl:equivalentClass crm:E90_Symbolic_Object .
+    rdfs:subClassOf crm:E90_Symbolic_Object .
 
 :NarrowSubject a owl:Class;
     rdfs:label "Narrow Subject";
     rdfs:comment "The specific topics that address the research object in question";
-    owl:equivalentClass crm:E90_Symbolic_Object .
+    rdfs:subClassOf crm:E90_Symbolic_Object .
 
 
 #Defining Tea as the cultural/research object 
