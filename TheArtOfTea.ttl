@@ -1,35 +1,18 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix bf: <http://id.loc.gov/ontologies/bibframe/> .
 @prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix schema: <http://schema.org/> .
-@prefix fabio: <http://purl.org/spar/fabio/> .
-@prefix prism: <http://prismstandard.org/namespaces/basic/2.0/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix ArTea: <https://w3id.org/ArtOfTea/> .
+@prefix aspect: <https://w3id.org/ArtOfTea/aspects/subjects#> .
 @prefix loc: <https://lccn.loc.gov/> .
 
-# Defining Tea as an object, not a concept
-ArTea:Tea a crm:E22_Human_Made_Object ;
-    rdfs:label "Tea" ;
-    schema:identifier <https://lccn.loc.gov/sh85132924> ;
-    crm:P129_is_subject_of 
-        ArTea:arTea01,
-        ArTea:arTea02,
-        ArTea:arTea03,
-        ArTea:arTea04,
-        ArTea:arTea05,
-        ArTea:arTea06,
-        ArTea:arTea07,
-        ArTea:arTea08,
-        ArTea:arTea09,
-        ArTea:arTea10,
-        ArTea:arTea11,
-        ArTea:arTea12,
-        ArTea:arTea13,
-        ArTea:arTea14,
-        ArTea:arTea15 .
+#linking to subject classification
+<https://w3id.org/ArtOfTea/> a owl:Ontology ;
+    owl:imports <https://w3id.org/ArtOfTea/aspects/subjects#> .
 
 # ArTea XML Entities
 
@@ -66,13 +49,9 @@ ArTea:arTea05 a schema:Book ;
     dcterms:format "310.5M" ;
     dcterms:abstract "The little book of tea is a collection of short tales and poems about tea, exploring its history, traditions, and tea drinking customs across different cultures." ;
     dcterms:subject 
-        <http://id.loc.gov/authorities/subjects/sh85132924>,
-        <https://lccn.loc.gov/sh85132933>,
-        <https://lccn.loc.gov/sh2010115714>,
-        <http://viaf.org/viaf/29565694>,
-        <https://lccn.loc.gov/sh85132940> ;
-    dcterms:hasVersion ArTea:LittleTeaBookXML ;
-    crm:P129_is_about ArTea:Tea .
+        aspect:TeaTasting ,
+        aspect:CulturalPractice ;
+    dcterms:hasVersion ArTea:LittleTeaBookXML .
 
 ArTea:arTea06 a schema:Book ;
     bf:identifiedBy "journeytoteacoun00fort" ;
@@ -89,14 +68,12 @@ ArTea:arTea06 a schema:Book ;
     dcterms:format "781.0M" ;
     dcterms:abstract "Including Sung-Lo and the Bohea hills; with a short notice of the East India Company's tea plantations in the Himalaya mountains - This book acts as the travelogue of the Scottish botanist Robert Fortune, probably the first western foreigner to travel to China in order to learn about the cultivation of tea, which up until that point had remained a mystery to the West. These secrets were of great interest to the East India Company who tasked Fortune with stealing a sample of tea leaves in order to start their own plantations in India." ;
     dcterms:subject 
-        <https://lccn.loc.gov/sh85019114>,
-        <https://lccn.loc.gov/sh2009000722>,
-        <https://lccn.loc.gov/sh2009002994>,
-        <https://lccn.loc.gov/sh85149720>,
-        <https://lccn.loc.gov/sh85095095>,
-        <https://lccn.loc.gov/sh8513294>,
-        <https://lccn.loc.gov/sh2008112604> ;
-    crm:P129_is_about ArTea:Tea .
+        aspect:Camellias ,
+        aspect:TeaTrade ,
+        aspect:Opium ,
+        aspect:TeaPlantation ,
+        aspect:IndianTeaPlantation ,
+        aspect:ZenBuddhism .
 
 ArTea:arTea07 a schema:Book ;
     bf:identifiedBy "bookoftea00okakrich" ;
@@ -113,17 +90,11 @@ ArTea:arTea07 a schema:Book ;
     dcterms:format "310.5M" ;
     dcterms:abstract "The Book of Tea describes all aspects of the Japanese tea ceremony and explains how its rituals blend seamlessly with traditional Japanese life." ;
     dcterms:subject 
-        <http://id.loc.gov/authorities/subjects/sh85132924>,
-        <http://id.loc.gov/authorities/subjects/sh85069725>,
-        <http://id.loc.gov/authorities/subjects/sh85022727>,
-        <http://id.loc.gov/authorities/subjects/sh85149720>,
-        <http://id.loc.gov/authorities/subjects/sh85132392>,
-        <https://www.wikidata.org/wiki/Q9333>,
-        <http://viaf.org/viaf/77109647>,
-        <http://viaf.org/viaf/77154987>,
-        <http://id.loc.gov/authorities/subjects/sh2020004829> ;
-    dcterms:hasVersion ArTea:BookOfTeaXML ;
-    crm:P129_is_about ArTea:Tea .
+        aspect:JapaneseTeaCeremony ,
+        aspect:Chashitsu ,
+        aspect:ZenBuddhism ,
+        aspect:Taoism ;
+    dcterms:hasVersion ArTea:BookOfTeaXML .
 
 ArTea:arTea08 a schema:Book ;
     bf:mainTitle "Tea room booklet" ;
@@ -136,11 +107,9 @@ ArTea:arTea08 a schema:Book ;
     dcterms:rights "Free eBook from the Library of Congress" ;
     dcterms:abstract "This collection of narratives and guides explores the founding and management of early 20th-century tea rooms, offering both practical business advice and personal success stories." ;
     dcterms:subject 
-        <http://id.loc.gov/authorities/subjects/sh85132924>,
-        <https://lccn.loc.gov/sh96001108>,
-        <https://lccn.loc.gov/sh85032133>,
-        <https://lccn.loc.gov/sh85113249> ;
-    crm:P129_is_about ArTea:Tea .
+        aspect:TeaRoom ,
+        aspect:AfternoonTea ,
+        aspect:Commerce .
 
 ArTea:arTea15 a schema:WebPage ;
     bf:mainTitle "The Classic of Tea" ;
@@ -152,19 +121,15 @@ ArTea:arTea15 a schema:WebPage ;
     dcterms:source <https://www.studentoftea.com/p/the-classic-of-tea-and-its-english-translation> ;
     dcterms:rights "-" ;
     dcterms:abstract "Before moving further into the art of tea, it is worth returning to where written tea culture began. The Classic of Tea (茶经) was written by Lu Yu (陆羽) during the Tang dynasty (618 to 907 AD). It is the first known monograph on tea and tea culture in the world." ;
-    dcterms:subject 
-        <http://id.loc.gov/authorities/subjects/sh85019114>,
-        <http://id.loc.gov/authorities/subjects/sh98001340>,
-        <http://id.loc.gov/authorities/subjects/sh97008800>,
-        <http://id.loc.gov/authorities/subjects/sh85069734>,
-        <http://id.loc.gov/authorities/subjects/sh2009000722>,
-        <http://id.loc.gov/authorities/subjects/sh2008112604>,
-        <http://id.loc.gov/authorities/subjects/sh2020004829>,
-        <http://id.loc.gov/authorities/subjects/sh85132940>,
-        <http://id.loc.gov/authorities/subjects/sh85132942>,
-        <http://id.loc.gov/authorities/subjects/sh85132392>,
-        <http://id.loc.gov/authorities/subjects/sh85149720> ;
-    crm:P129_is_about ArTea:Tea ;
+    dcterms:subject
+        aspect:Camellias ,
+        aspect:GreenTea ,
+        aspect:TeaGarden ,
+        aspect:TeaPlantation ,
+        aspect:TeaTasting ,
+        aspect:TeaTrade ,
+        aspect:Taoism ,
+        aspect:ZenBuddhism ;
     dcterms:isVersionOf <https://www.wikidata.org/wiki/Q259153> .
 
 # Images
@@ -178,12 +143,11 @@ ArTea:arTea01 a schema:ImageObject ;
     dcterms:date "c. 19th century" ;
     dcterms:description "Three young woman are sitting at table in a garden having afternoon tea, with a large fruit cake. Colour wood engraving by E. Evans after Kate Greenaway." ; 
     dcterms:subject 
-        <https://lccn.loc.gov/sj2021051488>,
-        <https://lccn.loc.gov/sh97008800>,
-        <https://lccn.loc.gov/sh2021008130> ;
+        aspect:AfternoonTea ,
+        aspect:TeaGarden ,
+        aspect:BlackTea ;
     schema:hasMeasurement "image 14.9 x 20.2 cm" ;
     dcterms:rights <https://creativecommons.org/publicdomain/mark/1.0/> ;
-    crm:P129_is_about ArTea:Tea ;
     dcterms:source <https://www.jstor.org/stable/community.24885633> .
 
 ArTea:arTea02 a schema:ImageObject ; 
@@ -194,10 +158,9 @@ ArTea:arTea02 a schema:ImageObject ;
     dcterms:date "c. 1890" ;
     dcterms:description "The tea taster at work The kettles ...; Lettering continues on top right: '2 cols'" ; 
     dcterms:subject 
-        <https://lccn.loc.gov/sh85132942>,
-        <https://lccn.loc.gov/sh85132940> ;
+        aspect:TeaTrade ,
+        aspect:TeaTasting ;
     dcterms:rights <https://creativecommons.org/publicdomain/mark/1.0/> ;
-    crm:P129_is_about ArTea:Tea ;
     dcterms:source <https://www.jstor.org/stable/community.24844948> .
 
 ArTea:arTea03 a schema:ImageObject ; 
@@ -208,11 +171,10 @@ ArTea:arTea03 a schema:ImageObject ;
     dcterms:date "c. 1820" ;
     dcterms:description "inscription: Signature: Eizan hitsu" ; 
     dcterms:subject 
-        <https://lccn.loc.gov/sh85132924>,
-        <https://lccn.loc.gov/sh85069725> ;
+        aspect:JapaneseTeaCeremony ,
+        aspect:JapaneseTeaGarden ;
     schema:hasMeasurement "Sheet: 20.6 x 18.1 cm (8 1/8 x 7 1/8 in.)" ;
     dcterms:rights <https://creativecommons.org/publicdomain/mark/1.0/> ;
-    crm:P129_is_about ArTea:Tea ;
     dcterms:source <https://www.jstor.org/stable/community.24570642> .
 
 ArTea:arTea04 a schema:ImageObject ; 
@@ -223,11 +185,9 @@ ArTea:arTea04 a schema:ImageObject ;
     dcterms:date "c. 1880" ;
     dcterms:description "A unique impression between the fourth and fifth states, Cassatt added texture and tone to the composition so that the figures and objects in the room become flat shapes defined by bold contrasts of light and shadow. Lydia’s elegant, pale hands raising a porcelain cup to her lips are brilliantly highlighted against the inky black of her dress." ; 
     dcterms:subject 
-        <https://lccn.loc.gov/sj2021051488>,
-        <https://lccn.loc.gov/sh2004001990> ;
+        aspect:AfternoonTea ;
     schema:hasMeasurement "Sheet: 27.5 x 36 cm (10 13/16 x 14 3/16 in.); Platemark: 18 x 28 cm (7 1/16 x 11 in.)" ;
     dcterms:rights <https://creativecommons.org/publicdomain/mark/1.0/> ;
-    crm:P129_is_about ArTea:Tea ;
     dcterms:source <https://www.jstor.org/stable/community.24626602> .
 
 ArTea:arTea09 a schema:ImageObject ; 
@@ -238,12 +198,10 @@ ArTea:arTea09 a schema:ImageObject ;
     dcterms:date "[between 1800 and 1899?]" ;
     dcterms:description "Indian tea plantation, an European lady and gentleman on horseback approach the main house, where a number of people await their arrival. Watercolour by an Indian artist." ;
     dcterms:subject 
-        <https://lccn.loc.gov/sh85132924>,
-        <https://lccn.loc.gov/sh2004001990>,
-        <https://lccn.loc.gov/sh2009002994>;
+        aspect:IndianTeaPlantation ,
+        aspect:TeaPlantationWorkers ;
     schema:hasMeasurement "image 19.5 x 16.5 cm" ;
     dcterms:rights <https://creativecommons.org/publicdomain/mark/1.0/> ;
-    crm:P129_is_about ArTea:Tea ;
     dcterms:source <https://www.jstor.org/stable/community.24902257> .
 
 ArTea:arTea10 a schema:ImageObject ; 
@@ -254,13 +212,11 @@ ArTea:arTea10 a schema:ImageObject ;
     dcterms:date "1815" ;
     dcterms:description "A tea-house scene: evening cooling (noryo). Lettering in Japanese" ;
     dcterms:subject 
-        <https://lccn.loc.gov/sh85132924>,
-        <https://lccn.loc.gov/sh2004001990>,
-        <https://lccn.loc.gov/sh96001108>,
-	    <https://lccn.loc.gov/sh85069579> ;
+        aspect:TeaRoom ,
+        aspect:Chashitsu ,
+        aspect:CulturalPractice ;
     schema:hasMeasurement "sheet 22.7 x 26.1 cm" ;
     dcterms:rights <https://creativecommons.org/publicdomain/mark/1.0/> ;
-    crm:P129_is_about ArTea:Tea ;
     dcterms:source <https://www.jstor.org/stable/community.24903985> .
 
 ArTea:arTea11 a schema:ImageObject ; 
@@ -271,12 +227,10 @@ ArTea:arTea11 a schema:ImageObject ;
     dcterms:date "1857" ;
     dcterms:description "Chinese woman gathering tea - from a drawing by a Chinese artist" ;
     dcterms:subject 
-        <https://lccn.loc.gov/sh85132924>,
-        <https://lccn.loc.gov/sh85019114>,
-        <https://lccn.loc.gov/sh90004329> ;
+        aspect:WomenTeaPlantationWorkers ,
+        aspect:Camellias ;
     schema:hasMeasurement "image and text 15.8 x 14.5 cm" ;
     dcterms:rights <https://creativecommons.org/publicdomain/mark/1.0/> ;
-    crm:P129_is_about ArTea:Tea ;
     dcterms:source <https://www.jstor.org/stable/community.24844945> .
 
 ArTea:arTea12 a schema:ImageObject ; 
@@ -286,12 +240,9 @@ ArTea:arTea12 a schema:ImageObject ;
     dcterms:medium "1 print : etching, with watercolour and colour printed ornamentation" ;
     dcterms:date "early 18th century" ;
     dcterms:description "A man pours tea for a resting Chinese warrior as a kettle steams on the stove beside them." ;
-    dcterms:subject 
-        <https://lccn.loc.gov/sh2008112604>,
-        <https://lccn.loc.gov/sh85132940> ;
+    dcterms:subject aspect:CulturalPractice ;
     schema:hasMeasurement "image 27.7 x 21.2 cm" ;
     dcterms:rights <https://creativecommons.org/publicdomain/mark/1.0/> ;
-    crm:P129_is_about ArTea:Tea ;
     dcterms:source <https://www.jstor.org/stable/community.24844933> .
 
 ArTea:arTea13 a schema:ImageObject ; 
@@ -302,14 +253,12 @@ ArTea:arTea13 a schema:ImageObject ;
     dcterms:date "early 19th century" ;
     dcterms:description "The manner of cleaning the ozier hurdles that hold the leaves; Bears number '5'" ;
     dcterms:subject 
-        <https://lccn.loc.gov/sh85132924>,
-        <https://lccn.loc.gov/sh85019114>,
-        <https://lccn.loc.gov/sh2009000722>,
-        <https://lccn.loc.gov/sh85132938>,
-        <https://lccn.loc.gov/sh2008112604> ;
+        aspect:Camellias ,
+        aspect:TeaPlantation ,
+        aspect:TeaMachinery ,
+        aspect:TeaPlantationWorkers ;
     schema:hasMeasurement "platemark 17.5 x 25.8 cm" ;
     dcterms:rights <https://creativecommons.org/publicdomain/mark/1.0/> ;
-    crm:P129_is_about ArTea:Tea ;
     dcterms:source <https://www.jstor.org/stable/community.24844937> .
 
 ArTea:arTea14 a schema:ImageObject ;
@@ -320,13 +269,14 @@ ArTea:arTea14 a schema:ImageObject ;
     dcterms:date "c. 1840" ;
     dcterms:description "The tea plant, the flowers, seeds, watering the plants, gathering the leaves, drying and rolling the leaves, packing, selling tea, drinking tea" ;
     dcterms:subject 
-        <https://lccn.loc.gov/sh85019114>,
-        <https://lccn.loc.gov/sh2009000722>,
-        <https://lccn.loc.gov/sh85132938>,
-        <https://lccn.loc.gov/sh85132942> ;
+        aspect:Camellias ,
+        aspect:TeaPlantation ,
+        aspect:TeaPlantationWorkers ,
+        aspect:TeaMachinery ,
+        aspect:TeaTasting ,
+        aspect:TeaTrade ;
     schema:hasMeasurement "border 22.5 x 17.7 cm" ;
     dcterms:rights <https://creativecommons.org/publicdomain/mark/1.0/> ;
-    crm:P129_is_about ArTea:Tea ;
     dcterms:source <https://www.jstor.org/stable/community.24898184> .
 
 
@@ -338,11 +288,8 @@ ArTea:arTea16 a schema:ImageObject ;
     dcterms:date "1503" ;
     dcterms:description "This painting depicts Shennong as he chews a branch, illustrating his role as healer." ;
     dcterms:subject 
-        <https://lccn.loc.gov/sh85019114>,
-        <https://lccn.loc.gov/sh2004001990>,
-        <https://lccn.loc.gov/sh2008112604> ;
+        aspect:Camellias ;
     schema:hasMeasurement "29.8 × 49.3 cm" ;
     dcterms:rights <https://creativecommons.org/publicdomain/mark/1.0/> ;
-    crm:P129_is_about ArTea:Tea ;
     dcterms:source <https://commons.wikimedia.org/wiki/File:Guo_Xu_album_dated_1503_(2).jpg> .
 
